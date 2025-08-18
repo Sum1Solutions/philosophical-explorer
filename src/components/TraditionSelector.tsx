@@ -34,6 +34,7 @@ const TraditionSelector: React.FC<TraditionSelectorProps> = ({
 }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [categoryFilter, setCategoryFilter] = useState<FilterCategory>('all');
+  const [sortBy, setSortBy] = useState<'date' | 'name' | 'category'>('date');
   const [quickCompareA, setQuickCompareA] = useState<string>('');
   const [quickCompareB, setQuickCompareB] = useState<string>('');
   const [selectedTraditionForDetail, setSelectedTraditionForDetail] = useState<Tradition | null>(null);
@@ -46,6 +47,29 @@ const TraditionSelector: React.FC<TraditionSelectorProps> = ({
     { value: 'eastern', label: 'Eastern' },
     { value: 'western', label: 'Western' }
   ];
+
+  const sortOptions = [
+    { value: 'date', label: 'By Date (Oldest First)' },
+    { value: 'name', label: 'By Name (A-Z)' },
+    { value: 'category', label: 'By Type (Religion/Philosophy)' }
+  ];
+
+  // Function to parse origin date for sorting
+  const parseOriginYear = (originStr: string): number => {
+    const str = originStr.toLowerCase();
+    if (str.includes('bce')) {
+      const match = str.match(/(\d+)/);
+      return match ? -parseInt(match[1]) : -3000;
+    }
+    if (str.includes('ce') || str.includes('century')) {
+      const match = str.match(/(\d+)/);
+      return match ? parseInt(match[1]) : 2000;
+    }
+    if (str.includes('prehistoric')) {
+      return -3000;
+    }
+    return 2000;
+  };
 
   const filteredTraditions = traditions.filter(tradition => {
     const matchesSearch = tradition.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -74,6 +98,20 @@ const TraditionSelector: React.FC<TraditionSelectorProps> = ({
     }
     
     return matchesSearch && matchesCategory;
+  }).sort((a, b) => {
+    switch (sortBy) {
+      case 'date':
+        return parseOriginYear(a.originDate) - parseOriginYear(b.originDate);
+      case 'name':
+        return a.name.localeCompare(b.name);
+      case 'category':
+        if (a.category === b.category) {
+          return a.name.localeCompare(b.name);
+        }
+        return a.category.localeCompare(b.category);
+      default:
+        return 0;
+    }
   });
 
   const handleTraditionToggle = (traditionId: string) => {
@@ -161,10 +199,10 @@ const TraditionSelector: React.FC<TraditionSelectorProps> = ({
         Click any tradition to auto-select it for comparison. Click headers, cards, or buttons to add multiple traditions.
       </Typography>
 
-      {/* Search and Filter */}
+      {/* Search, Filter, and Sort */}
       <Box sx={{ mb: 4 }}>
         <Grid container spacing={3}>
-          <Grid item xs={12} md={8}>
+          <Grid item xs={12} md={6}>
             <TextField
               fullWidth
               label="Search traditions"
@@ -174,7 +212,7 @@ const TraditionSelector: React.FC<TraditionSelectorProps> = ({
               onChange={(e) => setSearchTerm(e.target.value)}
             />
           </Grid>
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} md={3}>
             <FormControl fullWidth size="small">
               <InputLabel>Category</InputLabel>
               <Select
@@ -185,6 +223,22 @@ const TraditionSelector: React.FC<TraditionSelectorProps> = ({
                 {categories.map(category => (
                   <MenuItem key={category.value} value={category.value}>
                     {category.label}
+                  </MenuItem>
+                ))}
+              </Select>
+            </FormControl>
+          </Grid>
+          <Grid item xs={12} md={3}>
+            <FormControl fullWidth size="small">
+              <InputLabel>Sort By</InputLabel>
+              <Select
+                value={sortBy}
+                label="Sort By"
+                onChange={(e) => setSortBy(e.target.value as 'date' | 'name' | 'category')}
+              >
+                {sortOptions.map(option => (
+                  <MenuItem key={option.value} value={option.value}>
+                    {option.label}
                   </MenuItem>
                 ))}
               </Select>
