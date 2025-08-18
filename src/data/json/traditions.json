@@ -489,6 +489,92 @@
     ]
   },
   {
+    "id": "mahayana-buddhism",
+    "name": "Buddhism (Mahayana)",
+    "category": "Buddhist Philosophy",
+    "subSchool": "Great Vehicle tradition",
+    "firstYear": -100,
+    "metaphysics": {
+      "ultimateReality": "Buddha-nature (tathagatagarbha) - inherent potential for enlightenment in all beings",
+      "viewOfWorld": "Interdependent co-arising (pratityasamutpada) - all phenomena arise in dependence upon causes and conditions",
+      "viewOfSelf": "No-self (anatman) but emphasis on Buddha-nature within; bodhisattva ideal of compassionate action",
+      "afterlife": "Rebirth in various realms until enlightenment; Pure Land paradise available through devotion"
+    },
+    "epistemology": [
+      "Mahayana sutras (Lotus, Heart, Diamond)",
+      "Bodhisattva wisdom (prajna)",
+      "Skillful means (upaya)",
+      "Meditation and contemplative insight"
+    ],
+    "ethics": [
+      "Bodhisattva vows and compassionate action",
+      "Six perfections (paramitas)",
+      "Emptiness wisdom with compassionate engagement",
+      "Universal salvation - no being left behind"
+    ],
+    "liberation": {
+      "goal": "Buddhahood for the benefit of all sentient beings - not just personal liberation",
+      "path": [
+        "Bodhisattva path through six perfections",
+        "Cultivation of wisdom (prajna) and compassion (karuna)",
+        "Pure Land devotion and faith practices",
+        "Meditation and mindfulness training",
+        "Merit accumulation and dedication for all beings"
+      ]
+    },
+    "critiques": {
+      "Theravada Buddhism": "Individual liberation is selfish; bodhisattva ideal shows true Buddhist compassion",
+      "Hinduism": "Caste system contradicts universal Buddha-nature; ritual complexity obscures direct awakening",
+      "Christianity": "External savior model misses inherent Buddha-nature within all beings"
+    },
+    "primaryTexts": [
+      {
+        "title": "Lotus Sutra",
+        "url": "https://www.nichirenlibrary.org/en/lsoc/Content/1",
+        "description": "Central Mahayana text on universal Buddha-nature"
+      },
+      {
+        "title": "Heart Sutra",
+        "url": "https://www.accesstoinsight.org/tipitaka/kn/khp/khp.1-9.html#khp-7",
+        "description": "Essential teaching on emptiness and wisdom"
+      },
+      {
+        "title": "Diamond Sutra",
+        "url": "https://www.diamond-sutra.com/read-the-diamond-sutra-here/diamond-sutra-original-sanskrit/",
+        "description": "Perfection of wisdom literature"
+      },
+      "Vimalakirti Sutra",
+      "Pure Land Sutras"
+    ],
+    "adherents": "500M+ worldwide (largest Buddhist tradition)",
+    "originDate": "1st century BCE - 1st century CE",
+    "keyFigures": [
+      "Nagarjuna (founder of Madhyamaka philosophy)",
+      "Asanga and Vasubandhu (Yogacara school)",
+      "Avalokiteshvara (Bodhisattva of Compassion)",
+      "Amitabha Buddha (Pure Land tradition)"
+    ],
+    "confidence": 0.93,
+    "lastUpdated": "2024-01-18",
+    "sources": [
+      {
+        "text": "All beings possess Buddha-nature and can achieve enlightenment",
+        "source": "Lotus Sutra, Chapter 16 - Lifespan of the Tathagata",
+        "confidence": "high"
+      },
+      {
+        "text": "Form is emptiness, emptiness is form",
+        "source": "Heart Sutra (Prajnaparamita Hridaya)",
+        "confidence": "high"
+      },
+      {
+        "text": "May I not enter final nirvana until all beings are liberated",
+        "source": "Bodhisattva vows (traditional)",
+        "confidence": "high"
+      }
+    ]
+  },
+  {
     "id": "christianity",
     "name": "Christianity",
     "category": "Christian Theology",

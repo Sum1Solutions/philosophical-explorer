@@ -4,7 +4,7 @@ A comprehensive React application for comparing philosophical and religious trad
 
 ## 🌟 Features
 
-- **Interactive Tradition Comparison**: Side-by-side analysis of 22 major philosophical and religious traditions
+- **Interactive Tradition Comparison**: Side-by-side analysis of 23 major philosophical and religious traditions
 - **Enhanced Interactive Timeline**: Fully interactive chronological visualization with era filtering, hover effects, animated transitions, and detailed tradition tooltips
 - **Detailed Tradition Views**: In-depth exploration of each tradition's core beliefs and practices
 - **AI-Powered Debates**: Watch AI representatives from different traditions engage in philosophical discussions
@@ -12,31 +12,56 @@ A comprehensive React application for comparing philosophical and religious trad
 - **Verified Source Integration**: Direct links to primary texts and foundational documents from authoritative academic institutions and digital libraries
 - **Dark/Light Themes**: Fully accessible interface with theme consistency
 
-## 📚 Covered Traditions
+## 📚 Covered Traditions (23 Total)
 
-### Religious Traditions (10)
-1. **Christianity** - Focus on salvation through faith in Jesus Christ
-2. **Islam** - Submission to Allah through the Five Pillars
-3. **Judaism** - Covenant relationship with God and ethical living
-4. **Hinduism** - Liberation (moksha) through various paths
-5. **Buddhism** - Liberation from suffering through the Eightfold Path
-6. **Sikhism** - Union with the divine through devotion and service
-7. **Jainism** - Liberation through non-violence and spiritual purification
-8. **Taoism** - Harmony with the natural order (Tao)
-9. **Shinto** - Connection with kami and natural harmony
-10. **Bahá'í Faith** - Unity of God, religions, and humanity
+### Major Religious Traditions
 
-### Secular Philosophies (10)
-1. **Stoicism** - Virtue and tranquility through reason and acceptance
-2. **Existentialism** - Authentic existence and personal responsibility
-3. **Utilitarianism** - Greatest good for the greatest number
-4. **Deontological Ethics** - Moral duties and categorical imperatives
-5. **Virtue Ethics** - Character development and human flourishing
-6. **Secular Humanism** - Human dignity and scientific rationalism
-7. **Logical Positivism** - Scientific method and empirical verification
-8. **Pragmatism** - Truth through practical consequences
-9. **Nihilism** - Rejection of objective meaning and moral values
-10. **Absurdism** - Embrace of life's inherent meaninglessness
+#### **Buddhism** 🧘‍♂️
+- **Theravada Buddhism** - Conservative tradition emphasizing individual liberation
+- **Mahayana Buddhism** - Great Vehicle emphasizing universal salvation and bodhisattva ideal  
+- **Zen Buddhism** - Direct realization through meditation and sudden enlightenment
+
+#### **Abrahamic Traditions** ✡️☪️✝️
+- **Judaism** - Covenant relationship with God and ethical living
+- **Christianity** - Salvation through faith in Jesus Christ
+- **Islam (Sunni)** - Submission to Allah through the Five Pillars
+
+#### **Indian Philosophical Traditions** 🕉️
+- **Hinduism (Advaita Vedanta)** - Non-dual liberation through knowledge of Brahman
+- **Jainism** - Liberation through non-violence and spiritual purification
+- **Sikhism** - Union with the divine through devotion and service
+
+#### **East Asian Traditions** ☯️⛩️
+- **Confucianism** - Social harmony through virtue and ritual propriety
+- **Daoism (Taoism)** - Harmony with the natural order (Dao)
+- **Shintoism** - Connection with kami and natural harmony
+
+#### **Other Wisdom Traditions** 🌍
+- **Indigenous Wisdom** - Sacred relationship with land and ancestral guidance
+
+### Western Philosophical Schools
+
+#### **Ancient & Classical** 🏛️
+- **Stoicism** - Virtue and tranquility through reason and acceptance
+
+#### **Modern Ethics & Political Philosophy** ⚖️
+- **Utilitarianism** - Greatest good for the greatest number  
+- **Marxism** - Historical materialism and class struggle analysis
+
+#### **American Philosophy** 🇺🇸
+- **Pragmatism** - Truth through practical consequences
+- **Secular Humanism** - Human dignity and scientific rationalism
+
+#### **20th Century Continental** 🌍
+- **Existentialism** - Authentic existence and personal responsibility
+- **Absurdism (Camus)** - Embrace of life's inherent meaninglessness
+- **Postmodernism** - Critique of grand narratives and power structures
+
+#### **Analytic Tradition** 🧠
+- **Analytic Philosophy** - Logical analysis and linguistic precision
+
+#### **Contemporary Synthesis** 🌟
+- **Alan Watts** - Western interpretation of Eastern wisdom
 
 ## 🏗️ Data Structure Framework
 
@@ -242,8 +267,8 @@ npm run test     # Run tests (when implemented)
 - **Visual Effects**: Glowing timeline elements, spinning selection borders, and dynamic scaling
 
 #### **Era Markers**
-- **Ancient (before 0 CE)**: Indigenous Wisdom, Judaism, Jainism, Confucianism, Shintoism, Daoism, Stoicism, Buddhism
-- **Classical (0-500 CE)**: Christianity, Zen Buddhism
+- **Ancient (before 0 CE)**: Indigenous Wisdom, Judaism, Jainism, Confucianism, Shintoism, Daoism, Stoicism, Theravada Buddhism, Mahayana Buddhism
+- **Classical (0-500 CE)**: Christianity, Zen Buddhism  
 - **Medieval (500-1500 CE)**: Sunni Islam, Hinduism (Advaita Vedanta), Sikhism
 - **Early Modern (1500-1800 CE)**: Utilitarianism, Marxism, Pragmatism
 - **Modern (1800+ CE)**: Analytic Philosophy, Alan Watts, Secular Humanism, Existentialism, Absurdism, Postmodernism
