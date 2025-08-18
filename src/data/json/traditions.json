@@ -1,0 +1,614 @@
+[
+  {
+    "id": "christianity",
+    "name": "Christianity",
+    "category": "Christian Theology",
+    "subSchool": "Orthodox/Catholic/Protestant traditions",
+    "metaphysics": {
+      "ultimateReality": "Triune God - Father, Son, Holy Spirit",
+      "viewOfWorld": "Created by God, fallen but redeemable",
+      "viewOfSelf": "Made in God's image, fallen, redeemable through Christ",
+      "afterlife": "Heaven or Hell based on faith in Jesus Christ"
+    },
+    "epistemology": ["Scripture (Bible)", "Tradition", "Reason", "Experience (varies by denomination)"],
+    "ethics": ["Love of God and neighbor", "Ten Commandments", "Sermon on the Mount"],
+    "liberation": {
+      "goal": "Salvation - Eternal life with God through Jesus Christ",
+      "path": ["Faith in Jesus Christ", "Repentance", "Baptism", "Holy living"]
+    },
+    "critiques": {
+      "Islam": "Trinity compromises monotheism; Jesus as God is blasphemous",
+      "Judaism": "Jesus is not the Messiah; Trinity violates monotheism",
+      "Buddhism": "Eternal soul contradicts no-self doctrine"
+    },
+    "primaryTexts": ["Bible (Old & New Testament)", "Church Fathers", "Creeds"],
+    "adherents": "2.4B+",
+    "originDate": "1st century CE",
+    "keyFigures": ["Jesus Christ", "Paul the Apostle", "Augustine", "Thomas Aquinas"],
+    "confidence": 0.98,
+    "lastUpdated": "2024-01-15",
+    "sources": [
+      {
+        "text": "God so loved the world that he gave his one and only Son",
+        "source": "John 3:16",
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "sunni-islam",
+    "name": "Islam (Sunni)",
+    "category": "Islamic Theology",
+    "subSchool": "Sunni majority",
+    "metaphysics": {
+      "ultimateReality": "Allah - One, eternal, transcendent Creator",
+      "viewOfWorld": "Created by Allah, temporary test for humans",
+      "viewOfSelf": "Soul created by Allah, accountable to Allah",
+      "afterlife": "Paradise (Jannah) or Hell (Jahannam) based on faith and deeds"
+    },
+    "epistemology": ["Qur'an", "Sunnah (Prophetic tradition)", "Ijmā' (Consensus)", "Qiyās (Analogy)"],
+    "ethics": ["Five Pillars", "Sharī'ah law", "Akhlāq (Character development)"],
+    "liberation": {
+      "goal": "Paradise (Jannah) - Eternal bliss with Allah",
+      "path": ["Shahādah (Declaration of faith)", "Prayer (Ṣalāh)", "Charity (Zakāh)", "Fasting (Ṣawm)", "Pilgrimage (Ḥajj)"]
+    },
+    "critiques": {
+      "Christianity": "Trinity is shirk (associating partners with Allah); Jesus was a prophet, not divine",
+      "Judaism": "Rejection of Muhammad as final prophet; Torah corrupted (tahrif)",
+      "Hinduism": "Polytheism contradicts tawhid (oneness of Allah)"
+    },
+    "primaryTexts": ["Qur'an", "Ṣaḥīḥ al-Bukhārī", "Ṣaḥīḥ Muslim"],
+    "adherents": "1.8B+",
+    "originDate": "7th century CE",
+    "keyFigures": ["Muhammad", "Abu Bakr", "Umar ibn al-Khattab", "Al-Ghazali"],
+    "confidence": 0.98,
+    "lastUpdated": "2024-01-15",
+    "sources": [
+      {
+        "text": "There is no god but Allah, and Muhammad is his messenger",
+        "source": "Shahada",
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "judaism",
+    "name": "Judaism",
+    "category": "Jewish Theology", 
+    "subSchool": "Orthodox/Conservative/Reform traditions",
+    "metaphysics": {
+      "ultimateReality": "Hashem (God) - One, eternal, incorporeal Creator",
+      "viewOfWorld": "Created by God, sanctifiable through mitzvot",
+      "viewOfSelf": "Created b'tzelem Elohim (in God's image), covenant partner",
+      "afterlife": "Olam Haba (World to Come), focus on this-world ethics"
+    },
+    "epistemology": ["Tanakh (Hebrew Bible)", "Talmud", "Halakha (Jewish law)", "Rabbinic interpretation"],
+    "ethics": ["613 Mitzvot", "Tikkun Olam (Repairing the world)", "Tzedakah (Righteousness/charity)"],
+    "liberation": {
+      "goal": "Tikkun Olam - Perfecting the world under God's sovereignty",
+      "path": ["Torah study", "Mitzvot observance", "Ethical living", "Community responsibility"]
+    },
+    "critiques": {
+      "Christianity": "Jesus failed messianic criteria; Trinity contradicts monotheism",
+      "Islam": "Muhammad is not a prophet; Quran contradicts Torah",
+      "Buddhism": "Denial of eternal soul contradicts Jewish anthropology"
+    },
+    "primaryTexts": ["Tanakh (Hebrew Bible)", "Talmud", "Mishnah"],
+    "adherents": "15M+",
+    "originDate": "2000 BCE (Abraham)",
+    "keyFigures": ["Abraham", "Moses", "Rabbi Akiva", "Maimonides"],
+    "confidence": 0.95,
+    "lastUpdated": "2024-01-15",
+    "sources": [
+      {
+        "text": "Hear, O Israel: The Lord our God, the Lord is one",
+        "source": "Deuteronomy 6:4 (Shema)",
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "hinduism-advaita",
+    "name": "Hinduism (Advaita Vedanta)",
+    "category": "Hindu Philosophy",
+    "subSchool": "Non-dualist tradition",
+    "metaphysics": {
+      "ultimateReality": "Brahman - Pure consciousness, sat-chit-ananda",
+      "viewOfWorld": "Maya - Apparent reality, ultimately illusory",
+      "viewOfSelf": "Atman is Brahman - Individual self is ultimate reality",
+      "afterlife": "Reincarnation until moksha (liberation from samsara)"
+    },
+    "epistemology": ["Shruti (Revealed texts)", "Smriti (Traditional texts)", "Direct experience", "Guru instruction"],
+    "ethics": ["Dharma (Righteous living)", "Ahimsa (Non-violence)", "Four Puruṣārthas (Life goals)"],
+    "liberation": {
+      "goal": "Mokṣa - Liberation from cycle of rebirth, union with Brahman",
+      "path": ["Karma Yoga (Action)", "Bhakti Yoga (Devotion)", "Raja Yoga (Meditation)", "Jnana Yoga (Knowledge)"]
+    },
+    "critiques": {
+      "Buddhism": "Buddha's rejection of Brahman and Vedic authority is misguided",
+      "Christianity": "Exclusive salvation through Christ denies universal truth",
+      "Islam": "Rigid monotheism misses non-dual reality of Brahman"
+    },
+    "primaryTexts": ["Upaniṣads", "Bhagavad Gītā", "Brahma Sūtras"],
+    "adherents": "1.2B+",
+    "originDate": "1500-500 BCE",
+    "keyFigures": ["Adi Shankara", "Gaudapada", "Ramana Maharshi"],
+    "confidence": 0.92,
+    "lastUpdated": "2024-01-15",
+    "sources": [
+      {
+        "text": "Tat tvam asi - That thou art",
+        "source": "Chandogya Upanishad 6.8.7",
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "theravada-buddhism",
+    "name": "Buddhism (Theravada)",
+    "category": "Buddhist Philosophy",
+    "subSchool": "Doctrine of the Elders",
+    "metaphysics": {
+      "ultimateReality": "No permanent self or substance - dependent origination",
+      "viewOfWorld": "Impermanent, suffering-prone, without inherent existence",
+      "viewOfSelf": "Anatta - No permanent soul, bundle of ever-changing processes",
+      "afterlife": "Rebirth continues until nirvana, determined by karma"
+    },
+    "epistemology": ["Pāli Canon (Tipitaka)", "Buddha's teachings (Dhamma)", "Direct insight (Vipassanā)", "Mindful observation"],
+    "ethics": ["Noble Eightfold Path", "Five Precepts", "Compassion and wisdom"],
+    "liberation": {
+      "goal": "Nirvana - Complete cessation of suffering and rebirth",
+      "path": ["Right Understanding", "Right Intention", "Right Speech", "Right Action", "Right Livelihood", "Right Effort", "Right Mindfulness", "Right Concentration"]
+    },
+    "critiques": {
+      "Hinduism": "Brahman and eternal atman are conceptual constructs causing attachment",
+      "Christianity": "Eternal soul doctrine perpetuates illusion of permanence",
+      "Islam": "Belief in permanent soul contradicts anatta teaching"
+    },
+    "primaryTexts": ["Pāli Canon (Tipitaka)", "Dhammapada", "Visuddhimagga"],
+    "adherents": "520M+",
+    "originDate": "6th century BCE",
+    "keyFigures": ["Gautama Buddha", "Mahākassapa", "Buddhaghosa"],
+    "confidence": 0.94,
+    "lastUpdated": "2024-01-15",
+    "sources": [
+      {
+        "text": "Life is suffering (dukkha). Suffering arises from attachment.",
+        "source": "Four Noble Truths (Dhammacakkappavattana Sutta)",
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "sikhism",
+    "name": "Sikhism",
+    "category": "Sikh Theology",
+    "subSchool": "Khalsa tradition",
+    "metaphysics": {
+      "ultimateReality": "Waheguru - One formless God, creator and sustainer",
+      "viewOfWorld": "God's creation, place for spiritual development",
+      "viewOfSelf": "Soul seeking union with divine, equality of all humans",
+      "afterlife": "Reincarnation until merger with Waheguru"
+    },
+    "epistemology": ["Guru Granth Sahib", "Teachings of the Gurus", "Inner light", "Community wisdom"],
+    "ethics": ["Three pillars: Meditation, honest work, sharing", "Service (seva)", "Equality and justice"],
+    "liberation": {
+      "goal": "Mukti - Liberation and union with Waheguru",
+      "path": ["Meditation on God's name", "Righteous living", "Community service", "Following Guru's teachings"]
+    },
+    "critiques": {
+      "Hinduism": "Caste system contradicts human equality; ritualism misses devotion",
+      "Islam": "Exclusive claims ignore universal divine presence",
+      "Christianity": "Emphasis on suffering neglects this-world responsibility"
+    },
+    "primaryTexts": ["Guru Granth Sahib", "Dasam Granth"],
+    "adherents": "30M+",
+    "originDate": "15th century CE",
+    "keyFigures": ["Guru Nanak", "Guru Gobind Singh", "Guru Arjan"],
+    "confidence": 0.91,
+    "lastUpdated": "2024-01-15",
+    "sources": [
+      {
+        "text": "There is one God, whose name is Truth",
+        "source": "Guru Granth Sahib, Japji Sahib",
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "zen-buddhism",
+    "name": "Zen Buddhism",
+    "category": "Eastern Philosophy",
+    "subSchool": "Chan/Zen tradition",
+    "metaphysics": {
+      "ultimateReality": "Buddha-nature - Inherent awakened nature in all beings",
+      "viewOfWorld": "Empty of inherent existence, perfect as it is",
+      "viewOfSelf": "Originally enlightened, obscured by conceptual thinking",
+      "afterlife": "Rebirth continues until awakening to true nature"
+    },
+    "epistemology": ["Direct transmission", "Meditation practice", "Koan study", "Teacher-student relationship"],
+    "ethics": ["Compassion arising from wisdom", "Present-moment awareness", "Non-attachment"],
+    "liberation": {
+      "goal": "Satori/Kensho - Direct realization of Buddha-nature",
+      "path": ["Zazen meditation", "Koan practice", "Mindful daily activity", "Teacher guidance"]
+    },
+    "critiques": {
+      "Theravada Buddhism": "Over-emphasis on gradual path misses sudden enlightenment",
+      "Pure Land Buddhism": "Reliance on Amida Buddha creates dualistic thinking",
+      "Scholastic Buddhism": "Intellectual study can become obstacle to direct realization"
+    },
+    "primaryTexts": ["Platform Sutra", "Blue Cliff Record", "Shobogenzo"],
+    "adherents": "20M+ (part of broader Buddhism)",
+    "originDate": "6th century CE",
+    "keyFigures": ["Bodhidharma", "Huineng", "Dogen", "Hakuin"],
+    "confidence": 0.88,
+    "lastUpdated": "2024-01-15",
+    "sources": [
+      {
+        "text": "What is Buddha? Three pounds of flax.",
+        "source": "Dongshan Shouchu (Zen koan)",
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "id": "daoism",
+    "name": "Daoism (Taoism)",
+    "category": "Eastern Philosophy", 
+    "subSchool": "Religious and Philosophical Taoism",
+    "metaphysics": {
+      "ultimateReality": "Dao - The ineffable source and pattern of the universe",
+      "viewOfWorld": "Natural order governed by Dao, balance of yin-yang",
+      "viewOfSelf": "Part of natural order, should align with Dao",
+      "afterlife": "Return to Dao, or immortality through alignment with Dao"
+    },
+    "epistemology": ["Dao De Jing", "Zhuangzi", "Natural observation", "Intuitive wisdom"],
+    "ethics": ["Wu wei (Non-action)", "Harmony with nature", "Simplicity and humility"],
+    "liberation": {
+      "goal": "Harmony with Dao - Natural, effortless living",
+      "path": ["Wu wei practice", "Meditation", "Simplicity", "Following natural way"]
+    },
+    "critiques": {
+      "Confucianism": "Rigid social structures oppose natural spontaneity",
+      "Buddhism": "Goal of escaping suffering misses acceptance of natural flow",
+      "Western Philosophy": "Excessive rationalization disturbs natural harmony"
+    },
+    "primaryTexts": ["Dao De Jing", "Zhuangzi", "I Ching"],
+    "adherents": "12M+ (cultural influence much broader)",
+    "originDate": "6th century BCE",
+    "keyFigures": ["Laozi", "Zhuangzi", "Zhang Daoling"],
+    "confidence": 0.85,
+    "lastUpdated": "2024-01-15",
+    "sources": [
+      {
+        "text": "The Dao that can be named is not the eternal Dao",
+        "source": "Dao De Jing, Chapter 1",
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "confucianism",
+    "name": "Confucianism",
+    "category": "Eastern Philosophy",
+    "subSchool": "Classical Confucian tradition",
+    "metaphysics": {
+      "ultimateReality": "Tian (Heaven) - Moral order of cosmos",
+      "viewOfWorld": "Harmonious when governed by virtue and ritual",
+      "viewOfSelf": "Social being with capacity for moral cultivation",
+      "afterlife": "Immortality through virtuous influence on descendants"
+    },
+    "epistemology": ["Classical texts", "Historical study", "Moral reasoning", "Ritual practice"],
+    "ethics": ["Ren (Benevolence)", "Li (Ritual propriety)", "Filial piety", "Social harmony"],
+    "liberation": {
+      "goal": "Junzi - Exemplary person, social harmony through virtue",
+      "path": ["Study of classics", "Ritual practice", "Moral cultivation", "Social responsibility"]
+    },
+    "critiques": {
+      "Daoism": "Social artificiality corrupts natural spontaneity",
+      "Buddhism": "Otherworldly focus neglects social responsibility",
+      "Legalism": "Pure law without virtue creates tyranny"
+    },
+    "primaryTexts": ["Analects", "Mencius", "Great Learning", "Doctrine of the Mean"],
+    "adherents": "6M+ (cultural influence much broader)",
+    "originDate": "6th century BCE",
+    "keyFigures": ["Confucius", "Mencius", "Xunzi"],
+    "confidence": 0.89,
+    "lastUpdated": "2024-01-15",
+    "sources": [
+      {
+        "text": "Do not impose on others what you do not wish for yourself",
+        "source": "Analects 15:23",
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "shintoism",
+    "name": "Shintoism", 
+    "category": "Japanese Religion",
+    "subSchool": "Indigenous Japanese spirituality",
+    "metaphysics": {
+      "ultimateReality": "Kami - Sacred spirits/forces in nature and ancestors",
+      "viewOfWorld": "Sacred, inhabited by countless kami spirits",
+      "viewOfSelf": "Connected to kami, ancestors, and natural world",
+      "afterlife": "Continuation as kami, focus on purity in this life"
+    },
+    "epistemology": ["Oral tradition", "Ritual practice", "Natural observation", "Community memory"],
+    "ethics": ["Purity (kegare avoidance)", "Harmony with nature", "Ancestor veneration", "Community solidarity"],
+    "liberation": {
+      "goal": "Harmony with kami and nature, ritual purity",
+      "path": ["Shrine rituals", "Seasonal festivals", "Purification practices", "Ancestor veneration"]
+    },
+    "critiques": {
+      "Buddhism": "Foreign influence that complicated indigenous spirituality",
+      "Christianity": "Exclusive monotheism denies kami presence in nature",
+      "Secular materialism": "Denial of sacred in nature leads to environmental destruction"
+    },
+    "primaryTexts": ["Kojiki", "Nihon Shoki", "Norito prayers"],
+    "adherents": "100M+ (cultural practitioners)",
+    "originDate": "Prehistoric Japan",
+    "keyFigures": ["Amaterasu", "Emperor Jimmu", "Motoori Norinaga"],
+    "confidence": 0.82,
+    "lastUpdated": "2024-01-15",
+    "sources": [
+      {
+        "text": "The kami are in all things, and all things have the kami within them",
+        "source": "Traditional Shinto teaching",
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "id": "stoicism",
+    "name": "Stoicism",
+    "category": "Western Philosophy",
+    "subSchool": "Hellenistic virtue ethics",
+    "metaphysics": {
+      "ultimateReality": "Logos - Rational principle governing cosmos",
+      "viewOfWorld": "Deterministic, rational cosmos following natural law",
+      "viewOfSelf": "Rational being capable of aligning with cosmic reason",
+      "afterlife": "Soul may survive but focus is on virtue in this life"
+    },
+    "epistemology": ["Reason", "Natural law", "Empirical observation", "Philosophical reflection"],
+    "ethics": ["Four cardinal virtues", "Living according to nature", "Emotional regulation", "Cosmopolitanism"],
+    "liberation": {
+      "goal": "Eudaimonia - Flourishing through virtue and wisdom",
+      "path": ["Practice of virtue", "Philosophical reflection", "Acceptance of fate", "Focus on what's controllable"]
+    },
+    "critiques": {
+      "Epicurianism": "Pleasure-seeking undermines rational virtue",
+      "Christianity": "Divine command theory makes virtue arbitrary",
+      "Existentialism": "Emphasis on feeling over reason leads to confusion"
+    },
+    "primaryTexts": ["Meditations", "Discourses", "Letters to Lucilius"],
+    "adherents": "Academic/cultural revival",
+    "originDate": "3rd century BCE",
+    "keyFigures": ["Zeno of Citium", "Epictetus", "Marcus Aurelius", "Seneca"],
+    "confidence": 0.91,
+    "lastUpdated": "2024-01-15",
+    "sources": [
+      {
+        "text": "You have power over your mind - not outside events. Realize this, and you will find strength.",
+        "source": "Marcus Aurelius, Meditations",
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "existentialism",
+    "name": "Existentialism",
+    "category": "Western Philosophy",
+    "subSchool": "20th century continental philosophy",
+    "metaphysics": {
+      "ultimateReality": "No pre-given essence - existence precedes essence",
+      "viewOfWorld": "Absurd, lacking inherent meaning or purpose",
+      "viewOfSelf": "Radically free, responsible for creating meaning and identity",
+      "afterlife": "Generally denied - focus on authentic existence now"
+    },
+    "epistemology": ["Lived experience", "Phenomenological analysis", "Subjective reflection", "Literary expression"],
+    "ethics": ["Authenticity", "Radical responsibility", "Bad faith avoidance", "Commitment despite absurdity"],
+    "liberation": {
+      "goal": "Authentic existence - Living honestly in face of absurdity",
+      "path": ["Acknowledging freedom", "Taking responsibility", "Creating values", "Embracing anxiety"]
+    },
+    "critiques": {
+      "Essentialism": "Pre-given human nature denies radical freedom",
+      "Religious tradition": "Divine purpose removes human responsibility for meaning",
+      "Objectivist ethics": "Universal moral truths ignore subjective dimension"
+    },
+    "primaryTexts": ["Being and Nothingness", "The Stranger", "Being and Time"],
+    "adherents": "Academic/cultural influence",
+    "originDate": "19th-20th century",
+    "keyFigures": ["Jean-Paul Sartre", "Simone de Beauvoir", "Albert Camus", "Martin Heidegger"],
+    "confidence": 0.87,
+    "lastUpdated": "2024-01-15",
+    "sources": [
+      {
+        "text": "Man is condemned to be free; because once thrown into the world, he is responsible for everything he does",
+        "source": "Jean-Paul Sartre",
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "marxism",
+    "name": "Marxism",
+    "category": "Western Philosophy",
+    "subSchool": "Historical materialism",
+    "metaphysics": {
+      "ultimateReality": "Material conditions and class relations",
+      "viewOfWorld": "Shaped by economic base, subject to historical dialectic",
+      "viewOfSelf": "Social being defined by class relations and labor",
+      "afterlife": "Irrelevant - focus on transforming material conditions"
+    },
+    "epistemology": ["Historical materialism", "Dialectical analysis", "Empirical sociology", "Praxis (theory-practice unity)"],
+    "ethics": ["Class solidarity", "Revolutionary praxis", "Critique of exploitation", "Human emancipation"],
+    "liberation": {
+      "goal": "Classless society - End of exploitation and alienation",
+      "path": ["Class consciousness", "Revolutionary action", "Collective ownership", "Democratic planning"]
+    },
+    "critiques": {
+      "Capitalism": "Exploitative system that alienates workers from their labor",
+      "Religion": "Opium of the people - distracts from material struggles",
+      "Idealism": "Focus on ideas ignores material basis of social problems"
+    },
+    "primaryTexts": ["Das Kapital", "Communist Manifesto", "German Ideology"],
+    "adherents": "Political movements worldwide",
+    "originDate": "19th century",
+    "keyFigures": ["Karl Marx", "Friedrich Engels", "Vladimir Lenin", "Rosa Luxemburg"],
+    "confidence": 0.92,
+    "lastUpdated": "2024-01-15",
+    "sources": [
+      {
+        "text": "The philosophers have only interpreted the world; the point is to change it",
+        "source": "Karl Marx, Theses on Feuerbach",
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "utilitarianism",
+    "name": "Utilitarianism",
+    "category": "Western Philosophy",
+    "subSchool": "Consequentialist ethics",
+    "metaphysics": {
+      "ultimateReality": "Natural world governed by pleasure and pain",
+      "viewOfWorld": "Arena for maximizing happiness and reducing suffering",
+      "viewOfSelf": "Pleasure-seeking, pain-avoiding agent equal to all others",
+      "afterlife": "Generally materialist - focus on happiness in this life"
+    },
+    "epistemology": ["Empirical observation", "Hedonic calculus", "Scientific method", "Consequentialist reasoning"],
+    "ethics": ["Greatest happiness principle", "Impartial consideration", "Harm reduction", "Welfare maximization"],
+    "liberation": {
+      "goal": "Maximum happiness for maximum number of beings",
+      "path": ["Rational calculation", "Impartial concern", "Evidence-based policy", "Effective altruism"]
+    },
+    "critiques": {
+      "Deontological ethics": "Duty-based ethics ignores actual consequences for wellbeing",
+      "Virtue ethics": "Character focus misses the point of reducing suffering",
+      "Religious ethics": "Divine command ignores empirical wellbeing"
+    },
+    "primaryTexts": ["Principles of Morals and Legislation", "Utilitarianism", "Methods of Ethics"],
+    "adherents": "Academic philosophy and policy",
+    "originDate": "18th-19th century",
+    "keyFigures": ["Jeremy Bentham", "John Stuart Mill", "Henry Sidgwick", "Peter Singer"],
+    "confidence": 0.93,
+    "lastUpdated": "2024-01-15",
+    "sources": [
+      {
+        "text": "It is the greatest happiness of the greatest number that is the measure of right and wrong",
+        "source": "Jeremy Bentham",
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "pragmatism",
+    "name": "Pragmatism",
+    "category": "Western Philosophy",
+    "subSchool": "American philosophical tradition",
+    "metaphysics": {
+      "ultimateReality": "Process and experience - reality known through interaction",
+      "viewOfWorld": "Laboratory for testing ideas through consequences",
+      "viewOfSelf": "Problem-solving organism adapting to environment",
+      "afterlife": "Agnostic - focus on workable solutions in experience"
+    },
+    "epistemology": ["Experimental method", "Fallibilism", "Pragmatic maxim", "Democratic inquiry"],
+    "ethics": ["Meliorism", "Democratic participation", "Experimental attitude", "Consequentialist evaluation"],
+    "liberation": {
+      "goal": "Improved human experience through intelligent inquiry",
+      "path": ["Scientific method", "Democratic discourse", "Educational reform", "Social experimentation"]
+    },
+    "critiques": {
+      "Absolutism": "Claims to eternal truth ignore fallibility of knowledge",
+      "Foundationalism": "Search for certain foundations misses experimental nature of inquiry",
+      "Idealism": "Pure thought detached from consequences lacks meaning"
+    },
+    "primaryTexts": ["Pragmatism: A New Name for Old Ways of Thinking", "Democracy and Education", "Experience and Nature"],
+    "adherents": "Academic philosophy and education",
+    "originDate": "Late 19th century",
+    "keyFigures": ["William James", "John Dewey", "Charles Sanders Peirce", "Richard Rorty"],
+    "confidence": 0.88,
+    "lastUpdated": "2024-01-15",
+    "sources": [
+      {
+        "text": "The ultimate test for us of what a truth means is the conduct it dictates or inspires",
+        "source": "William James",
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "analytic-philosophy",
+    "name": "Analytic Philosophy",
+    "category": "Western Philosophy",
+    "subSchool": "Anglo-American philosophical tradition",
+    "metaphysics": {
+      "ultimateReality": "Logical structure underlying language and reality",
+      "viewOfWorld": "Analyzable through logical and linguistic methods",
+      "viewOfSelf": "Rational agent capable of precise conceptual analysis",
+      "afterlife": "Various views - focus on conceptual clarity"
+    },
+    "epistemology": ["Logical analysis", "Linguistic philosophy", "Scientific realism", "Conceptual analysis"],
+    "ethics": ["Meta-ethical analysis", "Applied ethics", "Rational argumentation", "Conceptual precision"],
+    "liberation": {
+      "goal": "Conceptual clarity and rational understanding",
+      "path": ["Logical analysis", "Careful argumentation", "Scientific method", "Linguistic precision"]
+    },
+    "critiques": {
+      "Continental philosophy": "Obscurantism and literary flourish obscure rational argument",
+      "Mysticism": "Appeals to ineffable experience avoid rigorous analysis",
+      "Relativism": "Denial of objective truth undermines rational discourse"
+    },
+    "primaryTexts": ["Tractus Logico-Philosophicus", "Principia Mathematica", "Word and Object"],
+    "adherents": "Academic philosophy",
+    "originDate": "Early 20th century",
+    "keyFigures": ["Bertrand Russell", "Ludwig Wittgenstein", "W.V.O. Quine", "Saul Kripke"],
+    "confidence": 0.90,
+    "lastUpdated": "2024-01-15",
+    "sources": [
+      {
+        "text": "Whereof one cannot speak, thereof one must be silent",
+        "source": "Ludwig Wittgenstein, Tractatus",
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "postmodernism",
+    "name": "Postmodernism",
+    "category": "Western Philosophy",
+    "subSchool": "Late 20th century continental philosophy",
+    "metaphysics": {
+      "ultimateReality": "No single reality - multiple perspectives and constructions",
+      "viewOfWorld": "Socially constructed through language and power relations",
+      "viewOfSelf": "Decentered subject shaped by discourses and power",
+      "afterlife": "Varied - often skeptical of grand narratives"
+    },
+    "epistemology": ["Deconstruction", "Genealogical method", "Discourse analysis", "Poststructural criticism"],
+    "ethics": ["Difference and otherness", "Power critique", "Anti-foundationalism", "Radical pluralism"],
+    "liberation": {
+      "goal": "Liberation from totalizing systems and grand narratives",
+      "path": ["Deconstruction", "Critique of power", "Embrace of difference", "Local resistance"]
+    },
+    "critiques": {
+      "Modernism": "Enlightenment rationality masks power and exclusion",
+      "Essentialism": "Fixed identities ignore fluid, constructed nature of subjects",
+      "Universal truth claims": "Totalizing systems suppress difference and otherness"
+    },
+    "primaryTexts": ["Of Grammatology", "The Postmodern Condition", "Discipline and Punish"],
+    "adherents": "Academic humanities and cultural studies",
+    "originDate": "Mid-late 20th century",
+    "keyFigures": ["Jacques Derrida", "Michel Foucault", "Jean-François Lyotard", "Gilles Deleuze"],
+    "confidence": 0.78,
+    "lastUpdated": "2024-01-15",
+    "sources": [
+      {
+        "text": "There is nothing outside the text",
+        "source": "Jacques Derrida, Of Grammatology",
+        "confidence": "medium"
+      }
+    ]
+  }
+]

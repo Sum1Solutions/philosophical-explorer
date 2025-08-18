@@ -1,0 +1,666 @@
+{
+  "Qur'an": [
+    {
+      "name": "Quran (Arabic with English translation)",
+      "url": "https://quran.com",
+      "description": "Complete Quran with multiple translations and audio",
+      "source": "other"
+    },
+    {
+      "name": "Quran - Sahih International Translation",
+      "url": "https://archive.org/details/QuranSahihInternational",
+      "description": "Popular modern English translation",
+      "source": "archive.org",
+      "language": "English",
+      "translation": "Sahih International"
+    }
+  ],
+  "Sunnah (Prophetic tradition)": [
+    {
+      "name": "Sunnah.com - Complete Hadith Collection",
+      "url": "https://sunnah.com",
+      "description": "Six major Hadith collections with search",
+      "source": "other"
+    },
+    {
+      "name": "Sahih Bukhari (Complete)",
+      "url": "https://archive.org/details/SahihBukhariEnglishTranslation",
+      "description": "Most authentic Hadith collection",
+      "source": "archive.org",
+      "language": "English"
+    }
+  ],
+  "Ṣaḥīḥ al-Bukhārī": [
+    {
+      "name": "Sahih Bukhari - Complete Collection",
+      "url": "https://sunnah.com/bukhari",
+      "description": "Most authentic Hadith collection with commentary",
+      "source": "other"
+    }
+  ],
+  "Ṣaḥīḥ Muslim": [
+    {
+      "name": "Sahih Muslim - Complete Collection",
+      "url": "https://sunnah.com/muslim",
+      "description": "Second most authentic Hadith collection",
+      "source": "other"
+    }
+  ],
+  "Ijmā' (Consensus)": [
+    {
+      "name": "Islamic Jurisprudence - Consensus Sources",
+      "url": "https://archive.org/details/IslamicJurisprudence",
+      "description": "Classical works on Islamic legal consensus",
+      "source": "archive.org"
+    }
+  ],
+  "Qiyās (Analogy)": [
+    {
+      "name": "Principles of Islamic Jurisprudence",
+      "url": "https://archive.org/details/PrinciplesOfIslamicJurisprudence",
+      "description": "Classical methodology of Islamic legal reasoning",
+      "source": "archive.org"
+    }
+  ],
+  "Bible (Old & New Testament)": [
+    {
+      "name": "King James Bible (1769)",
+      "url": "https://archive.org/details/bible-kjv",
+      "description": "Classic English translation",
+      "source": "archive.org",
+      "language": "English",
+      "translation": "King James Version"
+    },
+    {
+      "name": "Bible - Multiple Translations",
+      "url": "https://www.biblegateway.com",
+      "description": "Multiple translations and languages",
+      "source": "other"
+    }
+  ],
+  "Scripture (Bible)": [
+    {
+      "name": "Bible Gateway - Multiple Translations",
+      "url": "https://www.biblegateway.com",
+      "description": "Access to dozens of Bible translations",
+      "source": "other"
+    }
+  ],
+  "Church Fathers": [
+    {
+      "name": "Early Church Fathers - Complete Collection",
+      "url": "https://archive.org/details/church-fathers",
+      "description": "Writings of early Christian theologians",
+      "source": "archive.org"
+    }
+  ],
+  "Tradition": [
+    {
+      "name": "Catholic Encyclopedia Online",
+      "url": "https://www.newadvent.org/cathen/",
+      "description": "Comprehensive Catholic doctrinal sources",
+      "source": "other"
+    }
+  ],
+  "Experience (varies by denomination)": [
+    {
+      "name": "Mystics and Spiritual Experience",
+      "url": "https://archive.org/details/ChristianMysticism",
+      "description": "Christian mystical and experiential tradition",
+      "source": "archive.org"
+    }
+  ],
+  "Upaniṣads": [
+    {
+      "name": "The Upanishads (Max Müller translation)",
+      "url": "https://archive.org/details/upanishads00ml",
+      "description": "Classic 19th century translation",
+      "source": "archive.org",
+      "language": "English",
+      "translation": "Max Müller"
+    },
+    {
+      "name": "Principal Upanishads",
+      "url": "https://en.wikisource.org/wiki/The_Upanishads",
+      "description": "Various Upanishads with Sanskrit and English",
+      "source": "wikisource"
+    }
+  ],
+  "Bhagavad Gītā": [
+    {
+      "name": "Bhagavad Gita (Paramahansa Yogananda)",
+      "url": "https://archive.org/details/BhagavadGitaAsItIs",
+      "description": "Popular modern commentary",
+      "source": "archive.org",
+      "language": "English"
+    },
+    {
+      "name": "Bhagavad Gita - Sanskrit with translation",
+      "url": "https://en.wikisource.org/wiki/Bhagavad-Gita",
+      "description": "Multiple translations available",
+      "source": "wikisource"
+    }
+  ],
+  "Vedas": [
+    {
+      "name": "Rig Veda (Ralph T.H. Griffith translation)",
+      "url": "https://archive.org/details/rigveda00grif",
+      "description": "Complete Rig Veda in English",
+      "source": "archive.org",
+      "language": "English",
+      "translation": "Griffith"
+    }
+  ],
+  "Shruti (Revealed texts)": [
+    {
+      "name": "The Four Vedas (Sacred Texts Archive)",
+      "url": "https://sacred-texts.com/hin/index.htm#vedas",
+      "description": "Complete Vedic literature collection",
+      "source": "other"
+    }
+  ],
+  "Smriti (Traditional texts)": [
+    {
+      "name": "Hindu Smriti Literature",
+      "url": "https://archive.org/details/HinduSmritiTexts",
+      "description": "Traditional Hindu law and ethical texts",
+      "source": "archive.org"
+    }
+  ],
+  "Direct experience": [
+    {
+      "name": "Yoga and Meditation Texts",
+      "url": "https://archive.org/details/YogaAndMeditation",
+      "description": "Classical texts on Hindu spiritual practices",
+      "source": "archive.org"
+    }
+  ],
+  "Tanakh (Hebrew Bible)": [
+    {
+      "name": "Hebrew Bible (Masoretic Text)",
+      "url": "https://en.wikisource.org/wiki/Hebrew_Bible",
+      "description": "Hebrew text with various English translations",
+      "source": "wikisource"
+    }
+  ],
+  "Talmud": [
+    {
+      "name": "Babylonian Talmud (English translation)",
+      "url": "https://archive.org/details/BabylonianTalmudEnglish",
+      "description": "Complete Talmud in English",
+      "source": "archive.org",
+      "language": "English"
+    }
+  ],
+  "Pāli Canon (Tipitaka)": [
+    {
+      "name": "Tipitaka - Pali Canon",
+      "url": "https://tipitaka.org",
+      "description": "Complete Pali Canon with translations",
+      "source": "other"
+    },
+    {
+      "name": "Buddhist Texts (Sacred Books of the East)",
+      "url": "https://archive.org/details/sacredbooksofeas10ml",
+      "description": "Classic translations of Buddhist texts",
+      "source": "archive.org"
+    }
+  ],
+  "Buddha's teachings (Dhamma)": [
+    {
+      "name": "Access to Insight - Buddhist Texts",
+      "url": "https://accesstoinsight.org",
+      "description": "Theravada Buddhist texts with commentary",
+      "source": "other"
+    }
+  ],
+  "Direct insight (Vipassanā)": [
+    {
+      "name": "Buddhist Meditation Texts",
+      "url": "https://archive.org/details/BuddhistMeditationTexts",
+      "description": "Classical meditation manuals",
+      "source": "archive.org"
+    }
+  ],
+  "Mindful observation": [
+    {
+      "name": "Satipatthana Sutta and Meditation Texts",
+      "url": "https://accesstoinsight.org/tipitaka/mn/mn.022.than.html",
+      "description": "Foundations of mindfulness teaching",
+      "source": "other"
+    }
+  ],
+  "Guru Granth Sahib": [
+    {
+      "name": "Guru Granth Sahib (English translation)",
+      "url": "https://archive.org/details/GuruGranthSahibEnglish",
+      "description": "Complete Sikh scripture in English",
+      "source": "archive.org",
+      "language": "English"
+    }
+  ],
+  "Dao De Jing": [
+    {
+      "name": "Tao Te Ching (James Legge translation)",
+      "url": "https://archive.org/details/taoteching00laoz",
+      "description": "Classic English translation",
+      "source": "archive.org",
+      "language": "English",
+      "translation": "James Legge"
+    },
+    {
+      "name": "Tao Te Ching - Multiple translations",
+      "url": "https://en.wikisource.org/wiki/Tao_Te_Ching",
+      "description": "Various English translations",
+      "source": "wikisource"
+    }
+  ],
+  "Zhuangzi": [
+    {
+      "name": "The Chuang Tzu (James Legge)",
+      "url": "https://archive.org/details/sacredbooksofeas39ml",
+      "description": "Classic translation of Zhuangzi",
+      "source": "archive.org",
+      "language": "English",
+      "translation": "James Legge"
+    }
+  ],
+  "Being and Nothingness": [
+    {
+      "name": "Being and Nothingness (Sartre)",
+      "url": "https://archive.org/details/being-and-nothingness",
+      "description": "Foundational existentialist work",
+      "source": "archive.org",
+      "language": "English"
+    }
+  ],
+  "The Stranger": [
+    {
+      "name": "The Stranger (Albert Camus)",
+      "url": "https://archive.org/details/TheStranger_201606",
+      "description": "Existentialist novel",
+      "source": "archive.org",
+      "language": "English"
+    }
+  ],
+  "Meditations": [
+    {
+      "name": "Meditations of Marcus Aurelius",
+      "url": "https://en.wikisource.org/wiki/The_Meditations_of_Marcus_Aurelius",
+      "description": "Stoic emperor's personal reflections",
+      "source": "wikisource",
+      "language": "English"
+    },
+    {
+      "name": "Marcus Aurelius - Meditations (George Long)",
+      "url": "https://archive.org/details/meditationsofmar00marc",
+      "description": "Classic translation",
+      "source": "archive.org",
+      "language": "English",
+      "translation": "George Long"
+    }
+  ],
+  "Discourses": [
+    {
+      "name": "Discourses of Epictetus",
+      "url": "https://en.wikisource.org/wiki/Discourses_of_Epictetus",
+      "description": "Stoic teachings compiled by Arrian",
+      "source": "wikisource",
+      "language": "English"
+    }
+  ],
+  "Letters to Lucilius": [
+    {
+      "name": "Seneca - Letters to Lucilius",
+      "url": "https://en.wikisource.org/wiki/Moral_letters_to_Lucilius",
+      "description": "Stoic philosophy in letter form",
+      "source": "wikisource",
+      "language": "English"
+    }
+  ],
+  "Das Kapital": [
+    {
+      "name": "Capital (Marx) - Volume 1",
+      "url": "https://www.marxists.org/archive/marx/works/1867-c1/",
+      "description": "Marx's critique of political economy",
+      "source": "other",
+      "language": "English"
+    }
+  ],
+  "Communist Manifesto": [
+    {
+      "name": "The Communist Manifesto",
+      "url": "https://www.marxists.org/archive/marx/works/1848/communist-manifesto/",
+      "description": "Marx and Engels' revolutionary pamphlet",
+      "source": "other",
+      "language": "English"
+    }
+  ],
+  "Principles of Morals and Legislation": [
+    {
+      "name": "An Introduction to the Principles of Morals and Legislation",
+      "url": "https://archive.org/details/AnIntroductionToThePrinciplesOfMoralsAndLegislation",
+      "description": "Bentham's utilitarian philosophy",
+      "source": "archive.org",
+      "language": "English"
+    }
+  ],
+  "Utilitarianism": [
+    {
+      "name": "Utilitarianism (John Stuart Mill)",
+      "url": "https://en.wikisource.org/wiki/Utilitarianism",
+      "description": "Classic utilitarian text",
+      "source": "wikisource",
+      "language": "English"
+    }
+  ],
+  "Pragmatism: A New Name for Old Ways of Thinking": [
+    {
+      "name": "Pragmatism (William James)",
+      "url": "https://archive.org/details/pragmatismanewna00jameuoft",
+      "description": "Foundational pragmatist philosophy",
+      "source": "archive.org",
+      "language": "English"
+    }
+  ],
+  "Tractus Logico-Philosophicus": [
+    {
+      "name": "Tractatus Logico-Philosophicus",
+      "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus",
+      "description": "Wittgenstein's early philosophical work",
+      "source": "wikisource",
+      "language": "English"
+    }
+  ],
+  "Of Grammatology": [
+    {
+      "name": "Of Grammatology (Derrida)",
+      "url": "https://archive.org/details/DeridaJacques.OfGrammatology",
+      "description": "Deconstructionist philosophy",
+      "source": "archive.org",
+      "language": "English"
+    }
+  ],
+  "Four Noble Truths": [
+    {
+      "name": "Dhammacakkappavattana Sutta - First Teaching",
+      "url": "https://accesstoinsight.org/tipitaka/sn/sn56/sn56.011.than.html",
+      "description": "Buddha's first sermon outlining the Four Noble Truths",
+      "source": "other"
+    },
+    {
+      "name": "Four Noble Truths - Study Guide",
+      "url": "https://www.buddhanet.net/4noble.htm",
+      "description": "Comprehensive explanation of the Four Noble Truths",
+      "source": "other"
+    }
+  ],
+  "Noble Eightfold Path": [
+    {
+      "name": "Magga-vibhanga Sutta - Analysis of the Path",
+      "url": "https://accesstoinsight.org/tipitaka/sn/sn45/sn45.008.than.html",
+      "description": "Detailed explanation of the Noble Eightfold Path",
+      "source": "other"
+    }
+  ],
+  "Three Jewels (Buddha, Dhamma, Sangha)": [
+    {
+      "name": "Going for Refuge - The Three Jewels",
+      "url": "https://accesstoinsight.org/lib/authors/bodhi/refuge.html",
+      "description": "Explanation of taking refuge in Buddha, Dhamma, Sangha",
+      "source": "other"
+    }
+  ],
+  "Five Pillars": [
+    {
+      "name": "The Five Pillars of Islam",
+      "url": "https://archive.org/details/FivePillarsOfIslam",
+      "description": "Comprehensive explanation of Islamic fundamental practices",
+      "source": "archive.org"
+    },
+    {
+      "name": "Pillars of Islam - Scholarly Overview",
+      "url": "https://www.islamic-awareness.org/pillars",
+      "description": "Academic treatment of the Five Pillars",
+      "source": "other"
+    }
+  ],
+  "Shahādah (Declaration of Faith)": [
+    {
+      "name": "The Shahada - Islamic Creed",
+      "url": "https://archive.org/details/IslamicCreedShahada",
+      "description": "Detailed explanation of the Islamic declaration of faith",
+      "source": "archive.org"
+    }
+  ],
+  "Ṣalāh (Prayer)": [
+    {
+      "name": "Islamic Prayer - Complete Guide",
+      "url": "https://archive.org/details/IslamicPrayerGuide",
+      "description": "Comprehensive guide to Islamic prayer practices",
+      "source": "archive.org"
+    }
+  ],
+  "Zakāh (Almsgiving)": [
+    {
+      "name": "Zakat in Islam - Charity System",
+      "url": "https://archive.org/details/ZakatInIslam",
+      "description": "Islamic wealth redistribution and charity system",
+      "source": "archive.org"
+    }
+  ],
+  "Ṣawm (Fasting)": [
+    {
+      "name": "Ramadan and Islamic Fasting",
+      "url": "https://archive.org/details/IslamicFastingRamadan",
+      "description": "Spiritual and practical aspects of Islamic fasting",
+      "source": "archive.org"
+    }
+  ],
+  "Ḥajj (Pilgrimage)": [
+    {
+      "name": "Hajj Pilgrimage - Spiritual Journey",
+      "url": "https://archive.org/details/HajjPilgrimageIslam",
+      "description": "Complete guide to the Islamic pilgrimage to Mecca",
+      "source": "archive.org"
+    }
+  ],
+  "Sharī'ah law": [
+    {
+      "name": "Introduction to Islamic Law",
+      "url": "https://archive.org/details/IntroductionToIslamicLaw",
+      "description": "Comprehensive overview of Islamic jurisprudence",
+      "source": "archive.org"
+    }
+  ],
+  "Akhlāq (Character development)": [
+    {
+      "name": "Islamic Ethics and Moral Development",
+      "url": "https://archive.org/details/IslamicEthicsAkhlaq",
+      "description": "Character development in Islamic tradition",
+      "source": "archive.org"
+    }
+  ],
+  "Ten Commandments": [
+    {
+      "name": "The Decalogue - Ten Commandments",
+      "url": "https://www.biblegateway.com/passage/?search=Exodus%2020%3A1-17&version=NIV",
+      "description": "Biblical text of the Ten Commandments",
+      "source": "other"
+    },
+    {
+      "name": "Ten Commandments Study",
+      "url": "https://archive.org/details/TenCommandmentsStudy",
+      "description": "Historical and theological analysis",
+      "source": "archive.org"
+    }
+  ],
+  "Beatitudes": [
+    {
+      "name": "Sermon on the Mount - Beatitudes",
+      "url": "https://www.biblegateway.com/passage/?search=Matthew%205%3A1-12&version=NIV",
+      "description": "Jesus' teaching on blessed living from Matthew 5",
+      "source": "other"
+    }
+  ],
+  "Trinity": [
+    {
+      "name": "Early Church Councils on Trinity",
+      "url": "https://archive.org/details/EarlyChurchCouncilsTrinity",
+      "description": "Historical development of Trinitarian doctrine",
+      "source": "archive.org"
+    }
+  ],
+  "Salvation by Grace": [
+    {
+      "name": "Pauline Epistles on Salvation",
+      "url": "https://www.biblegateway.com/passage/?search=Ephesians%202%3A8-9&version=NIV",
+      "description": "Biblical foundation of salvation by grace through faith",
+      "source": "other"
+    }
+  ],
+  "Four Puruṣārthas (Life Goals)": [
+    {
+      "name": "The Four Goals of Human Life",
+      "url": "https://archive.org/details/FourPurusharthasHindu",
+      "description": "Dharma, Artha, Kama, Moksha explained",
+      "source": "archive.org"
+    }
+  ],
+  "Dharma (Righteous Living)": [
+    {
+      "name": "Concept of Dharma in Hinduism",
+      "url": "https://archive.org/details/DharmaHinduism",
+      "description": "Comprehensive study of dharmic principles",
+      "source": "archive.org"
+    }
+  ],
+  "Karma and Reincarnation": [
+    {
+      "name": "Law of Karma and Rebirth",
+      "url": "https://archive.org/details/KarmaReincarnationHindu",
+      "description": "Hindu understanding of action and consequence",
+      "source": "archive.org"
+    }
+  ],
+  "Mokṣa (Liberation)": [
+    {
+      "name": "Paths to Liberation - Hindu Moksha",
+      "url": "https://archive.org/details/MokshaLiberation",
+      "description": "Various paths to spiritual liberation in Hinduism",
+      "source": "archive.org"
+    }
+  ],
+  "Shema": [
+    {
+      "name": "Shema Yisrael - Central Prayer",
+      "url": "https://en.wikisource.org/wiki/Shema_Yisrael",
+      "description": "Central Jewish declaration of faith",
+      "source": "wikisource"
+    }
+  ],
+  "613 Mitzvot": [
+    {
+      "name": "Complete List of 613 Commandments",
+      "url": "https://archive.org/details/613MitzvotJewish",
+      "description": "All biblical commandments in Jewish tradition",
+      "source": "archive.org"
+    }
+  ],
+  "Tikkun Olam (Repairing the World)": [
+    {
+      "name": "Tikkun Olam - Jewish Social Justice",
+      "url": "https://archive.org/details/TikkunOlamJewish",
+      "description": "Jewish concept of social repair and justice",
+      "source": "archive.org"
+    }
+  ],
+  "Four Cardinal Virtues": [
+    {
+      "name": "Stoic Virtues - Wisdom, Justice, Courage, Temperance",
+      "url": "https://archive.org/details/StoicVirtuesCardinal",
+      "description": "Classical presentation of the four cardinal virtues",
+      "source": "archive.org"
+    }
+  ],
+  "Dichotomy of Control": [
+    {
+      "name": "Epictetus on What Is Up to Us",
+      "url": "https://en.wikisource.org/wiki/Discourses_of_Epictetus/Book_I/Chapter_1",
+      "description": "Fundamental Stoic principle of control",
+      "source": "wikisource"
+    }
+  ],
+  "Wu Wei (Non-Action)": [
+    {
+      "name": "Wu Wei - Effortless Action",
+      "url": "https://archive.org/details/WuWeiDaoism",
+      "description": "Central Daoist principle of natural action",
+      "source": "archive.org"
+    }
+  ],
+  "Yin Yang": [
+    {
+      "name": "Yin Yang - Complementary Forces",
+      "url": "https://archive.org/details/YinYangPhilosophy",
+      "description": "Daoist understanding of complementary opposites",
+      "source": "archive.org"
+    }
+  ],
+  "Authenticity": [
+    {
+      "name": "Existentialist Authenticity",
+      "url": "https://archive.org/details/ExistentialistAuthenticity",
+      "description": "Being true to one's own existence and values",
+      "source": "archive.org"
+    }
+  ],
+  "Absurdism": [
+    {
+      "name": "Camus - The Absurd",
+      "url": "https://archive.org/details/CamusAbsurd",
+      "description": "Confronting the meaningless universe",
+      "source": "archive.org"
+    }
+  ],
+  "Greatest Happiness Principle": [
+    {
+      "name": "Bentham - Principle of Utility",
+      "url": "https://archive.org/details/BenthamUtilityPrinciple",
+      "description": "Foundation of utilitarian ethics",
+      "source": "archive.org"
+    }
+  ],
+  "Hedonic Calculus": [
+    {
+      "name": "Bentham - Felicific Calculus",
+      "url": "https://archive.org/details/HedonicCalculusBentham",
+      "description": "Method for calculating pleasure and pain",
+      "source": "archive.org"
+    }
+  ],
+  "Scripture": [
+    {
+      "name": "Sacred Texts Archive",
+      "url": "https://sacred-texts.com",
+      "description": "Comprehensive collection of religious and philosophical texts",
+      "source": "other"
+    }
+  ],
+  "Reason": [
+    {
+      "name": "Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu",
+      "description": "Peer-reviewed philosophical reference work",
+      "source": "other"
+    }
+  ],
+  "Scientific method": [
+    {
+      "name": "Internet Archive - Science Collection",
+      "url": "https://archive.org/details/science",
+      "description": "Open access scientific literature",
+      "source": "archive.org"
+    }
+  ]
+}
