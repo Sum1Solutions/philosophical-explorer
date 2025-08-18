@@ -19,6 +19,7 @@ import {
 import {
   Close,
   Add,
+  Remove,
   Source,
   Info,
   Timeline,
@@ -501,8 +502,16 @@ const TraditionDetailView: React.FC<TraditionDetailViewProps> = ({
       }}>
             <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
               {tradition.primaryTexts.map((text, index) => {
-                const links = getSourceLinks(text);
-                const hasLinks = links.length > 0;
+                // Handle both string and object formats for primaryTexts
+                const textTitle = typeof text === 'string' ? text : text.title;
+                const textUrl = typeof text === 'string' ? null : text.url;
+                const textDescription = typeof text === 'string' ? null : text.description;
+                
+                // Try to get source links, or use the embedded URL if available
+                const sourceLinks = getSourceLinks(textTitle);
+                const hasSourceLinks = sourceLinks.length > 0;
+                const hasEmbeddedUrl = textUrl !== null && textUrl !== undefined;
+                const hasLinks = hasSourceLinks || hasEmbeddedUrl;
                 
                 return (
                   <Tooltip 
@@ -510,30 +519,42 @@ const TraditionDetailView: React.FC<TraditionDetailViewProps> = ({
                     title={hasLinks ? (
                       <Box>
                         <Typography variant="caption" display="block">
-                          Click to read "{text}" online
+                          Click to read "{textTitle}" online
                         </Typography>
-                        {links.slice(0, 3).map((link, i) => (
+                        {textDescription && (
+                          <Typography variant="caption" display="block" sx={{ fontStyle: 'italic', mb: 1 }}>
+                            {textDescription}
+                          </Typography>
+                        )}
+                        {hasEmbeddedUrl && (
+                          <Typography variant="caption" display="block">
+                            • Direct link available
+                          </Typography>
+                        )}
+                        {sourceLinks.slice(0, 3).map((link, i) => (
                           <Typography key={i} variant="caption" display="block">
                             • {link.name} ({link.source})
                           </Typography>
                         ))}
                       </Box>
-                    ) : `${text} - No online version found`}
+                    ) : `${textTitle} - No online version found`}
                     arrow
                   >
                     <Chip
-                      label={text}
+                      label={textTitle}
                       variant={hasLinks ? "filled" : "outlined"}
                       size="small"
                       icon={<Source />}
                       color={hasLinks ? "primary" : "default"}
                       clickable={hasLinks}
                       onClick={hasLinks ? () => {
-                        if (links.length === 1) {
-                          window.open(links[0].url, '_blank');
-                        } else {
-                          // Open first available link
-                          window.open(links[0].url, '_blank');
+                        if (hasEmbeddedUrl) {
+                          window.open(textUrl, '_blank');
+                        } else if (sourceLinks.length === 1) {
+                          window.open(sourceLinks[0].url, '_blank');
+                        } else if (sourceLinks.length > 0) {
+                          // Open first available source link
+                          window.open(sourceLinks[0].url, '_blank');
                         }
                       } : undefined}
                       sx={hasLinks ? {
@@ -607,17 +628,16 @@ const TraditionDetailView: React.FC<TraditionDetailViewProps> = ({
             </Button>
             
             <Tooltip 
-              title={isAlreadySelected ? 'Already in comparison' : 'Add to comparison'}
+              title={isAlreadySelected ? 'Remove from comparison' : 'Add to comparison'}
             >
               <span>
                 <Button
-                  variant="contained"
-                  startIcon={<Add />}
+                  variant={isAlreadySelected ? "outlined" : "contained"}
+                  startIcon={isAlreadySelected ? <Remove /> : <Add />}
                   onClick={handleAddToCompare}
-                  disabled={isAlreadySelected}
                   color="primary"
                 >
-                  {isAlreadySelected ? 'In Comparison' : 'Add to Compare'}
+                  {isAlreadySelected ? 'Remove from Compare' : 'Add to Compare'}
                 </Button>
               </span>
             </Tooltip>

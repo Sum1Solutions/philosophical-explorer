@@ -65,7 +65,10 @@ export const searchTraditions = (searchTerm: string): Tradition[] => {
     tradition.name.toLowerCase().includes(normalizedSearch) ||
     tradition.category.toLowerCase().includes(normalizedSearch) ||
     tradition.keyFigures.some(figure => figure.toLowerCase().includes(normalizedSearch)) ||
-    tradition.primaryTexts.some(text => text.toLowerCase().includes(normalizedSearch))
+    tradition.primaryTexts.some(text => {
+      const textString = typeof text === 'string' ? text : text.title;
+      return textString.toLowerCase().includes(normalizedSearch);
+    })
   );
 };
 

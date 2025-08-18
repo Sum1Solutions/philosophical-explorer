@@ -99,7 +99,7 @@ const AIDebateChat: React.FC<AIDebateChatProps> = ({
     const citations: Citation[] = [
       {
         text: "Primary source reference",
-        source: tradition.primaryTexts[0] || "Traditional text",
+        source: (typeof tradition.primaryTexts[0] === 'string' ? tradition.primaryTexts[0] : tradition.primaryTexts[0]?.title) || "Traditional text",
         confidence: 'high'
       }
     ];

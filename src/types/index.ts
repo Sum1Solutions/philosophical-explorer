@@ -19,7 +19,7 @@ export interface Tradition {
   };
   
   critiques: Record<string, string>;
-  primaryTexts: string[];
+  primaryTexts: (string | { title: string; url?: string; description?: string })[];
   adherents: string;
   originDate: string;
   keyFigures: string[];
