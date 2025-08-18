@@ -162,8 +162,8 @@ const TraditionSelector: React.FC<TraditionSelectorProps> = ({
       </Typography>
 
       {/* Search and Filter */}
-      <Box sx={{ mb: 3 }}>
-        <Grid container spacing={2}>
+      <Box sx={{ mb: 4 }}>
+        <Grid container spacing={3}>
           <Grid item xs={12} md={8}>
             <TextField
               fullWidth
@@ -179,6 +179,7 @@ const TraditionSelector: React.FC<TraditionSelectorProps> = ({
               <InputLabel>Category</InputLabel>
               <Select
                 value={categoryFilter}
+                label="Category"
                 onChange={(e) => setCategoryFilter(e.target.value as FilterCategory)}
               >
                 {categories.map(category => (
@@ -191,66 +192,6 @@ const TraditionSelector: React.FC<TraditionSelectorProps> = ({
           </Grid>
         </Grid>
       </Box>
-
-      {/* Quick Compare Tool */}
-      <Card sx={{ 
-        mb: 3, 
-        bgcolor: 'primary.main', 
-        color: 'primary.contrastText',
-        '& .MuiTextField-root': {
-          '& .MuiOutlinedInput-root': {
-            bgcolor: 'background.paper',
-            '& fieldset': {
-              borderColor: 'rgba(255, 255, 255, 0.3)'
-            },
-            '&:hover fieldset': {
-              borderColor: 'rgba(255, 255, 255, 0.5)'
-            }
-          }
-        }
-      }}>
-        <CardContent>
-          <Typography variant="h6" gutterBottom>
-            Quick Compare Any Two
-          </Typography>
-          <Grid container spacing={2} alignItems="center">
-            <Grid item xs={12} md={4}>
-              <Autocomplete
-                options={traditions}
-                getOptionLabel={(option) => option.name}
-                value={traditions.find(t => t.id === quickCompareA) || null}
-                onChange={(_, newValue) => handleQuickCompareAChange(newValue)}
-                renderInput={(params) => (
-                  <TextField {...params} label="First Tradition" variant="outlined" size="small" />
-                )}
-              />
-            </Grid>
-            <Grid item xs={12} md={4}>
-              <Autocomplete
-                options={traditions}
-                getOptionLabel={(option) => option.name}
-                value={traditions.find(t => t.id === quickCompareB) || null}
-                onChange={(_, newValue) => handleQuickCompareBChange(newValue)}
-                renderInput={(params) => (
-                  <TextField {...params} label="Second Tradition" variant="outlined" size="small" />
-                )}
-              />
-            </Grid>
-            <Grid item xs={12} md={4}>
-              <Button
-                variant="contained"
-                color="secondary"
-                onClick={handleQuickCompare}
-                disabled={!quickCompareA || !quickCompareB || quickCompareA === quickCompareB}
-                startIcon={<Compare />}
-                fullWidth
-              >
-                Compare
-              </Button>
-            </Grid>
-          </Grid>
-        </CardContent>
-      </Card>
 
       {/* Selected Traditions Display */}
       {selectedTraditions.length > 0 && (
@@ -474,6 +415,70 @@ const TraditionSelector: React.FC<TraditionSelectorProps> = ({
           </Grid>
         ))}
       </Grid>
+
+      {/* Quick Compare Tool - Positioned after browsing traditions */}
+      <Card sx={{ 
+        mt: 4,
+        mb: 3, 
+        bgcolor: 'primary.main', 
+        color: 'primary.contrastText',
+        '& .MuiTextField-root': {
+          '& .MuiOutlinedInput-root': {
+            bgcolor: 'background.paper',
+            '& fieldset': {
+              borderColor: 'rgba(255, 255, 255, 0.3)'
+            },
+            '&:hover fieldset': {
+              borderColor: 'rgba(255, 255, 255, 0.5)'
+            }
+          }
+        }
+      }}>
+        <CardContent>
+          <Typography variant="h6" gutterBottom>
+            Quick Compare Any Two
+          </Typography>
+          <Typography variant="body2" sx={{ mb: 2, opacity: 0.9 }}>
+            Already know which traditions you want to compare? Select them directly here:
+          </Typography>
+          <Grid container spacing={2} alignItems="center">
+            <Grid item xs={12} md={4}>
+              <Autocomplete
+                options={traditions}
+                getOptionLabel={(option) => option.name}
+                value={traditions.find(t => t.id === quickCompareA) || null}
+                onChange={(_, newValue) => handleQuickCompareAChange(newValue)}
+                renderInput={(params) => (
+                  <TextField {...params} label="First Tradition" variant="outlined" size="small" />
+                )}
+              />
+            </Grid>
+            <Grid item xs={12} md={4}>
+              <Autocomplete
+                options={traditions}
+                getOptionLabel={(option) => option.name}
+                value={traditions.find(t => t.id === quickCompareB) || null}
+                onChange={(_, newValue) => handleQuickCompareBChange(newValue)}
+                renderInput={(params) => (
+                  <TextField {...params} label="Second Tradition" variant="outlined" size="small" />
+                )}
+              />
+            </Grid>
+            <Grid item xs={12} md={4}>
+              <Button
+                variant="contained"
+                color="secondary"
+                onClick={handleQuickCompare}
+                disabled={!quickCompareA || !quickCompareB || quickCompareA === quickCompareB}
+                startIcon={<Compare />}
+                fullWidth
+              >
+                Compare
+              </Button>
+            </Grid>
+          </Grid>
+        </CardContent>
+      </Card>
 
       {filteredTraditions.length === 0 && (
         <Box sx={{ textAlign: 'center', py: 4 }}>
