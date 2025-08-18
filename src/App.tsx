@@ -17,7 +17,6 @@ import {
 import { School, Psychology, Quiz, Chat, DarkMode, LightMode, Timeline } from '@mui/icons-material';
 import TraditionSelector from './components/TraditionSelector';
 import ComparisonMatrix from './components/ComparisonMatrix';
-import PerspectiveSelector from './components/PerspectiveSelector';
 import AIDebateChat from './components/AIDebateChat';
 import TimelineView from './components/TimelineView';
 import TraditionDetailView from './components/TraditionDetailView';
@@ -153,13 +152,6 @@ function App() {
         </AppBar>
 
         <Container maxWidth="xl" sx={{ mt: 2 }}>
-          {/* Perspective Selector - Always visible */}
-          <PerspectiveSelector
-            userProfile={userProfile}
-            onProfileUpdate={setUserProfile}
-            selectedTraditions={selectedTraditions}
-          />
-
           <Paper sx={{ width: '100%', mb: 2 }}>
             <Tabs
               value={currentTab}
@@ -215,6 +207,8 @@ function App() {
               selectedTraditions={selectedTraditions}
               onSelectionChange={handleTraditionSelectionChange}
               onCompare={handleCompare}
+              userProfile={userProfile}
+              onProfileUpdate={setUserProfile}
             />
           </TabPanel>
 

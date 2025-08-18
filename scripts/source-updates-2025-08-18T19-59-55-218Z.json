@@ -1,0 +1,254 @@
+{
+  "updatedSources": {
+    "Qur'an": [
+      {
+        "name": "Quranic Arabic Corpus",
+        "url": "http://corpus.quran.com/",
+        "description": "University of Leeds linguistic analysis with word-by-word translations",
+        "source": "academic",
+        "authority": "University of Leeds"
+      },
+      {
+        "name": "Tanzil Quran Navigator",
+        "url": "http://tanzil.net/",
+        "description": "Open source Quran project with multiple translations",
+        "source": "academic"
+      }
+    ],
+    "Sunnah (Prophetic tradition)": [
+      {
+        "name": "USC-MSA Hadith Database",
+        "url": "https://www.usc.edu/org/cmje/religious-texts/hadith/",
+        "description": "University of Southern California's comprehensive hadith collection",
+        "source": "academic",
+        "authority": "University of Southern California"
+      },
+      {
+        "name": "Sunnah.com - Complete Hadith Collection",
+        "url": "https://sunnah.com",
+        "description": "Six major Hadith collections with search",
+        "source": "other"
+      }
+    ],
+    "Bible (Old & New Testament)": [
+      {
+        "name": "Bible Gateway Academic",
+        "url": "https://www.biblegateway.com/",
+        "description": "Comprehensive Bible database with scholarly tools",
+        "source": "academic",
+        "authority": "Zondervan Academic"
+      },
+      {
+        "name": "Blue Letter Bible",
+        "url": "https://www.blueletterbible.org/",
+        "description": "Biblical exegesis tools with original language texts",
+        "source": "academic"
+      }
+    ],
+    "Church Fathers": [
+      {
+        "name": "Christian Classics Ethereal Library",
+        "url": "https://ccel.org/",
+        "description": "Comprehensive collection of Christian literature",
+        "source": "academic",
+        "authority": "Calvin University"
+      },
+      {
+        "name": "New Advent - Church Fathers",
+        "url": "http://www.newadvent.org/fathers/",
+        "description": "Complete collection of patristic writings",
+        "source": "other"
+      }
+    ],
+    "Upaniṣads": [
+      {
+        "name": "Sanskrit Web - Upanishads",
+        "url": "http://sanskritdocuments.org/doc_upanishhat/",
+        "description": "Sanskrit texts with transliterations",
+        "source": "academic"
+      },
+      {
+        "name": "Wisdom Library - Upanishads",
+        "url": "https://www.wisdomlib.org/hinduism/book/the-upanishads",
+        "description": "Scholarly translations and commentaries",
+        "source": "academic"
+      }
+    ],
+    "Bhagavad Gītā": [
+      {
+        "name": "Bhagavad Gita Online",
+        "url": "https://www.holy-bhagavad-gita.org/",
+        "description": "Sanskrit with word-by-word translation",
+        "source": "other"
+      },
+      {
+        "name": "IIT Kanpur Gita Supersite",
+        "url": "http://www.gitasupersite.iitk.ac.in/",
+        "description": "IIT Kanpur's comprehensive Gita resource",
+        "source": "academic",
+        "authority": "Indian Institute of Technology Kanpur"
+      }
+    ],
+    "Pāli Canon (Tipitaka)": [
+      {
+        "name": "SuttaCentral",
+        "url": "https://suttacentral.net/",
+        "description": "Early Buddhist texts with critical editions",
+        "source": "academic",
+        "authority": "International Buddhist studies collaboration"
+      },
+      {
+        "name": "Access to Insight - Tipitaka",
+        "url": "https://accesstoinsight.org/tipitaka/index.html",
+        "description": "Comprehensive Theravada Buddhist canon",
+        "source": "other"
+      }
+    ],
+    "Dhammapada": [
+      {
+        "name": "Access to Insight - Dhammapada",
+        "url": "https://www.accesstoinsight.org/tipitaka/kn/dhp/dhp.intro.budd.html",
+        "description": "Scholarly translation with commentary",
+        "source": "other"
+      }
+    ],
+    "Tanakh (Hebrew Bible)": [
+      {
+        "name": "Mechon Mamre Hebrew Bible",
+        "url": "https://mechon-mamre.org/p/pt/pt0.htm",
+        "description": "Hebrew text with traditional punctuation",
+        "source": "other"
+      },
+      {
+        "name": "Tanach.us",
+        "url": "http://www.tanach.us/",
+        "description": "Hebrew Bible with multiple English translations",
+        "source": "other"
+      }
+    ],
+    "Talmud": [
+      {
+        "name": "Halakhah.com Talmud",
+        "url": "http://halakhah.com/",
+        "description": "Complete Babylonian Talmud online",
+        "source": "other"
+      },
+      {
+        "name": "Sefaria Talmud",
+        "url": "https://www.sefaria.org/texts/Talmud",
+        "description": "Talmud with commentary and translations",
+        "source": "other"
+      }
+    ],
+    "Dao De Jing": [
+      {
+        "name": "Chinese Text Project - Dao De Jing",
+        "url": "https://ctext.org/dao-de-jing",
+        "description": "Chinese text with multiple English translations",
+        "source": "academic",
+        "authority": "Digital humanities project"
+      }
+    ],
+    "Zhuangzi": [
+      {
+        "name": "Chinese Text Project - Zhuangzi",
+        "url": "https://ctext.org/zhuangzi",
+        "description": "Complete Chinese text with translations",
+        "source": "academic",
+        "authority": "Digital humanities project"
+      }
+    ],
+    "Meditations": [
+      {
+        "name": "Perseus Digital Library - Marcus Aurelius",
+        "url": "http://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A2008.01.0641",
+        "description": "Greek text with scholarly apparatus",
+        "source": "academic",
+        "authority": "Tufts University Perseus Project"
+      }
+    ],
+    "Discourses": [
+      {
+        "name": "Perseus Digital Library - Epictetus",
+        "url": "http://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0236",
+        "description": "Greek text with English translations",
+        "source": "academic",
+        "authority": "Tufts University Perseus Project"
+      }
+    ],
+    "Tractus Logico-Philosophicus": [
+      {
+        "name": "Project Gutenberg - Tractatus",
+        "url": "https://www.gutenberg.org/ebooks/5740",
+        "description": "Complete text of Tractatus Logico-Philosophicus",
+        "source": "gutenberg.org"
+      }
+    ],
+    "Utilitarianism": [
+      {
+        "name": "Project Gutenberg - Utilitarianism",
+        "url": "https://www.gutenberg.org/ebooks/11224",
+        "description": "John Stuart Mill's complete work",
+        "source": "gutenberg.org"
+      }
+    ]
+  },
+  "newSources": {
+    "Āgamas": [
+      {
+        "name": "Jain Agamas Collection",
+        "url": "http://www.agamashastra.com/",
+        "description": "Digital collection of Jain canonical texts",
+        "source": "other"
+      }
+    ],
+    "Tattvartha Sutra": [
+      {
+        "name": "Jainworld - Tattvartha Sutra",
+        "url": "http://www.jainworld.com/literature/sutra01.htm",
+        "description": "Complete Tattvartha Sutra with commentary",
+        "source": "other"
+      }
+    ],
+    "Kojiki": [
+      {
+        "name": "Sacred Texts - Kojiki",
+        "url": "https://sacred-texts.com/shi/kj/",
+        "description": "Complete Kojiki (Records of Ancient Matters)",
+        "source": "other"
+      }
+    ],
+    "Nihon Shoki": [
+      {
+        "name": "Sacred Texts - Nihon Shoki",
+        "url": "https://sacred-texts.com/shi/nihongi/",
+        "description": "Chronicles of Japan (Nihon Shoki)",
+        "source": "other"
+      }
+    ],
+    "Visuddhimagga": [
+      {
+        "name": "Access to Insight - Visuddhimagga",
+        "url": "https://www.accesstoinsight.org/lib/authors/nanamoli/PathofPurification2011.pdf",
+        "description": "Complete Path of Purification translation",
+        "source": "other"
+      }
+    ],
+    "Platform Sutra": [
+      {
+        "name": "BDK America - Platform Sutra",
+        "url": "https://www.bdkamerica.org/tripitaka-translations",
+        "description": "Scholarly translation of Zen foundational text",
+        "source": "academic"
+      }
+    ],
+    "Analects": [
+      {
+        "name": "Chinese Text Project - Analects",
+        "url": "https://ctext.org/analects",
+        "description": "Confucian Analects in Chinese with translations",
+        "source": "academic"
+      }
+    ]
+  }
+}

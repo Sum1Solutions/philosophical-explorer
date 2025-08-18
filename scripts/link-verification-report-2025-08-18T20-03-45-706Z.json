@@ -1,0 +1,1264 @@
+{
+  "summary": {
+    "totalTraditions": 22,
+    "totalSources": 71,
+    "totalUrls": 81,
+    "workingLinks": 26,
+    "brokenLinks": 55,
+    "workingPercentage": 32,
+    "traditionsMissingRecommendations": 13
+  },
+  "brokenLinks": [
+    {
+      "url": "https://archive.org/details/QuranSahihInternational",
+      "error": "HTTP 404",
+      "foundIn": [
+        "Qur'an [source 2]"
+      ]
+    },
+    {
+      "url": "https://archive.org/details/SahihBukhariEnglishTranslation",
+      "error": "HTTP 404",
+      "foundIn": [
+        "Sunnah (Prophetic tradition) [source 2]"
+      ]
+    },
+    {
+      "url": "https://archive.org/details/PrinciplesOfIslamicJurisprudence",
+      "error": "HTTP 404",
+      "foundIn": [
+        "Qiyās (Analogy) [source 1]"
+      ]
+    },
+    {
+      "url": "https://archive.org/details/bible-kjv",
+      "error": "HTTP 404",
+      "foundIn": [
+        "Bible (Old & New Testament) [source 1]"
+      ]
+    },
+    {
+      "url": "https://archive.org/details/church-fathers",
+      "error": "HTTP 404",
+      "foundIn": [
+        "Church Fathers [source 1]"
+      ]
+    },
+    {
+      "url": "https://archive.org/details/upanishads00ml",
+      "error": "HTTP 404",
+      "foundIn": [
+        "Upaniṣads [source 1]"
+      ]
+    },
+    {
+      "url": "https://en.wikisource.org/wiki/The_Upanishads",
+      "error": "HTTP 403",
+      "foundIn": [
+        "Upaniṣads [source 2]"
+      ]
+    },
+    {
+      "url": "https://archive.org/details/BhagavadGitaAsItIs",
+      "error": "HTTP 404",
+      "foundIn": [
+        "Bhagavad Gītā [source 1]"
+      ]
+    },
+    {
+      "url": "https://en.wikisource.org/wiki/Bhagavad-Gita",
+      "error": "HTTP 403",
+      "foundIn": [
+        "Bhagavad Gītā [source 2]"
+      ]
+    },
+    {
+      "url": "https://archive.org/details/rigveda00grif",
+      "error": "HTTP 404",
+      "foundIn": [
+        "Vedas [source 1]"
+      ]
+    },
+    {
+      "url": "https://archive.org/details/HinduSmritiTexts",
+      "error": "HTTP 404",
+      "foundIn": [
+        "Smriti (Traditional texts) [source 1]"
+      ]
+    },
+    {
+      "url": "https://archive.org/details/YogaAndMeditation",
+      "error": "HTTP 404",
+      "foundIn": [
+        "Direct experience [source 1]"
+      ]
+    },
+    {
+      "url": "https://en.wikisource.org/wiki/Hebrew_Bible",
+      "error": "HTTP 403",
+      "foundIn": [
+        "Tanakh (Hebrew Bible) [source 1]"
+      ]
+    },
+    {
+      "url": "https://archive.org/details/BabylonianTalmudEnglish",
+      "error": "HTTP 404",
+      "foundIn": [
+        "Talmud [source 1]"
+      ]
+    },
+    {
+      "url": "https://archive.org/details/sacredbooksofeas10ml",
+      "error": "HTTP 404",
+      "foundIn": [
+        "Pāli Canon (Tipitaka) [source 2]"
+      ]
+    },
+    {
+      "url": "https://archive.org/details/BuddhistMeditationTexts",
+      "error": "HTTP 404",
+      "foundIn": [
+        "Direct insight (Vipassanā) [source 1]"
+      ]
+    },
+    {
+      "url": "https://archive.org/details/GuruGranthSahibEnglish",
+      "error": "HTTP 404",
+      "foundIn": [
+        "Guru Granth Sahib [source 1]"
+      ]
+    },
+    {
+      "url": "https://en.wikisource.org/wiki/Tao_Te_Ching",
+      "error": "HTTP 403",
+      "foundIn": [
+        "Dao De Jing [source 2]"
+      ]
+    },
+    {
+      "url": "https://archive.org/details/sacredbooksofeas39ml",
+      "error": "HTTP 404",
+      "foundIn": [
+        "Zhuangzi [source 1]"
+      ]
+    },
+    {
+      "url": "https://archive.org/details/being-and-nothingness",
+      "error": "HTTP 404",
+      "foundIn": [
+        "Being and Nothingness [source 1]"
+      ]
+    },
+    {
+      "url": "https://archive.org/details/TheStranger_201606",
+      "error": "HTTP 404",
+      "foundIn": [
+        "The Stranger [source 1]"
+      ]
+    },
+    {
+      "url": "https://en.wikisource.org/wiki/The_Meditations_of_Marcus_Aurelius",
+      "error": "HTTP 403",
+      "foundIn": [
+        "Meditations [source 1]"
+      ]
+    },
+    {
+      "url": "https://en.wikisource.org/wiki/Discourses_of_Epictetus",
+      "error": "HTTP 403",
+      "foundIn": [
+        "Discourses [source 1]"
+      ]
+    },
+    {
+      "url": "https://en.wikisource.org/wiki/Moral_letters_to_Lucilius",
+      "error": "HTTP 403",
+      "foundIn": [
+        "Letters to Lucilius [source 1]"
+      ]
+    },
+    {
+      "url": "https://archive.org/details/AnIntroductionToThePrinciplesOfMoralsAndLegislation",
+      "error": "HTTP 404",
+      "foundIn": [
+        "Principles of Morals and Legislation [source 1]"
+      ]
+    },
+    {
+      "url": "https://en.wikisource.org/wiki/Utilitarianism",
+      "error": "HTTP 403",
+      "foundIn": [
+        "Utilitarianism [source 1]"
+      ]
+    },
+    {
+      "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus",
+      "error": "HTTP 403",
+      "foundIn": [
+        "Tractus Logico-Philosophicus [source 1]"
+      ]
+    },
+    {
+      "url": "https://archive.org/details/DeridaJacques.OfGrammatology",
+      "error": "HTTP 404",
+      "foundIn": [
+        "Of Grammatology [source 1]"
+      ]
+    },
+    {
+      "url": "https://www.buddhanet.net/4noble.htm",
+      "error": "HTTP 404",
+      "foundIn": [
+        "Four Noble Truths [source 2]"
+      ]
+    },
+    {
+      "url": "https://archive.org/details/FivePillarsOfIslam",
+      "error": "HTTP 404",
+      "foundIn": [
+        "Five Pillars [source 1]"
+      ]
+    },
+    {
+      "url": "https://www.islamic-awareness.org/pillars",
+      "error": "HTTP 404",
+      "foundIn": [
+        "Five Pillars [source 2]"
+      ]
+    },
+    {
+      "url": "https://archive.org/details/IslamicCreedShahada",
+      "error": "HTTP 404",
+      "foundIn": [
+        "Shahādah (Declaration of Faith) [source 1]"
+      ]
+    },
+    {
+      "url": "https://archive.org/details/IslamicPrayerGuide",
+      "error": "HTTP 404",
+      "foundIn": [
+        "Ṣalāh (Prayer) [source 1]"
+      ]
+    },
+    {
+      "url": "https://archive.org/details/ZakatInIslam",
+      "error": "HTTP 404",
+      "foundIn": [
+        "Zakāh (Almsgiving) [source 1]"
+      ]
+    },
+    {
+      "url": "https://archive.org/details/IslamicFastingRamadan",
+      "error": "HTTP 404",
+      "foundIn": [
+        "Ṣawm (Fasting) [source 1]"
+      ]
+    },
+    {
+      "url": "https://archive.org/details/HajjPilgrimageIslam",
+      "error": "HTTP 404",
+      "foundIn": [
+        "Ḥajj (Pilgrimage) [source 1]"
+      ]
+    },
+    {
+      "url": "https://archive.org/details/IntroductionToIslamicLaw",
+      "error": "HTTP 404",
+      "foundIn": [
+        "Sharī'ah law [source 1]"
+      ]
+    },
+    {
+      "url": "https://archive.org/details/IslamicEthicsAkhlaq",
+      "error": "HTTP 404",
+      "foundIn": [
+        "Akhlāq (Character development) [source 1]"
+      ]
+    },
+    {
+      "url": "https://archive.org/details/TenCommandmentsStudy",
+      "error": "HTTP 404",
+      "foundIn": [
+        "Ten Commandments [source 2]"
+      ]
+    },
+    {
+      "url": "https://archive.org/details/EarlyChurchCouncilsTrinity",
+      "error": "HTTP 404",
+      "foundIn": [
+        "Trinity [source 1]"
+      ]
+    },
+    {
+      "url": "https://archive.org/details/FourPurusharthasHindu",
+      "error": "HTTP 404",
+      "foundIn": [
+        "Four Puruṣārthas (Life Goals) [source 1]"
+      ]
+    },
+    {
+      "url": "https://archive.org/details/DharmaHinduism",
+      "error": "HTTP 404",
+      "foundIn": [
+        "Dharma (Righteous Living) [source 1]"
+      ]
+    },
+    {
+      "url": "https://archive.org/details/KarmaReincarnationHindu",
+      "error": "HTTP 404",
+      "foundIn": [
+        "Karma and Reincarnation [source 1]"
+      ]
+    },
+    {
+      "url": "https://archive.org/details/MokshaLiberation",
+      "error": "HTTP 404",
+      "foundIn": [
+        "Mokṣa (Liberation) [source 1]"
+      ]
+    },
+    {
+      "url": "https://en.wikisource.org/wiki/Shema_Yisrael",
+      "error": "HTTP 403",
+      "foundIn": [
+        "Shema [source 1]"
+      ]
+    },
+    {
+      "url": "https://archive.org/details/613MitzvotJewish",
+      "error": "HTTP 404",
+      "foundIn": [
+        "613 Mitzvot [source 1]"
+      ]
+    },
+    {
+      "url": "https://archive.org/details/TikkunOlamJewish",
+      "error": "HTTP 404",
+      "foundIn": [
+        "Tikkun Olam (Repairing the World) [source 1]"
+      ]
+    },
+    {
+      "url": "https://archive.org/details/StoicVirtuesCardinal",
+      "error": "HTTP 404",
+      "foundIn": [
+        "Four Cardinal Virtues [source 1]"
+      ]
+    },
+    {
+      "url": "https://en.wikisource.org/wiki/Discourses_of_Epictetus/Book_I/Chapter_1",
+      "error": "HTTP 403",
+      "foundIn": [
+        "Dichotomy of Control [source 1]"
+      ]
+    },
+    {
+      "url": "https://archive.org/details/WuWeiDaoism",
+      "error": "HTTP 404",
+      "foundIn": [
+        "Wu Wei (Non-Action) [source 1]"
+      ]
+    },
+    {
+      "url": "https://archive.org/details/YinYangPhilosophy",
+      "error": "HTTP 404",
+      "foundIn": [
+        "Yin Yang [source 1]"
+      ]
+    },
+    {
+      "url": "https://archive.org/details/ExistentialistAuthenticity",
+      "error": "HTTP 404",
+      "foundIn": [
+        "Authenticity [source 1]"
+      ]
+    },
+    {
+      "url": "https://archive.org/details/CamusAbsurd",
+      "error": "HTTP 404",
+      "foundIn": [
+        "Absurdism [source 1]"
+      ]
+    },
+    {
+      "url": "https://archive.org/details/BenthamUtilityPrinciple",
+      "error": "HTTP 404",
+      "foundIn": [
+        "Greatest Happiness Principle [source 1]"
+      ]
+    },
+    {
+      "url": "https://archive.org/details/HedonicCalculusBentham",
+      "error": "HTTP 404",
+      "foundIn": [
+        "Hedonic Calculus [source 1]"
+      ]
+    }
+  ],
+  "missingSources": [
+    {
+      "tradition": "Indigenous Wisdom",
+      "id": "indigenous-wisdom",
+      "missingTexts": [
+        "Oral traditions",
+        "Ceremonial teachings",
+        "Sacred stories"
+      ],
+      "issues": [
+        {
+          "type": "missing_url",
+          "quote": "We do not inherit the Earth from our ancestors; we borrow it from our children",
+          "source": "Traditional Native American saying",
+          "description": "Quote source has no URL"
+        },
+        {
+          "type": "missing_url",
+          "quote": "All my relations - Mitákuye Oyás'iŋ",
+          "source": "Lakota prayer acknowledging interconnection",
+          "description": "Quote source has no URL"
+        }
+      ]
+    },
+    {
+      "tradition": "Judaism",
+      "id": "judaism",
+      "missingTexts": [
+        "Mishnah"
+      ],
+      "issues": [
+        {
+          "type": "missing_url",
+          "quote": "Hear, O Israel: The Lord our God, the Lord is one",
+          "source": "Deuteronomy 6:4 (Shema)",
+          "description": "Quote source has no URL"
+        }
+      ]
+    },
+    {
+      "tradition": "Jainism",
+      "id": "jainism",
+      "missingTexts": [
+        "Āgamas",
+        "Tattvartha Sutra",
+        "Kalpa Sutra"
+      ],
+      "issues": [
+        {
+          "type": "missing_url",
+          "quote": "Ahimsa is the highest dharma",
+          "source": "Acharanga Sutra 1.4.1",
+          "description": "Quote source has no URL"
+        },
+        {
+          "type": "missing_url",
+          "quote": "All beings hate pain; therefore, one should not injure them",
+          "source": "Sutrakritanga 1.10.11",
+          "description": "Quote source has no URL"
+        }
+      ]
+    },
+    {
+      "tradition": "Confucianism",
+      "id": "confucianism",
+      "missingTexts": [
+        "Analects",
+        "Mencius",
+        "Great Learning",
+        "Doctrine of the Mean"
+      ],
+      "issues": [
+        {
+          "type": "missing_url",
+          "quote": "Do not impose on others what you do not wish for yourself",
+          "source": "Analects 15:24 (Yan Yuan)",
+          "description": "Quote source has no URL"
+        }
+      ]
+    },
+    {
+      "tradition": "Shintoism",
+      "id": "shintoism",
+      "missingTexts": [
+        "Kojiki",
+        "Nihon Shoki",
+        "Norito prayers"
+      ],
+      "issues": [
+        {
+          "type": "missing_url",
+          "quote": "The kami are in all things, and all things have the kami within them",
+          "source": "Traditional Shinto teaching",
+          "description": "Quote source has no URL"
+        }
+      ]
+    },
+    {
+      "tradition": "Daoism (Taoism)",
+      "id": "daoism",
+      "missingTexts": [
+        "Dao De Jing (CText.org verified)",
+        "Zhuangzi (Complete works)",
+        "I Ching (Book of Changes)"
+      ],
+      "issues": [
+        {
+          "type": "placeholder_text",
+          "text": "Dao De Jing (CText.org verified)",
+          "description": "Contains placeholder text but no actual URL"
+        },
+        {
+          "type": "missing_url",
+          "quote": "The Dao that can be named is not the eternal Dao",
+          "source": "Dao De Jing, Chapter 1",
+          "description": "Quote source has no URL"
+        }
+      ]
+    },
+    {
+      "tradition": "Stoicism",
+      "id": "stoicism",
+      "missingTexts": [],
+      "issues": [
+        {
+          "type": "missing_url",
+          "quote": "You have power over your mind - not outside events. Realize this, and you will find strength.",
+          "source": "Marcus Aurelius, Meditations",
+          "description": "Quote source has no URL"
+        }
+      ]
+    },
+    {
+      "tradition": "Buddhism (Theravada)",
+      "id": "theravada-buddhism",
+      "missingTexts": [
+        "Dhammapada",
+        "Visuddhimagga"
+      ],
+      "issues": [
+        {
+          "type": "missing_url",
+          "quote": "Life is suffering (dukkha). Suffering arises from attachment.",
+          "source": "Four Noble Truths (Dhammacakkappavattana Sutta)",
+          "description": "Quote source has no URL"
+        }
+      ]
+    },
+    {
+      "tradition": "Christianity",
+      "id": "christianity",
+      "missingTexts": [
+        "Creeds"
+      ],
+      "issues": [
+        {
+          "type": "missing_url",
+          "quote": "God so loved the world that he gave his one and only Son",
+          "source": "John 3:16",
+          "description": "Quote source has no URL"
+        }
+      ]
+    },
+    {
+      "tradition": "Zen Buddhism",
+      "id": "zen-buddhism",
+      "missingTexts": [
+        "Platform Sutra",
+        "Blue Cliff Record",
+        "Shobogenzo"
+      ],
+      "issues": [
+        {
+          "type": "missing_url",
+          "quote": "What is Buddha? Three pounds of flax.",
+          "source": "Dongshan Shouchu (Zen koan)",
+          "description": "Quote source has no URL"
+        }
+      ]
+    },
+    {
+      "tradition": "Islam (Sunni)",
+      "id": "sunni-islam",
+      "missingTexts": [],
+      "issues": [
+        {
+          "type": "missing_url",
+          "quote": "There is no god but Allah, and Muhammad is his messenger",
+          "source": "Shahada",
+          "description": "Quote source has no URL"
+        }
+      ]
+    },
+    {
+      "tradition": "Hinduism (Advaita Vedanta)",
+      "id": "hinduism-advaita",
+      "missingTexts": [
+        "Brahma Sūtras"
+      ],
+      "issues": [
+        {
+          "type": "missing_url",
+          "quote": "Tat tvam asi - That thou art",
+          "source": "Chandogya Upanishad 6.8.7",
+          "description": "Quote source has no URL"
+        },
+        {
+          "type": "missing_url",
+          "quote": "Brahman alone is real, the world is appearance",
+          "source": "Adi Shankara, Vivekachudamani 20",
+          "description": "Quote source has no URL"
+        }
+      ]
+    },
+    {
+      "tradition": "Sikhism",
+      "id": "sikhism",
+      "missingTexts": [
+        "Dasam Granth"
+      ],
+      "issues": [
+        {
+          "type": "missing_url",
+          "quote": "There is one God, whose name is Truth",
+          "source": "Guru Granth Sahib, Japji Sahib",
+          "description": "Quote source has no URL"
+        }
+      ]
+    },
+    {
+      "tradition": "Utilitarianism",
+      "id": "utilitarianism",
+      "missingTexts": [
+        {
+          "title": "Principles of Morals and Legislation",
+          "url": "https://www.gutenberg.org/ebooks/4320",
+          "description": "Jeremy Bentham's foundational utilitarian work"
+        },
+        {
+          "title": "Utilitarianism",
+          "url": "https://www.gutenberg.org/ebooks/11224",
+          "description": "John Stuart Mill's complete work"
+        },
+        "Methods of Ethics"
+      ],
+      "issues": [
+        {
+          "type": "missing_url",
+          "quote": "It is the greatest happiness of the greatest number that is the measure of right and wrong",
+          "source": "Jeremy Bentham",
+          "description": "Quote source has no URL"
+        }
+      ]
+    },
+    {
+      "tradition": "Marxism",
+      "id": "marxism",
+      "missingTexts": [
+        "German Ideology"
+      ],
+      "issues": [
+        {
+          "type": "missing_url",
+          "quote": "The philosophers have only interpreted the world; the point is to change it",
+          "source": "Karl Marx, Theses on Feuerbach",
+          "description": "Quote source has no URL"
+        }
+      ]
+    },
+    {
+      "tradition": "Pragmatism",
+      "id": "pragmatism",
+      "missingTexts": [
+        "Democracy and Education",
+        "Experience and Nature"
+      ],
+      "issues": [
+        {
+          "type": "missing_url",
+          "quote": "The ultimate test for us of what a truth means is the conduct it dictates or inspires",
+          "source": "William James",
+          "description": "Quote source has no URL"
+        }
+      ]
+    },
+    {
+      "tradition": "Analytic Philosophy",
+      "id": "analytic-philosophy",
+      "missingTexts": [
+        {
+          "title": "Tractatus Logico-Philosophicus",
+          "url": "https://www.gutenberg.org/ebooks/5740",
+          "description": "Complete text of Tractatus Logico-Philosophicus"
+        },
+        "Principia Mathematica",
+        "Word and Object"
+      ],
+      "issues": [
+        {
+          "type": "missing_url",
+          "quote": "Whereof one cannot speak, thereof one must be silent",
+          "source": "Ludwig Wittgenstein, Tractatus",
+          "description": "Quote source has no URL"
+        }
+      ]
+    },
+    {
+      "tradition": "Alan Watts",
+      "id": "alan-watts",
+      "missingTexts": [
+        "The Book",
+        "Tao: The Watercourse Way",
+        "Out of Your Mind lectures"
+      ],
+      "issues": [
+        {
+          "type": "missing_url",
+          "quote": "The ego is a social institution with no physical reality",
+          "source": "The Book: On the Taboo Against Knowing Who You Are",
+          "description": "Quote source has no URL"
+        },
+        {
+          "type": "missing_url",
+          "quote": "We are the universe experiencing itself subjectively",
+          "source": "Alan Watts lectures",
+          "description": "Quote source has no URL"
+        }
+      ]
+    },
+    {
+      "tradition": "Secular Humanism",
+      "id": "secular-humanism",
+      "missingTexts": [
+        "Humanist Manifesto I, II, III",
+        "The Secular Humanist Declaration"
+      ],
+      "issues": [
+        {
+          "type": "missing_url",
+          "quote": "We are responsible for our own destinies",
+          "source": "Humanist Manifesto III",
+          "description": "Quote source has no URL"
+        },
+        {
+          "type": "missing_url",
+          "quote": "Knowledge of the world is derived by observation, experimentation, and rational analysis",
+          "source": "A Secular Humanist Declaration",
+          "description": "Quote source has no URL"
+        }
+      ]
+    },
+    {
+      "tradition": "Existentialism",
+      "id": "existentialism",
+      "missingTexts": [
+        "Being and Time"
+      ],
+      "issues": [
+        {
+          "type": "missing_url",
+          "quote": "Man is condemned to be free; because once thrown into the world, he is responsible for everything he does",
+          "source": "Jean-Paul Sartre",
+          "description": "Quote source has no URL"
+        }
+      ]
+    },
+    {
+      "tradition": "Camus / Absurdism",
+      "id": "absurdism",
+      "missingTexts": [
+        "The Myth of Sisyphus",
+        "The Rebel"
+      ],
+      "issues": [
+        {
+          "type": "missing_url",
+          "quote": "There is but one truly serious philosophical problem, and that is suicide",
+          "source": "The Myth of Sisyphus",
+          "description": "Quote source has no URL"
+        },
+        {
+          "type": "missing_url",
+          "quote": "The struggle itself toward the heights is enough to fill a man's heart",
+          "source": "The Myth of Sisyphus",
+          "description": "Quote source has no URL"
+        }
+      ]
+    },
+    {
+      "tradition": "Postmodernism",
+      "id": "postmodernism",
+      "missingTexts": [
+        "The Postmodern Condition",
+        "Discipline and Punish"
+      ],
+      "issues": [
+        {
+          "type": "missing_url",
+          "quote": "There is nothing outside the text",
+          "source": "Jacques Derrida, Of Grammatology",
+          "description": "Quote source has no URL"
+        }
+      ]
+    }
+  ],
+  "recommendations": [
+    {
+      "tradition": "Judaism",
+      "id": "judaism",
+      "recommendedSources": {
+        "Tanakh (Hebrew Bible)": [
+          {
+            "title": "Sefaria Library",
+            "url": "https://www.sefaria.org/",
+            "description": "Comprehensive Jewish text library with commentaries",
+            "authority": "Collaborative Jewish scholarship platform"
+          },
+          {
+            "title": "Jewish Publication Society Tanakh",
+            "url": "https://www.sefaria.org/texts/Tanakh",
+            "description": "Authoritative Jewish translation",
+            "authority": "Jewish Publication Society"
+          }
+        ]
+      }
+    },
+    {
+      "tradition": "Confucianism",
+      "id": "confucianism",
+      "recommendedSources": {
+        "Analects": [
+          {
+            "title": "Chinese Text Project - Analects",
+            "url": "https://ctext.org/analects",
+            "description": "Chinese text with scholarly translations",
+            "authority": "Digital Sinology platform"
+          },
+          {
+            "title": "Analects (D.C. Lau translation)",
+            "url": "https://archive.org/details/AnalectsConfuciusDCLau",
+            "description": "Critical scholarly translation",
+            "authority": "Penguin Classics academic edition"
+          }
+        ]
+      }
+    },
+    {
+      "tradition": "Daoism (Taoism)",
+      "id": "daoism",
+      "recommendedSources": {
+        "Dao De Jing": [
+          {
+            "title": "Chinese Text Project - Dao De Jing",
+            "url": "https://ctext.org/dao-de-jing",
+            "description": "Chinese text with multiple English translations",
+            "authority": "Digital Sinology platform"
+          },
+          {
+            "title": "Dao De Jing (D.C. Lau translation)",
+            "url": "https://archive.org/details/DaoDeJingDCLau",
+            "description": "Scholarly critical translation",
+            "authority": "Penguin Classics academic edition"
+          }
+        ],
+        "Zhuangzi": [
+          {
+            "title": "Chinese Text Project - Zhuangzi",
+            "url": "https://ctext.org/zhuangzi",
+            "description": "Complete Chinese text with translations",
+            "authority": "Digital Sinology platform"
+          }
+        ]
+      }
+    },
+    {
+      "tradition": "Stoicism",
+      "id": "stoicism",
+      "recommendedSources": {
+        "Meditations": [
+          {
+            "title": "Perseus Digital Library - Marcus Aurelius",
+            "url": "http://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A2008.01.0641",
+            "description": "Greek text with scholarly apparatus",
+            "authority": "Tufts University classical studies"
+          }
+        ],
+        "Discourses": [
+          {
+            "title": "Perseus Digital Library - Epictetus",
+            "url": "http://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0236",
+            "description": "Greek text with translations",
+            "authority": "Tufts University classical studies"
+          }
+        ]
+      }
+    },
+    {
+      "tradition": "Christianity",
+      "id": "christianity",
+      "recommendedSources": {
+        "Bible (Old & New Testament)": [
+          {
+            "title": "Bible Hub - Interlinear Bible",
+            "url": "https://biblehub.com/interlinear/",
+            "description": "Hebrew/Greek interlinear with multiple scholarly translations",
+            "authority": "Academic biblical studies resource"
+          },
+          {
+            "title": "NET Bible",
+            "url": "https://netbible.org/",
+            "description": "Modern translation with extensive scholarly notes",
+            "authority": "Biblical Studies Foundation"
+          }
+        ]
+      }
+    },
+    {
+      "tradition": "Islam (Sunni)",
+      "id": "sunni-islam",
+      "recommendedSources": {
+        "Qur'an": [
+          {
+            "title": "Corpus Coranicum",
+            "url": "https://corpuscoranicum.de/en/",
+            "description": "Critical scholarly edition with historical context",
+            "authority": "Berlin-Brandenburg Academy of Sciences"
+          },
+          {
+            "title": "The Quranic Arabic Corpus",
+            "url": "https://corpus.quran.com/",
+            "description": "Linguistic analysis and multiple translations",
+            "authority": "University of Leeds"
+          }
+        ]
+      }
+    },
+    {
+      "tradition": "Hinduism (Advaita Vedanta)",
+      "id": "hinduism-advaita",
+      "recommendedSources": {
+        "Upaniṣads": [
+          {
+            "title": "Principal Upanishads (Radhakrishnan)",
+            "url": "https://archive.org/details/PrincipalUpanishads",
+            "description": "Scholarly translation with Sanskrit text and commentary",
+            "authority": "Oxford University Press academic edition"
+          }
+        ],
+        "Bhagavad Gītā": [
+          {
+            "title": "Bhagavad Gita (Radhakrishnan translation)",
+            "url": "https://archive.org/details/BhagavadGitaRadhakrishnan",
+            "description": "Academic translation with philosophical commentary",
+            "authority": "Oxford scholarly edition"
+          }
+        ]
+      }
+    },
+    {
+      "tradition": "Analytic Philosophy",
+      "id": "analytic-philosophy",
+      "recommendedSources": {
+        "Tractus Logico-Philosophicus": [
+          {
+            "title": "Project Gutenberg - Tractatus",
+            "url": "https://www.gutenberg.org/ebooks/5740",
+            "description": "Open access text of Wittgenstein's work",
+            "authority": "Project Gutenberg"
+          }
+        ]
+      }
+    },
+    {
+      "tradition": "Existentialism",
+      "id": "existentialism",
+      "recommendedSources": {
+        "Being and Nothingness": [
+          {
+            "title": "Stanford Encyclopedia - Sartre",
+            "url": "https://plato.stanford.edu/entries/sartre/",
+            "description": "Scholarly overview of Sartre's philosophy",
+            "authority": "Stanford Encyclopedia of Philosophy"
+          }
+        ]
+      }
+    }
+  ],
+  "detailedReport": [],
+  "priorityRecommendations": [
+    {
+      "tradition": "Indigenous Wisdom",
+      "id": "indigenous-wisdom",
+      "missingTexts": [
+        "Oral traditions",
+        "Ceremonial teachings",
+        "Sacred stories"
+      ],
+      "suggestedDomains": [
+        ".edu",
+        "plato.stanford.edu",
+        "sep.stanford.edu",
+        "oxford.com",
+        "cambridge.org",
+        "archive.org",
+        "sacred-texts.com",
+        "wikisource.org",
+        "gutenberg.org"
+      ]
+    },
+    {
+      "tradition": "Jainism",
+      "id": "jainism",
+      "missingTexts": [
+        "Āgamas",
+        "Tattvartha Sutra",
+        "Kalpa Sutra"
+      ],
+      "suggestedDomains": [
+        "vedabase.com",
+        "hinduwebsite.com",
+        "bharatadesam.com",
+        ".edu",
+        "plato.stanford.edu",
+        "sep.stanford.edu",
+        "oxford.com",
+        "cambridge.org",
+        "archive.org",
+        "sacred-texts.com",
+        "wikisource.org",
+        "gutenberg.org"
+      ]
+    },
+    {
+      "tradition": "Shintoism",
+      "id": "shintoism",
+      "missingTexts": [
+        "Kojiki",
+        "Nihon Shoki",
+        "Norito prayers"
+      ],
+      "suggestedDomains": [
+        ".edu",
+        "plato.stanford.edu",
+        "sep.stanford.edu",
+        "oxford.com",
+        "cambridge.org",
+        "archive.org",
+        "sacred-texts.com",
+        "wikisource.org",
+        "gutenberg.org"
+      ]
+    },
+    {
+      "tradition": "Buddhism (Theravada)",
+      "id": "theravada-buddhism",
+      "missingTexts": [
+        "Dhammapada",
+        "Visuddhimagga"
+      ],
+      "suggestedDomains": [
+        "accesstoinsight.org",
+        "buddhanet.net",
+        "dhammatalks.org",
+        "tipitaka.org",
+        ".edu",
+        "plato.stanford.edu",
+        "sep.stanford.edu",
+        "oxford.com",
+        "cambridge.org",
+        "archive.org",
+        "sacred-texts.com",
+        "wikisource.org",
+        "gutenberg.org"
+      ]
+    },
+    {
+      "tradition": "Zen Buddhism",
+      "id": "zen-buddhism",
+      "missingTexts": [
+        "Platform Sutra",
+        "Blue Cliff Record",
+        "Shobogenzo"
+      ],
+      "suggestedDomains": [
+        "accesstoinsight.org",
+        "buddhanet.net",
+        "dhammatalks.org",
+        "tipitaka.org",
+        ".edu",
+        "plato.stanford.edu",
+        "sep.stanford.edu",
+        "oxford.com",
+        "cambridge.org",
+        "archive.org",
+        "sacred-texts.com",
+        "wikisource.org",
+        "gutenberg.org"
+      ]
+    },
+    {
+      "tradition": "Sikhism",
+      "id": "sikhism",
+      "missingTexts": [
+        "Dasam Granth"
+      ],
+      "suggestedDomains": [
+        ".edu",
+        "plato.stanford.edu",
+        "sep.stanford.edu",
+        "oxford.com",
+        "cambridge.org",
+        "archive.org",
+        "sacred-texts.com",
+        "wikisource.org",
+        "gutenberg.org"
+      ]
+    },
+    {
+      "tradition": "Utilitarianism",
+      "id": "utilitarianism",
+      "missingTexts": [
+        {
+          "title": "Principles of Morals and Legislation",
+          "url": "https://www.gutenberg.org/ebooks/4320",
+          "description": "Jeremy Bentham's foundational utilitarian work"
+        },
+        {
+          "title": "Utilitarianism",
+          "url": "https://www.gutenberg.org/ebooks/11224",
+          "description": "John Stuart Mill's complete work"
+        },
+        "Methods of Ethics"
+      ],
+      "suggestedDomains": [
+        ".edu",
+        "plato.stanford.edu",
+        "sep.stanford.edu",
+        "oxford.com",
+        "cambridge.org",
+        "archive.org",
+        "sacred-texts.com",
+        "wikisource.org",
+        "gutenberg.org"
+      ]
+    },
+    {
+      "tradition": "Marxism",
+      "id": "marxism",
+      "missingTexts": [
+        "German Ideology"
+      ],
+      "suggestedDomains": [
+        "marxists.org",
+        "constitution.org",
+        "bartleby.com",
+        ".edu",
+        "plato.stanford.edu",
+        "sep.stanford.edu",
+        "oxford.com",
+        "cambridge.org",
+        "archive.org",
+        "sacred-texts.com",
+        "wikisource.org",
+        "gutenberg.org"
+      ]
+    },
+    {
+      "tradition": "Pragmatism",
+      "id": "pragmatism",
+      "missingTexts": [
+        "Democracy and Education",
+        "Experience and Nature"
+      ],
+      "suggestedDomains": [
+        "marxists.org",
+        "constitution.org",
+        "bartleby.com",
+        ".edu",
+        "plato.stanford.edu",
+        "sep.stanford.edu",
+        "oxford.com",
+        "cambridge.org",
+        "archive.org",
+        "sacred-texts.com",
+        "wikisource.org",
+        "gutenberg.org"
+      ]
+    },
+    {
+      "tradition": "Alan Watts",
+      "id": "alan-watts",
+      "missingTexts": [
+        "The Book",
+        "Tao: The Watercourse Way",
+        "Out of Your Mind lectures"
+      ],
+      "suggestedDomains": [
+        ".edu",
+        "plato.stanford.edu",
+        "sep.stanford.edu",
+        "oxford.com",
+        "cambridge.org",
+        "archive.org",
+        "sacred-texts.com",
+        "wikisource.org",
+        "gutenberg.org"
+      ]
+    },
+    {
+      "tradition": "Secular Humanism",
+      "id": "secular-humanism",
+      "missingTexts": [
+        "Humanist Manifesto I, II, III",
+        "The Secular Humanist Declaration"
+      ],
+      "suggestedDomains": [
+        ".edu",
+        "plato.stanford.edu",
+        "sep.stanford.edu",
+        "oxford.com",
+        "cambridge.org",
+        "archive.org",
+        "sacred-texts.com",
+        "wikisource.org",
+        "gutenberg.org"
+      ]
+    },
+    {
+      "tradition": "Camus / Absurdism",
+      "id": "absurdism",
+      "missingTexts": [
+        "The Myth of Sisyphus",
+        "The Rebel"
+      ],
+      "suggestedDomains": [
+        ".edu",
+        "plato.stanford.edu",
+        "sep.stanford.edu",
+        "oxford.com",
+        "cambridge.org",
+        "archive.org",
+        "sacred-texts.com",
+        "wikisource.org",
+        "gutenberg.org"
+      ]
+    },
+    {
+      "tradition": "Postmodernism",
+      "id": "postmodernism",
+      "missingTexts": [
+        "The Postmodern Condition",
+        "Discipline and Punish"
+      ],
+      "suggestedDomains": [
+        ".edu",
+        "plato.stanford.edu",
+        "sep.stanford.edu",
+        "oxford.com",
+        "cambridge.org",
+        "archive.org",
+        "sacred-texts.com",
+        "wikisource.org",
+        "gutenberg.org"
+      ]
+    }
+  ]
+}

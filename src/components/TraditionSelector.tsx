@@ -17,20 +17,25 @@ import {
   CardActions
 } from '@mui/material';
 import { Add, Clear, Compare, Info } from '@mui/icons-material';
-import { Tradition, FilterCategory } from '../types';
+import { Tradition, FilterCategory, UserProfile } from '../types';
 import { traditions } from '../data/traditions';
 import TraditionDetailView from './TraditionDetailView';
+import PerspectiveSelector from './PerspectiveSelector';
 
 interface TraditionSelectorProps {
   selectedTraditions: string[];
   onSelectionChange: (traditionIds: string[]) => void;
   onCompare: () => void;
+  userProfile: UserProfile;
+  onProfileUpdate: (profile: UserProfile) => void;
 }
 
 const TraditionSelector: React.FC<TraditionSelectorProps> = ({
   selectedTraditions,
   onSelectionChange,
-  onCompare
+  onCompare,
+  userProfile,
+  onProfileUpdate
 }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [categoryFilter, setCategoryFilter] = useState<FilterCategory>('all');
@@ -191,61 +196,62 @@ const TraditionSelector: React.FC<TraditionSelectorProps> = ({
   };
 
   return (
-    <Paper sx={{ p: 3, mb: 3 }}>
-      <Typography variant="h5" gutterBottom>
-        Select Philosophical Traditions to Compare
-      </Typography>
-      <Typography variant="body2" color="text.secondary" sx={{ mb: 3 }}>
-        Click any tradition to auto-select it for comparison. Click headers, cards, or buttons to add multiple traditions.
-      </Typography>
+    <>
+      <Paper sx={{ p: 3, mb: 3 }}>
+        <Typography variant="h5" gutterBottom>
+          Select Philosophical Traditions to Compare
+        </Typography>
+        <Typography variant="body2" color="text.secondary" sx={{ mb: 3 }}>
+          Click any tradition to auto-select it for comparison. Click headers, cards, or buttons to add multiple traditions.
+        </Typography>
 
-      {/* Search, Filter, and Sort */}
-      <Box sx={{ mb: 4 }}>
-        <Grid container spacing={3}>
-          <Grid item xs={12} md={6}>
-            <TextField
-              fullWidth
-              label="Search traditions"
-              variant="outlined"
-              size="small"
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-            />
+        {/* Search, Filter, and Sort */}
+        <Box sx={{ mb: 4 }}>
+          <Grid container spacing={3}>
+            <Grid item xs={12} md={6}>
+              <TextField
+                fullWidth
+                label="Search traditions"
+                variant="outlined"
+                size="small"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+              />
+            </Grid>
+            <Grid item xs={12} md={3}>
+              <FormControl fullWidth size="small">
+                <InputLabel>Category</InputLabel>
+                <Select
+                  value={categoryFilter}
+                  label="Category"
+                  onChange={(e) => setCategoryFilter(e.target.value as FilterCategory)}
+                >
+                  {categories.map(category => (
+                    <MenuItem key={category.value} value={category.value}>
+                      {category.label}
+                    </MenuItem>
+                  ))}
+                </Select>
+              </FormControl>
+            </Grid>
+            <Grid item xs={12} md={3}>
+              <FormControl fullWidth size="small">
+                <InputLabel>Sort By</InputLabel>
+                <Select
+                  value={sortBy}
+                  label="Sort By"
+                  onChange={(e) => setSortBy(e.target.value as 'date' | 'name' | 'category')}
+                >
+                  {sortOptions.map(option => (
+                    <MenuItem key={option.value} value={option.value}>
+                      {option.label}
+                    </MenuItem>
+                  ))}
+                </Select>
+              </FormControl>
+            </Grid>
           </Grid>
-          <Grid item xs={12} md={3}>
-            <FormControl fullWidth size="small">
-              <InputLabel>Category</InputLabel>
-              <Select
-                value={categoryFilter}
-                label="Category"
-                onChange={(e) => setCategoryFilter(e.target.value as FilterCategory)}
-              >
-                {categories.map(category => (
-                  <MenuItem key={category.value} value={category.value}>
-                    {category.label}
-                  </MenuItem>
-                ))}
-              </Select>
-            </FormControl>
-          </Grid>
-          <Grid item xs={12} md={3}>
-            <FormControl fullWidth size="small">
-              <InputLabel>Sort By</InputLabel>
-              <Select
-                value={sortBy}
-                label="Sort By"
-                onChange={(e) => setSortBy(e.target.value as 'date' | 'name' | 'category')}
-              >
-                {sortOptions.map(option => (
-                  <MenuItem key={option.value} value={option.value}>
-                    {option.label}
-                  </MenuItem>
-                ))}
-              </Select>
-            </FormControl>
-          </Grid>
-        </Grid>
-      </Box>
+        </Box>
 
       {/* Selected Traditions Display */}
       {selectedTraditions.length > 0 && (
@@ -542,15 +548,23 @@ const TraditionSelector: React.FC<TraditionSelectorProps> = ({
         </Box>
       )}
 
-      {/* Tradition Detail View Dialog */}
-      <TraditionDetailView
-        tradition={selectedTraditionForDetail}
-        isOpen={isDetailViewOpen}
-        onClose={handleDetailViewClose}
-        onAddToCompare={handleAddToCompareFromDetail}
-        isAlreadySelected={selectedTraditionForDetail ? selectedTraditions.includes(selectedTraditionForDetail.id) : false}
+        {/* Tradition Detail View Dialog */}
+        <TraditionDetailView
+          tradition={selectedTraditionForDetail}
+          isOpen={isDetailViewOpen}
+          onClose={handleDetailViewClose}
+          onAddToCompare={handleAddToCompareFromDetail}
+          isAlreadySelected={selectedTraditionForDetail ? selectedTraditions.includes(selectedTraditionForDetail.id) : false}
+        />
+      </Paper>
+
+      {/* Perspective Selector - Positioned below main content as separate section */}
+      <PerspectiveSelector
+        userProfile={userProfile}
+        onProfileUpdate={onProfileUpdate}
+        selectedTraditions={selectedTraditions}
       />
-    </Paper>
+    </>
   );
 };
 

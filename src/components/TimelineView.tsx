@@ -8,7 +8,12 @@ import {
   ToggleButton,
   ToggleButtonGroup,
   FormControl,
-  FormLabel
+  FormLabel,
+  Card,
+  CardContent,
+  Fade,
+  Zoom,
+  Slide
 } from '@mui/material';
 import { Timeline, LinearScale } from '@mui/icons-material';
 import { traditions } from '../data/traditions';
@@ -24,30 +29,43 @@ const TimelineView: React.FC<TimelineViewProps> = ({
   onTraditionClick 
 }) => {
   const [timelineMode, setTimelineMode] = useState<'accurate' | 'linear'>('accurate');
-  // Parse origin dates for timeline sorting
-  const parseOrigin = (originStr: string): { year: number, era: string, display: string } => {
-    const str = originStr.toLowerCase();
+  const [hoveredTradition, setHoveredTradition] = useState<string | null>(null);
+  const [isAnimating, setIsAnimating] = useState(false);
+  const [selectedEra, setSelectedEra] = useState<string | null>(null);
+  // Get year for timeline positioning - use firstYear if available, otherwise parse originDate
+  const getTimelineYear = (tradition: Tradition): { year: number, era: string, display: string } => {
+    // Use firstYear if it exists (our new field)
+    if ('firstYear' in tradition && typeof tradition.firstYear === 'number') {
+      const year = tradition.firstYear;
+      const era = year < 0 ? 'BCE' : 'CE';
+      const absYear = Math.abs(year);
+      const display = year < 0 ? `${absYear} BCE` : `${year} CE`;
+      return { year, era, display };
+    }
+
+    // Fallback to parsing originDate string (legacy support)
+    const str = tradition.originDate?.toLowerCase() || '';
     if (str.includes('bce')) {
       const match = str.match(/(\d+)/);
       const year = match ? -parseInt(match[1]) : 0;
-      return { year, era: 'BCE', display: originStr };
+      return { year, era: 'BCE', display: tradition.originDate || '' };
     }
     if (str.includes('ce') || str.includes('century')) {
       const match = str.match(/(\d+)/);
       const year = match ? parseInt(match[1]) : 2000;
-      return { year, era: 'CE', display: originStr };
+      return { year, era: 'CE', display: tradition.originDate || '' };
     }
     if (str.includes('prehistoric')) {
-      return { year: -3000, era: 'Prehistoric', display: originStr };
+      return { year: -10000, era: 'Prehistoric', display: tradition.originDate || '' };
     }
-    return { year: 2000, era: 'Modern', display: originStr };
+    return { year: 2000, era: 'Modern', display: tradition.originDate || '' };
   };
 
   // Prepare timeline data
   const timelineData = traditions
     .map(tradition => ({
       ...tradition,
-      timelineInfo: parseOrigin(tradition.originDate),
+      timelineInfo: getTimelineYear(tradition),
       isSelected: selectedTraditions.includes(tradition.id)
     }))
     .sort((a, b) => a.timelineInfo.year - b.timelineInfo.year);
@@ -133,98 +151,211 @@ const TimelineView: React.FC<TimelineViewProps> = ({
         <br />Click any tradition to learn more.
       </Typography>
 
-      {/* Linear Timeline Visualization */}
+      {/* Enhanced Interactive Timeline */}
       <Box sx={{ 
         mb: 4, 
         position: 'relative', 
-        height: timelineMode === 'linear' ? 80 : 60,
-        transition: 'height 0.3s ease-in-out'
+        height: timelineMode === 'linear' ? 120 : 100,
+        transition: 'height 0.3s ease-in-out',
+        background: (theme) => theme.palette.mode === 'dark' 
+          ? 'linear-gradient(45deg, rgba(25,25,25,0.8), rgba(40,40,40,0.9))' 
+          : 'linear-gradient(45deg, rgba(245,245,245,0.8), rgba(250,250,250,0.9))',
+        borderRadius: 2,
+        padding: 2,
+        boxShadow: (theme) => theme.palette.mode === 'dark' ? 3 : 1
       }}>
-        {/* Main timeline line */}
+        {/* Enhanced Main Timeline Line with Glow Effect */}
         <Box sx={{
-          height: 4,
+          height: 6,
           background: 'linear-gradient(to right, #8B4513, #4A90E2, #7B68EE, #20B2AA, #32CD32)',
-          borderRadius: 2,
+          borderRadius: 3,
           mb: 4,
-          position: 'relative'
+          position: 'relative',
+          boxShadow: isAnimating ? '0 0 20px rgba(75, 144, 226, 0.6)' : '0 0 10px rgba(0,0,0,0.2)',
+          transition: 'box-shadow 0.3s ease-in-out',
+          '&::before': {
+            content: '""',
+            position: 'absolute',
+            top: -1,
+            left: 0,
+            right: 0,
+            bottom: -1,
+            background: 'linear-gradient(to right, #8B4513, #4A90E2, #7B68EE, #20B2AA, #32CD32)',
+            borderRadius: 3,
+            opacity: 0.3,
+            filter: 'blur(3px)'
+          }
         }}>
-          {/* Era markers */}
+          {/* Enhanced Era Markers with Interaction */}
           {[0, 500, 1500, 1800].map((year, index) => {
             const position = getTimelinePosition(year);
+            const eraRange = timelineRanges.find(r => year >= r.min && year < r.max);
+            const isSelected = selectedEra === eraRange?.label;
             return (
-              <Box key={year} sx={{
-                position: 'absolute',
-                left: `${position}%`,
-                top: -8,
-                width: 16,
-                height: 16,
-                bgcolor: 'background.paper',
-                border: '2px solid',
-                borderColor: getTimelineColor(year),
-                borderRadius: '50%',
-                transform: 'translateX(-50%)'
-              }}>
-                <Tooltip title={`${year} ${year <= 0 ? 'BCE' : 'CE'}`}>
-                  <Box sx={{ width: '100%', height: '100%', cursor: 'pointer' }} />
-                </Tooltip>
-              </Box>
+              <Zoom key={year} in={true} style={{ transitionDelay: `${index * 100}ms` }}>
+                <Box sx={{
+                  position: 'absolute',
+                  left: `${position}%`,
+                  top: -10,
+                  width: isSelected ? 24 : 18,
+                  height: isSelected ? 24 : 18,
+                  bgcolor: 'background.paper',
+                  border: '3px solid',
+                  borderColor: getTimelineColor(year),
+                  borderRadius: '50%',
+                  transform: 'translateX(-50%)',
+                  cursor: 'pointer',
+                  transition: 'all 0.3s ease-in-out',
+                  boxShadow: isSelected ? `0 0 15px ${getTimelineColor(year)}60` : 2,
+                  zIndex: 5,
+                  '&:hover': {
+                    transform: 'translateX(-50%) scale(1.2)',
+                    boxShadow: `0 0 20px ${getTimelineColor(year)}80`
+                  }
+                }}>
+                  <Tooltip 
+                    title={
+                      <Box sx={{ textAlign: 'center' }}>
+                        <Typography variant="subtitle2">{year <= 0 ? `${Math.abs(year)} BCE` : `${year} CE`}</Typography>
+                        <Typography variant="caption">{eraRange?.label}</Typography>
+                      </Box>
+                    } 
+                    placement="top" 
+                    arrow
+                  >
+                    <Box 
+                      sx={{ width: '100%', height: '100%', cursor: 'pointer' }}
+                      onClick={() => setSelectedEra(isSelected ? null : eraRange?.label || null)}
+                    />
+                  </Tooltip>
+                </Box>
+              </Zoom>
             );
           })}
         </Box>
 
-        {/* Tradition markers on timeline */}
+        {/* Enhanced Interactive Tradition Markers */}
         {timelineData.map((tradition, index) => {
           const position = getTimelinePosition(tradition.timelineInfo.year, index);
+          const isHovered = hoveredTradition === tradition.id;
+          const isSelected = tradition.isSelected;
+          const shouldShow = !selectedEra || !!timelineRanges.find(r => r.label === selectedEra && 
+            tradition.timelineInfo.year >= r.min && tradition.timelineInfo.year < r.max);
+          
+          if (!shouldShow) return null;
+          
           return (
-            <Tooltip key={tradition.id} title={`${tradition.name} (${tradition.timelineInfo.display})`}>
+            <Fade key={tradition.id} in={shouldShow} timeout={300}>
               <Box
                 sx={{
                   position: 'absolute',
                   left: `${position}%`,
-                  top: 20,
+                  top: 25,
                   transform: 'translateX(-50%)',
                   cursor: 'pointer',
-                  zIndex: tradition.isSelected ? 10 : 1
+                  zIndex: isSelected ? 15 : isHovered ? 10 : 5
                 }}
-                onClick={() => onTraditionClick?.(tradition)}
+                onMouseEnter={() => setHoveredTradition(tradition.id)}
+                onMouseLeave={() => setHoveredTradition(null)}
+                onClick={() => {
+                  onTraditionClick?.(tradition);
+                  setIsAnimating(true);
+                  setTimeout(() => setIsAnimating(false), 600);
+                }}
               >
-                <Box sx={{
-                  width: tradition.isSelected ? 16 : 12,
-                  height: tradition.isSelected ? 16 : 12,
-                  bgcolor: getTimelineColor(tradition.timelineInfo.year),
-                  border: tradition.isSelected ? '3px solid' : '2px solid',
-                  borderColor: tradition.isSelected ? 'primary.main' : 'background.paper',
-                  borderRadius: '50%',
-                  boxShadow: tradition.isSelected ? 3 : 1,
-                  transition: 'all 0.2s ease-in-out',
-                  '&:hover': {
-                    transform: 'scale(1.3)',
-                    boxShadow: 4
+                <Tooltip 
+                  title={
+                    <Card sx={{ minWidth: 250, bgcolor: 'background.paper' }}>
+                      <CardContent sx={{ p: 2 }}>
+                        <Typography variant="h6" color="primary" gutterBottom>
+                          {tradition.name}
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary" gutterBottom>
+                          {tradition.timelineInfo.display}
+                        </Typography>
+                        <Typography variant="caption" color="text.secondary">
+                          {tradition.category} • {tradition.subSchool}
+                        </Typography>
+                        {tradition.adherents && (
+                          <Typography variant="caption" display="block" sx={{ mt: 1 }}>
+                            📊 {tradition.adherents} adherents
+                          </Typography>
+                        )}
+                      </CardContent>
+                    </Card>
                   }
-                }} />
-                {/* Show tradition name in linear mode for better identification */}
-                {timelineMode === 'linear' && (
-                  <Typography 
-                    variant="caption" 
-                    sx={{
+                  placement="top"
+                  arrow
+                  PopperProps={{
+                    sx: {
+                      '& .MuiTooltip-tooltip': {
+                        bgcolor: 'transparent',
+                        maxWidth: 'none'
+                      }
+                    }
+                  }}
+                >
+                  <Box sx={{
+                    width: isSelected ? 20 : isHovered ? 16 : 14,
+                    height: isSelected ? 20 : isHovered ? 16 : 14,
+                    bgcolor: getTimelineColor(tradition.timelineInfo.year),
+                    border: isSelected ? '4px solid' : '3px solid',
+                    borderColor: isSelected ? 'primary.main' : isHovered ? 'secondary.main' : 'background.paper',
+                    borderRadius: '50%',
+                    boxShadow: isSelected ? `0 0 20px ${getTimelineColor(tradition.timelineInfo.year)}80` : 
+                              isHovered ? `0 0 15px ${getTimelineColor(tradition.timelineInfo.year)}60` : 2,
+                    transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+                    transform: isSelected ? 'scale(1.2)' : isHovered ? 'scale(1.1)' : 'scale(1)',
+                    '&::after': isSelected || isHovered ? {
+                      content: '""',
                       position: 'absolute',
-                      top: 20,
-                      left: '50%',
-                      transform: 'translateX(-50%)',
-                      fontSize: '0.7rem',
-                      whiteSpace: 'nowrap',
-                      color: 'text.secondary',
-                      bgcolor: (theme) => theme.palette.mode === 'dark' ? 'rgba(0,0,0,0.7)' : 'rgba(255,255,255,0.8)',
-                      padding: '2px 4px',
-                      borderRadius: '4px',
-                      pointerEvents: 'none'
-                    }}
+                      top: -2,
+                      left: -2,
+                      right: -2,
+                      bottom: -2,
+                      borderRadius: '50%',
+                      background: `conic-gradient(from 0deg, ${getTimelineColor(tradition.timelineInfo.year)}, transparent, ${getTimelineColor(tradition.timelineInfo.year)})`,
+                      animation: isSelected ? 'spin 2s linear infinite' : 'none',
+                      zIndex: -1
+                    } : {}
+                  }} />
+                </Tooltip>
+                
+                {/* Enhanced tradition labels */}
+                {(timelineMode === 'linear' || isHovered || isSelected) && (
+                  <Slide 
+                    direction="up" 
+                    in={timelineMode === 'linear' || isHovered || isSelected} 
+                    timeout={200}
                   >
-                    {tradition.name}
-                  </Typography>
+                    <Typography 
+                      variant="caption" 
+                      sx={{
+                        position: 'absolute',
+                        top: 25,
+                        left: '50%',
+                        transform: 'translateX(-50%)',
+                        fontSize: isSelected ? '0.8rem' : '0.7rem',
+                        fontWeight: isSelected ? 'bold' : 'normal',
+                        whiteSpace: 'nowrap',
+                        color: isSelected ? 'primary.main' : 'text.secondary',
+                        bgcolor: (theme) => theme.palette.mode === 'dark' 
+                          ? isSelected ? 'rgba(25,25,25,0.95)' : 'rgba(25,25,25,0.8)'
+                          : isSelected ? 'rgba(255,255,255,0.95)' : 'rgba(255,255,255,0.8)',
+                        padding: isSelected ? '3px 6px' : '2px 4px',
+                        borderRadius: '6px',
+                        pointerEvents: 'none',
+                        boxShadow: isSelected ? 2 : 1,
+                        border: isSelected ? '1px solid' : 'none',
+                        borderColor: isSelected ? 'primary.main' : 'transparent'
+                      }}
+                    >
+                      {tradition.name}
+                    </Typography>
+                  </Slide>
                 )}
               </Box>
-            </Tooltip>
+            </Fade>
           );
         })}
       </Box>
@@ -262,7 +393,7 @@ const TimelineView: React.FC<TimelineViewProps> = ({
               borderLeftColor: group.color + '40'
             }}>
               {group.traditions.map(tradition => (
-                <Tooltip key={tradition.id} title={`Click to learn about ${tradition.name}`}>
+                <Tooltip key={tradition.id} title={`Click to learn about ${tradition.name}`} placement="top" arrow>
                   <Chip
                     label={`${tradition.name} (${tradition.timelineInfo.display})`}
                     onClick={() => onTraditionClick?.(tradition)}
@@ -289,13 +420,17 @@ const TimelineView: React.FC<TimelineViewProps> = ({
         ))}
       </Box>
 
-      {/* Legend */}
-      <Box sx={{ 
-        mt: 4, 
-        p: 2, 
-        bgcolor: (theme) => theme.palette.mode === 'dark' ? 'grey.800' : 'grey.50',
-        borderRadius: 1 
-      }}>
+      {/* Enhanced Legend with Animations */}
+      <Fade in={true} timeout={1000}>
+        <Box sx={{ 
+          mt: 4, 
+          p: 3, 
+          bgcolor: (theme) => theme.palette.mode === 'dark' ? 'rgba(33,33,33,0.8)' : 'rgba(248,248,248,0.8)',
+          borderRadius: 2,
+          border: '1px solid',
+          borderColor: (theme) => theme.palette.mode === 'dark' ? 'grey.700' : 'grey.200',
+          backdropFilter: 'blur(10px)'
+        }}>
         <Typography variant="caption" color="text.secondary" sx={{ mb: 1, display: 'block' }}>
           Timeline spans from {Math.abs(minYear)} {minYear < 0 ? 'BCE' : 'CE'} to {maxYear} CE
         </Typography>
@@ -308,7 +443,31 @@ const TimelineView: React.FC<TimelineViewProps> = ({
             : '📐 Linear Mode: All traditions evenly spaced for easy scanning and comparison (chronological order maintained)'
           }
         </Typography>
-      </Box>
+        </Box>
+      </Fade>
+      
+      {/* Floating Era Filter */}
+      {selectedEra && (
+        <Zoom in={!!selectedEra}>
+          <Card sx={{
+            position: 'fixed',
+            bottom: 20,
+            right: 20,
+            zIndex: 1000,
+            bgcolor: 'primary.main',
+            color: 'primary.contrastText'
+          }}>
+            <CardContent sx={{ p: 2, '&:last-child': { pb: 2 } }}>
+              <Typography variant="subtitle2">
+                Filtering: {selectedEra}
+              </Typography>
+              <Typography variant="caption" display="block">
+                Click era markers to filter • Click again to clear
+              </Typography>
+            </CardContent>
+          </Card>
+        </Zoom>
+      )}
     </Paper>
   );
 };

@@ -1,0 +1,474 @@
+{
+  "metadata": {
+    "generated": "2025-08-18T19:59:55.219Z",
+    "purpose": "Replace broken links with authoritative academic sources",
+    "totalReplacements": 24,
+    "totalAdditions": 10
+  },
+  "replacements": [
+    {
+      "category": "Qur'an",
+      "action": "replace",
+      "source": {
+        "title": "Quranic Arabic Corpus (University of Leeds)",
+        "url": "http://corpus.quran.com/",
+        "description": "Academic linguistic analysis of the Quran with word-by-word translations",
+        "authority": "University of Leeds - Department of Computing",
+        "priority": "critical"
+      },
+      "replaces": [
+        "https://archive.org/details/QuranSahihInternational"
+      ],
+      "instructions": "Replace broken links in category \"Qur'an\" with this authoritative source"
+    },
+    {
+      "category": "Qur'an",
+      "action": "replace",
+      "source": {
+        "title": "Tanzil Quran Navigator",
+        "url": "http://tanzil.net/",
+        "description": "Open source Quran project with multiple translations",
+        "authority": "Academic Quran project",
+        "priority": "high"
+      },
+      "replaces": [
+        "https://archive.org/details/QuranSahihInternational"
+      ],
+      "instructions": "Replace broken links in category \"Qur'an\" with this authoritative source"
+    },
+    {
+      "category": "Hadith Collections",
+      "action": "replace",
+      "source": {
+        "title": "Hadith Collection - USC-MSA",
+        "url": "https://www.usc.edu/org/cmje/religious-texts/hadith/",
+        "description": "University of Southern California's hadith database",
+        "authority": "University of Southern California",
+        "priority": "critical"
+      },
+      "replaces": [
+        "https://archive.org/details/SahihBukhariEnglishTranslation"
+      ],
+      "instructions": "Replace broken links in category \"Hadith Collections\" with this authoritative source"
+    },
+    {
+      "category": "Bible",
+      "action": "replace",
+      "source": {
+        "title": "Bible Gateway Academic",
+        "url": "https://www.biblegateway.com/",
+        "description": "Comprehensive Bible database with scholarly tools",
+        "authority": "Zondervan Academic",
+        "priority": "critical"
+      },
+      "replaces": [
+        "https://archive.org/details/bible-kjv"
+      ],
+      "instructions": "Replace broken links in category \"Bible\" with this authoritative source"
+    },
+    {
+      "category": "Bible",
+      "action": "replace",
+      "source": {
+        "title": "Blue Letter Bible",
+        "url": "https://www.blueletterbible.org/",
+        "description": "Biblical exegesis tools with original language texts",
+        "authority": "Blue Letter Bible Institute",
+        "priority": "high"
+      },
+      "replaces": [],
+      "instructions": "Replace broken links in category \"Bible\" with this authoritative source"
+    },
+    {
+      "category": "Patristic Sources",
+      "action": "replace",
+      "source": {
+        "title": "Christian Classics Ethereal Library",
+        "url": "https://ccel.org/",
+        "description": "Comprehensive collection of Christian literature",
+        "authority": "Calvin University",
+        "priority": "critical"
+      },
+      "replaces": [
+        "https://archive.org/details/church-fathers"
+      ],
+      "instructions": "Replace broken links in category \"Patristic Sources\" with this authoritative source"
+    },
+    {
+      "category": "Patristic Sources",
+      "action": "replace",
+      "source": {
+        "title": "New Advent - Church Fathers",
+        "url": "http://www.newadvent.org/fathers/",
+        "description": "Complete collection of patristic writings",
+        "authority": "New Advent Catholic Encyclopedia",
+        "priority": "high"
+      },
+      "replaces": [],
+      "instructions": "Replace broken links in category \"Patristic Sources\" with this authoritative source"
+    },
+    {
+      "category": "Upanishads",
+      "action": "replace",
+      "source": {
+        "title": "Sanskrit Web - Upanishads",
+        "url": "http://sanskritdocuments.org/doc_upanishhat/",
+        "description": "Sanskrit texts with transliterations",
+        "authority": "Sanskrit Documents Collection",
+        "priority": "critical"
+      },
+      "replaces": [
+        "https://archive.org/details/upanishads00ml"
+      ],
+      "instructions": "Replace broken links in category \"Upanishads\" with this authoritative source"
+    },
+    {
+      "category": "Upanishads",
+      "action": "replace",
+      "source": {
+        "title": "Wisdom Library - Upanishads",
+        "url": "https://www.wisdomlib.org/hinduism/book/the-upanishads",
+        "description": "Scholarly translations and commentaries",
+        "authority": "Wisdom Library Academic Project",
+        "priority": "high"
+      },
+      "replaces": [],
+      "instructions": "Replace broken links in category \"Upanishads\" with this authoritative source"
+    },
+    {
+      "category": "Bhagavad Gita",
+      "action": "replace",
+      "source": {
+        "title": "Bhagavad Gita Online",
+        "url": "https://www.holy-bhagavad-gita.org/",
+        "description": "Sanskrit with word-by-word translation",
+        "authority": "Vedic studies platform",
+        "priority": "critical"
+      },
+      "replaces": [
+        "https://archive.org/details/BhagavadGitaAsItIs"
+      ],
+      "instructions": "Replace broken links in category \"Bhagavad Gita\" with this authoritative source"
+    },
+    {
+      "category": "Bhagavad Gita",
+      "action": "replace",
+      "source": {
+        "title": "Gitasupersite",
+        "url": "http://www.gitasupersite.iitk.ac.in/",
+        "description": "IIT Kanpur's comprehensive Gita resource",
+        "authority": "Indian Institute of Technology Kanpur",
+        "priority": "critical"
+      },
+      "replaces": [],
+      "instructions": "Replace broken links in category \"Bhagavad Gita\" with this authoritative source"
+    },
+    {
+      "category": "Pali Canon",
+      "action": "replace",
+      "source": {
+        "title": "SuttaCentral",
+        "url": "https://suttacentral.net/",
+        "description": "Early Buddhist texts with critical editions",
+        "authority": "International Buddhist studies collaboration",
+        "priority": "critical"
+      },
+      "replaces": [
+        "https://archive.org/details/sacredbooksofeas10ml"
+      ],
+      "instructions": "Replace broken links in category \"Pali Canon\" with this authoritative source"
+    },
+    {
+      "category": "Pali Canon",
+      "action": "replace",
+      "source": {
+        "title": "Dhamma Ocean",
+        "url": "https://ocean.dhamma.gift/",
+        "description": "Modern interface for Pali Canon",
+        "authority": "Buddhist Studies collaborative",
+        "priority": "high"
+      },
+      "replaces": [],
+      "instructions": "Replace broken links in category \"Pali Canon\" with this authoritative source"
+    },
+    {
+      "category": "Dhammapada",
+      "action": "replace",
+      "source": {
+        "title": "Access to Insight - Dhammapada",
+        "url": "https://www.accesstoinsight.org/tipitaka/kn/dhp/dhp.intro.budd.html",
+        "description": "Scholarly translation with commentary",
+        "authority": "Access to Insight Buddhist Library",
+        "priority": "critical"
+      },
+      "replaces": [],
+      "instructions": "Replace broken links in category \"Dhammapada\" with this authoritative source"
+    },
+    {
+      "category": "Hebrew Bible",
+      "action": "replace",
+      "source": {
+        "title": "Mechon Mamre Hebrew Bible",
+        "url": "https://mechon-mamre.org/p/pt/pt0.htm",
+        "description": "Hebrew text with traditional punctuation",
+        "authority": "Mechon Mamre Institute",
+        "priority": "critical"
+      },
+      "replaces": [
+        "https://en.wikisource.org/wiki/Hebrew_Bible"
+      ],
+      "instructions": "Replace broken links in category \"Hebrew Bible\" with this authoritative source"
+    },
+    {
+      "category": "Hebrew Bible",
+      "action": "replace",
+      "source": {
+        "title": "Tanach.us",
+        "url": "http://www.tanach.us/",
+        "description": "Hebrew Bible with multiple English translations",
+        "authority": "Jewish studies resource",
+        "priority": "high"
+      },
+      "replaces": [],
+      "instructions": "Replace broken links in category \"Hebrew Bible\" with this authoritative source"
+    },
+    {
+      "category": "Talmud",
+      "action": "replace",
+      "source": {
+        "title": "Halakhah.com Talmud",
+        "url": "http://halakhah.com/",
+        "description": "Complete Babylonian Talmud online",
+        "authority": "Halakhah.com",
+        "priority": "critical"
+      },
+      "replaces": [
+        "https://archive.org/details/BabylonianTalmudEnglish"
+      ],
+      "instructions": "Replace broken links in category \"Talmud\" with this authoritative source"
+    },
+    {
+      "category": "Dao De Jing",
+      "action": "replace",
+      "source": {
+        "title": "Chinese Text Project - Dao De Jing",
+        "url": "https://ctext.org/dao-de-jing",
+        "description": "Chinese text with multiple English translations",
+        "authority": "Digital humanities project by Donald Sturgeon",
+        "priority": "critical"
+      },
+      "replaces": [],
+      "instructions": "Replace broken links in category \"Dao De Jing\" with this authoritative source"
+    },
+    {
+      "category": "Zhuangzi",
+      "action": "replace",
+      "source": {
+        "title": "Chinese Text Project - Zhuangzi",
+        "url": "https://ctext.org/zhuangzi",
+        "description": "Complete Chinese text with translations",
+        "authority": "Digital humanities project by Donald Sturgeon",
+        "priority": "critical"
+      },
+      "replaces": [
+        "https://archive.org/details/sacredbooksofeas39ml"
+      ],
+      "instructions": "Replace broken links in category \"Zhuangzi\" with this authoritative source"
+    },
+    {
+      "category": "Analects",
+      "action": "replace",
+      "source": {
+        "title": "Chinese Text Project - Analects",
+        "url": "https://ctext.org/analects",
+        "description": "Confucian Analects in Chinese with translations",
+        "authority": "Digital humanities project by Donald Sturgeon",
+        "priority": "critical"
+      },
+      "replaces": [],
+      "instructions": "Replace broken links in category \"Analects\" with this authoritative source"
+    },
+    {
+      "category": "Marcus Aurelius Meditations",
+      "action": "replace",
+      "source": {
+        "title": "Perseus Digital Library - Marcus Aurelius",
+        "url": "http://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A2008.01.0641",
+        "description": "Greek text with scholarly apparatus",
+        "authority": "Tufts University Perseus Project",
+        "priority": "critical"
+      },
+      "replaces": [
+        "https://en.wikisource.org/wiki/The_Meditations_of_Marcus_Aurelius"
+      ],
+      "instructions": "Replace broken links in category \"Marcus Aurelius Meditations\" with this authoritative source"
+    },
+    {
+      "category": "Epictetus Discourses",
+      "action": "replace",
+      "source": {
+        "title": "Perseus Digital Library - Epictetus",
+        "url": "http://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0236",
+        "description": "Greek text with English translations",
+        "authority": "Tufts University Perseus Project",
+        "priority": "critical"
+      },
+      "replaces": [
+        "https://en.wikisource.org/wiki/Discourses_of_Epictetus"
+      ],
+      "instructions": "Replace broken links in category \"Epictetus Discourses\" with this authoritative source"
+    },
+    {
+      "category": "Wittgenstein Tractus",
+      "action": "replace",
+      "source": {
+        "title": "Project Gutenberg - Tractatus",
+        "url": "https://www.gutenberg.org/ebooks/5740",
+        "description": "Complete text of Tractatus Logico-Philosophicus",
+        "authority": "Project Gutenberg",
+        "priority": "critical"
+      },
+      "replaces": [
+        "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus"
+      ],
+      "instructions": "Replace broken links in category \"Wittgenstein Tractus\" with this authoritative source"
+    },
+    {
+      "category": "Mill Utilitarianism",
+      "action": "replace",
+      "source": {
+        "title": "Project Gutenberg - Utilitarianism",
+        "url": "https://www.gutenberg.org/ebooks/11224",
+        "description": "John Stuart Mill's complete work on utilitarianism",
+        "authority": "Project Gutenberg",
+        "priority": "critical"
+      },
+      "replaces": [
+        "https://en.wikisource.org/wiki/Utilitarianism"
+      ],
+      "instructions": "Replace broken links in category \"Mill Utilitarianism\" with this authoritative source"
+    }
+  ],
+  "additions": [
+    {
+      "tradition": "Indigenous Wisdom",
+      "action": "add",
+      "source": {
+        "title": "Encyclopedia Britannica - Indigenous Religions",
+        "url": "https://www.britannica.com/topic/Native-American-religions",
+        "description": "Scholarly overview of Native American spiritual traditions",
+        "authority": "Encyclopedia Britannica Academic",
+        "priority": "critical"
+      },
+      "instructions": "Add new source for tradition \"Indigenous Wisdom\""
+    },
+    {
+      "tradition": "Indigenous Wisdom",
+      "action": "add",
+      "source": {
+        "title": "Smithsonian NMAI - Indigenous Spiritual Practices",
+        "url": "https://americanindian.si.edu/",
+        "description": "National Museum of the American Indian resources",
+        "authority": "Smithsonian Institution",
+        "priority": "high"
+      },
+      "instructions": "Add new source for tradition \"Indigenous Wisdom\""
+    },
+    {
+      "tradition": "Jainism",
+      "action": "add",
+      "source": {
+        "title": "Jain Agamas (Agamashastra.com)",
+        "url": "http://www.agamashastra.com/",
+        "description": "Digital collection of Jain canonical texts",
+        "authority": "Jain studies platform",
+        "priority": "critical"
+      },
+      "instructions": "Add new source for tradition \"Jainism\""
+    },
+    {
+      "tradition": "Jainism",
+      "action": "add",
+      "source": {
+        "title": "Jainworld - Sacred Texts",
+        "url": "http://www.jainworld.com/literature/",
+        "description": "Comprehensive Jain literature collection",
+        "authority": "Jainworld Educational Foundation",
+        "priority": "high"
+      },
+      "instructions": "Add new source for tradition \"Jainism\""
+    },
+    {
+      "tradition": "Shintoism",
+      "action": "add",
+      "source": {
+        "title": "Sacred Texts - Shinto",
+        "url": "https://sacred-texts.com/shi/",
+        "description": "Kojiki, Nihon Shoki, and other Shinto texts",
+        "authority": "Sacred Texts Archive",
+        "priority": "critical"
+      },
+      "instructions": "Add new source for tradition \"Shintoism\""
+    },
+    {
+      "tradition": "Shintoism",
+      "action": "add",
+      "source": {
+        "title": "Stanford Encyclopedia - Shinto",
+        "url": "https://plato.stanford.edu/entries/shinto/",
+        "description": "Academic overview of Shinto philosophy",
+        "authority": "Stanford Encyclopedia of Philosophy",
+        "priority": "high"
+      },
+      "instructions": "Add new source for tradition \"Shintoism\""
+    },
+    {
+      "tradition": "Buddhist Meditation Texts",
+      "action": "add",
+      "source": {
+        "title": "Visuddhimagga (Access to Insight)",
+        "url": "https://www.accesstoinsight.org/lib/authors/nanamoli/PathofPurification2011.pdf",
+        "description": "Complete Visuddhimagga translation",
+        "authority": "Buddhist Publication Society",
+        "priority": "critical"
+      },
+      "instructions": "Add new source for tradition \"Buddhist Meditation Texts\""
+    },
+    {
+      "tradition": "Buddhist Meditation Texts",
+      "action": "add",
+      "source": {
+        "title": "Platform Sutra (BDK America)",
+        "url": "https://www.bdkamerica.org/tripitaka-translations",
+        "description": "Scholarly translation of Zen foundational text",
+        "authority": "Bukkyō Dendō Kyōkai",
+        "priority": "high"
+      },
+      "instructions": "Add new source for tradition \"Buddhist Meditation Texts\""
+    },
+    {
+      "tradition": "Modern Philosophy",
+      "action": "add",
+      "source": {
+        "title": "Internet Archive - Modern Philosophy",
+        "url": "https://archive.org/details/texts?query=philosophy&sort=-downloads",
+        "description": "Extensive collection of philosophical works",
+        "authority": "Internet Archive",
+        "priority": "high"
+      },
+      "instructions": "Add new source for tradition \"Modern Philosophy\""
+    },
+    {
+      "tradition": "Modern Philosophy",
+      "action": "add",
+      "source": {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/",
+        "description": "Peer-reviewed philosophical reference work",
+        "authority": "Stanford University",
+        "priority": "critical"
+      },
+      "instructions": "Add new source for tradition \"Modern Philosophy\""
+    }
+  ]
+}

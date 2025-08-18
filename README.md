@@ -4,12 +4,12 @@ A comprehensive React application for comparing philosophical and religious trad
 
 ## 🌟 Features
 
-- **Interactive Tradition Comparison**: Side-by-side analysis of 20 major philosophical and religious traditions
-- **Historical Timeline**: Visualize traditions chronologically with accurate or linear spacing modes
+- **Interactive Tradition Comparison**: Side-by-side analysis of 22 major philosophical and religious traditions
+- **Enhanced Interactive Timeline**: Fully interactive chronological visualization with era filtering, hover effects, animated transitions, and detailed tradition tooltips
 - **Detailed Tradition Views**: In-depth exploration of each tradition's core beliefs and practices
 - **AI-Powered Debates**: Watch AI representatives from different traditions engage in philosophical discussions
 - **Educational Tooltips**: Hover explanations for philosophical concepts and terminology
-- **Source Integration**: Direct links to primary texts and foundational documents
+- **Verified Source Integration**: Direct links to primary texts and foundational documents from authoritative academic institutions and digital libraries
 - **Dark/Light Themes**: Fully accessible interface with theme consistency
 
 ## 📚 Covered Traditions
@@ -109,12 +109,27 @@ interface Tradition {
 
 ## 🔗 Source Integration
 
-### Primary Text Links
-The application integrates with major online repositories:
-- **Archive.org** - Historical and religious texts
-- **Wikisource** - Community-verified sources
-- **Sacred-texts.com** - Religious and spiritual writings
-- **Project Gutenberg** - Public domain philosophical works
+### Verified Academic Sources
+The application integrates with authoritative academic institutions and digital libraries:
+
+#### **Academic Institutions (.edu domains)**
+- **University of Leeds** - Quranic Arabic Corpus with linguistic analysis
+- **Tufts University** - Perseus Digital Library for Greek and Roman texts
+- **University of Southern California** - Comprehensive hadith database
+- **IIT Kanpur** - Bhagavad Gita Supersite
+- **Calvin University** - Christian Classics Ethereal Library
+
+#### **Digital Humanities Projects**
+- **Chinese Text Project** (ctext.org) - Complete Chinese philosophical texts with translations
+- **SuttaCentral** - Critical editions of early Buddhist texts
+- **Access to Insight** - Comprehensive Theravada Buddhist canon
+- **Sefaria** - Jewish texts with commentary and translations
+
+#### **Established Archives**
+- **Project Gutenberg** - Modern philosophy and literature
+- **Sacred Texts Archive** - Religious and spiritual traditions
+- **Archive.org** - Historical documents and manuscripts
+- **Wikisource** - Community-verified primary sources
 
 ### Adding New Sources
 Sources are managed in `src/data/json/sources.json`:
@@ -209,16 +224,35 @@ npm run test     # Run tests (when implemented)
 
 ### Navigation
 - **Select Traditions**: Browse and choose traditions for comparison
-- **Historical Timeline**: View traditions chronologically with toggle modes
+- **Enhanced Interactive Timeline**: View traditions chronologically with multiple interaction modes
 - **Compare**: Side-by-side analysis of selected traditions
 - **AI Debate**: Watch philosophical discussions between tradition representatives
 - **Quiz Mode**: Discover aligned traditions (coming soon)
 
-### Interactive Features
-- **Tooltips**: Hover over philosophical terms for explanations
-- **Source Links**: Click primary texts to read online versions
-- **Theme Toggle**: Switch between dark and light modes
-- **Responsive Design**: Works on desktop, tablet, and mobile
+### Enhanced Timeline Features 🕒
+
+#### **Timeline Modes**
+- **Accurate Mode**: Proportional historical spacing showing true chronological gaps
+- **Linear Mode**: Even spacing for easy comparison while maintaining chronological order
+
+#### **Interactive Elements**
+- **Era Filtering**: Click on era markers (Ancient, Classical, Medieval, Early Modern, Modern) to filter traditions by time period
+- **Rich Hover Tooltips**: Detailed tradition cards with adherent counts, categories, and key information
+- **Animated Transitions**: Smooth fade, zoom, and slide effects for enhanced user experience
+- **Visual Effects**: Glowing timeline elements, spinning selection borders, and dynamic scaling
+
+#### **Era Markers**
+- **Ancient (before 0 CE)**: Indigenous Wisdom, Judaism, Jainism, Confucianism, Shintoism, Daoism, Stoicism, Buddhism
+- **Classical (0-500 CE)**: Christianity, Zen Buddhism
+- **Medieval (500-1500 CE)**: Sunni Islam, Hinduism (Advaita Vedanta), Sikhism
+- **Early Modern (1500-1800 CE)**: Utilitarianism, Marxism, Pragmatism
+- **Modern (1800+ CE)**: Analytic Philosophy, Alan Watts, Secular Humanism, Existentialism, Absurdism, Postmodernism
+
+### General Interactive Features
+- **Educational Tooltips**: Hover over philosophical terms for explanations
+- **Verified Source Links**: Click primary texts to access authoritative online versions
+- **Theme Toggle**: Switch between dark and light modes with consistent readability
+- **Responsive Design**: Optimized for desktop, tablet, and mobile devices
 
 ## 📊 Data Quality
 
