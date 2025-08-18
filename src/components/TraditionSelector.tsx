@@ -157,10 +157,41 @@ const TraditionSelector: React.FC<TraditionSelectorProps> = ({
       <Typography variant="h5" gutterBottom>
         Select Philosophical Traditions to Compare
       </Typography>
-      <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
+      <Typography variant="body2" color="text.secondary" sx={{ mb: 3 }}>
         Click any tradition to auto-select it for comparison. Click headers, cards, or buttons to add multiple traditions.
       </Typography>
-      
+
+      {/* Search and Filter */}
+      <Box sx={{ mb: 3 }}>
+        <Grid container spacing={2}>
+          <Grid item xs={12} md={8}>
+            <TextField
+              fullWidth
+              label="Search traditions"
+              variant="outlined"
+              size="small"
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+            />
+          </Grid>
+          <Grid item xs={12} md={4}>
+            <FormControl fullWidth size="small">
+              <InputLabel>Category</InputLabel>
+              <Select
+                value={categoryFilter}
+                onChange={(e) => setCategoryFilter(e.target.value as FilterCategory)}
+              >
+                {categories.map(category => (
+                  <MenuItem key={category.value} value={category.value}>
+                    {category.label}
+                  </MenuItem>
+                ))}
+              </Select>
+            </FormControl>
+          </Grid>
+        </Grid>
+      </Box>
+
       {/* Quick Compare Tool */}
       <Card sx={{ 
         mb: 3, 
@@ -220,37 +251,6 @@ const TraditionSelector: React.FC<TraditionSelectorProps> = ({
           </Grid>
         </CardContent>
       </Card>
-
-      {/* Search and Filter */}
-      <Box sx={{ mb: 3 }}>
-        <Grid container spacing={2}>
-          <Grid item xs={12} md={8}>
-            <TextField
-              fullWidth
-              label="Search traditions"
-              variant="outlined"
-              size="small"
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-            />
-          </Grid>
-          <Grid item xs={12} md={4}>
-            <FormControl fullWidth size="small">
-              <InputLabel>Category</InputLabel>
-              <Select
-                value={categoryFilter}
-                onChange={(e) => setCategoryFilter(e.target.value as FilterCategory)}
-              >
-                {categories.map(category => (
-                  <MenuItem key={category.value} value={category.value}>
-                    {category.label}
-                  </MenuItem>
-                ))}
-              </Select>
-            </FormControl>
-          </Grid>
-        </Grid>
-      </Box>
 
       {/* Selected Traditions Display */}
       {selectedTraditions.length > 0 && (
