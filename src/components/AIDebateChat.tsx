@@ -32,7 +32,7 @@ import {
   Warning,
   CheckCircle
 } from '@mui/icons-material';
-import { AIDebate, DebateMessage, Tradition, Citation } from '../types';
+import { DebateMessage, Tradition, Citation } from '../types';
 import { traditions } from '../data/traditions';
 
 interface AIDebateChatProps {
