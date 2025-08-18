@@ -92,16 +92,19 @@ git push origin main
 ## 🌐 Deployment Targets
 
 ### Primary Deployment
-**Platform**: [To be configured]  
-**URL**: [To be added]  
+**Platform**: Cloudflare Pages  
+**URL**: https://philosophical-explorer.pages.dev  
 **Environment**: Production  
-**Auto-Deploy**: Enabled on main branch  
+**Auto-Deploy**: Manual deployment via CLI  
+**Deployed**: 2025-08-18
 
-### Staging Environment
-**Platform**: [To be configured]  
-**URL**: [To be added]  
-**Environment**: Staging  
-**Purpose**: Pre-production testing  
+### Current Live Deployment
+**Platform**: Cloudflare Pages  
+**URL**: https://5d039b97.philosophical-explorer.pages.dev  
+**Environment**: Production  
+**Status**: ✅ Successfully deployed
+**Deploy Time**: 3.11 seconds
+**Files**: 14 uploaded (includes _headers, _redirects)  
 
 ---
 
