@@ -1,92 +1,80 @@
 # Philosophical Explorer
 
-A comprehensive React application for comparing philosophical and religious traditions across four fundamental areas: Metaphysics, Epistemology, Ethics, and Liberation/Salvation.
+A React application for comparing 23 philosophical and religious traditions across four areas: Metaphysics, Epistemology, Ethics, and Liberation.
 
-## 🌟 Features
+## Features
 
-- **Interactive Tradition Comparison**: Side-by-side analysis of 23 major philosophical and religious traditions
-- **Enhanced Interactive Timeline**: Fully interactive chronological visualization with era filtering, hover effects, animated transitions, and detailed tradition tooltips
-- **Detailed Tradition Views**: In-depth exploration of each tradition's core beliefs and practices
-- **AI-Powered Debates**: Watch AI representatives from different traditions engage in philosophical discussions
-- **Educational Tooltips**: Hover explanations for philosophical concepts and terminology
-- **Verified Source Integration**: Direct links to primary texts and foundational documents from authoritative academic institutions and digital libraries
-- **Dark/Light Themes**: Fully accessible interface with theme consistency
+- **Tradition Comparison**: Side-by-side analysis of 23 philosophical and religious traditions
+- **Interactive Timeline**: Chronological visualization with two positioning modes
+- **Detailed Tradition Views**: Exploration of each tradition's core beliefs
+- **Source Integration**: Links to primary texts and foundational documents
+- **Theme Support**: Dark and light mode interface
 
-## 📚 Covered Traditions (23 Total)
+## Covered Traditions (23 Total)
 
-### Major Religious Traditions
+### Buddhism
+- **Theravada Buddhism** - Liberation through the Noble Eightfold Path
+- **Mahayana Buddhism** - Compassionate service and bodhisattva ideal  
+- **Zen Buddhism** - Direct insight through meditation
 
-#### **Buddhism** 🧘‍♂️
-- **Theravada Buddhism** - Conservative tradition emphasizing individual liberation
-- **Mahayana Buddhism** - Great Vehicle emphasizing universal salvation and bodhisattva ideal  
-- **Zen Buddhism** - Direct realization through meditation and sudden enlightenment
-
-#### **Abrahamic Traditions** ✡️☪️✝️
+### Abrahamic Traditions
 - **Judaism** - Covenant relationship with God and ethical living
 - **Christianity** - Salvation through faith in Jesus Christ
 - **Islam (Sunni)** - Submission to Allah through the Five Pillars
 
-#### **Indian Philosophical Traditions** 🕉️
-- **Hinduism (Advaita Vedanta)** - Non-dual liberation through knowledge of Brahman
-- **Jainism** - Liberation through non-violence and spiritual purification
+### Indian Philosophy
+- **Hinduism (Advaita Vedanta)** - Liberation through knowledge of Brahman
+- **Jainism** - Liberation through non-violence and purification
 - **Sikhism** - Union with the divine through devotion and service
 
-#### **East Asian Traditions** ☯️⛩️
-- **Confucianism** - Social harmony through virtue and ritual propriety
-- **Daoism (Taoism)** - Harmony with the natural order (Dao)
-- **Shintoism** - Connection with kami and natural harmony
+### East Asian Traditions
+- **Confucianism** - Social harmony through virtue and propriety
+- **Daoism (Taoism)** - Harmony with natural order
+- **Shintoism** - Connection with kami and nature
 
-#### **Other Wisdom Traditions** 🌍
-- **Indigenous Wisdom** - Sacred relationship with land and ancestral guidance
+### Western Philosophy
 
-### Western Philosophical Schools
+#### Classical
+- **Stoicism** - Virtue through reason and acceptance
 
-#### **Ancient & Classical** 🏛️
-- **Stoicism** - Virtue and tranquility through reason and acceptance
+#### Modern
+- **Utilitarianism** - Maximum welfare for all
+- **Marxism** - Historical materialism and class analysis
+- **Pragmatism** - Truth through practical application
+- **Secular Humanism** - Human dignity and scientific method
 
-#### **Modern Ethics & Political Philosophy** ⚖️
-- **Utilitarianism** - Greatest good for the greatest number  
-- **Marxism** - Historical materialism and class struggle analysis
+#### Contemporary
+- **Existentialism** - Authentic existence and responsibility
+- **Absurdism (Camus)** - Acceptance of life's meaninglessness
+- **Postmodernism** - Critique of universal narratives
+- **Analytic Philosophy** - Logical analysis and precision
 
-#### **American Philosophy** 🇺🇸
-- **Pragmatism** - Truth through practical consequences
-- **Secular Humanism** - Human dignity and scientific rationalism
+#### Other
+- **Alan Watts** - Western interpretation of Eastern philosophy
+- **Indigenous Wisdom** - Sacred relationship with land and ancestors
 
-#### **20th Century Continental** 🌍
-- **Existentialism** - Authentic existence and personal responsibility
-- **Absurdism (Camus)** - Embrace of life's inherent meaninglessness
-- **Postmodernism** - Critique of grand narratives and power structures
+## Data Structure
 
-#### **Analytic Tradition** 🧠
-- **Analytic Philosophy** - Logical analysis and linguistic precision
+Each tradition is analyzed across four philosophical dimensions:
 
-#### **Contemporary Synthesis** 🌟
-- **Alan Watts** - Western interpretation of Eastern wisdom
+### 1. Metaphysics
+- Ultimate Reality: What exists at the deepest level
+- View of World: How physical reality is understood
+- View of Self: Human nature and consciousness
+- Afterlife: What happens after death
 
-## 🏗️ Data Structure Framework
+### 2. Epistemology
+- Sources of Knowledge: Scripture, reason, experience, revelation, intuition
 
-### Core Philosophy Areas
-Each tradition is analyzed across four fundamental philosophical dimensions:
+### 3. Ethics
+- Moral Principles: What makes actions right or wrong
+- Virtue Systems: Character traits to be cultivated
 
-#### 1. **Metaphysics** 🧠
-- **Ultimate Reality**: What exists at the deepest level?
-- **View of World**: How is physical reality understood?
-- **View of Self**: What is human nature and consciousness?
-- **Afterlife**: What happens after death?
+### 4. Liberation/Salvation
+- Ultimate Goal: The highest human aspiration
+- Path/Method: How to achieve this goal
 
-#### 2. **Epistemology** 📖
-- **Sources of Knowledge**: How do we know what we know?
-- Examples: Scripture, reason, experience, revelation, intuition
-
-#### 3. **Ethics** ⚖️
-- **Moral Principles**: What makes actions right or wrong?
-- **Virtue Systems**: What character traits should be cultivated?
-
-#### 4. **Liberation/Salvation** ✈️
-- **Ultimate Goal**: What is the highest human aspiration?
-- **Path/Method**: How do we achieve this goal?
-
-### Data Organization
+## File Structure
 
 ```
 src/data/
@@ -94,143 +82,52 @@ src/data/
 │   ├── traditions.json     # Complete tradition data
 │   └── sources.json        # Online source links
 ├── loaders.ts             # Data loading utilities
-└── sources.ts             # Source link management
+└── traditions.ts          # Data exports
 ```
 
-### Tradition Data Schema
+## Source Integration
 
-```typescript
-interface Tradition {
-  id: string;
-  name: string;
-  category: 'Religion' | 'Philosophy';
-  subSchool: string;
-  originDate: string;
-  keyFigures: string[];
-  adherents: string;
-  confidence: number;        // 0-1 scale for data reliability
-  
-  metaphysics: {
-    ultimateReality: string;
-    viewOfWorld: string;
-    viewOfSelf: string;
-    afterlife: string;
-  };
-  
-  epistemology: string[];    // Sources of knowledge
-  ethics: string[];          // Moral principles
-  
-  liberation: {
-    goal: string;            // Ultimate aspiration
-    path: string[];          // Steps to achieve goal
-  };
-  
-  primaryTexts: string[];    // Foundational writings
-  sources?: Citation[];      // Academic references
-  critiques: Record<string, string>; // Inter-tradition critiques
-  lastUpdated: string;
-}
-```
+The application links to primary texts from:
 
-## 🔗 Source Integration
+- **Academic Institutions**: University of Leeds, Tufts University, USC, IIT Kanpur, Calvin University
+- **Digital Projects**: Chinese Text Project, SuttaCentral, Access to Insight, Sefaria
+- **Archives**: Project Gutenberg, Sacred Texts Archive, Archive.org, Wikisource
 
-### Verified Academic Sources
-The application integrates with authoritative academic institutions and digital libraries:
+## Timeline Features
 
-#### **Academic Institutions (.edu domains)**
-- **University of Leeds** - Quranic Arabic Corpus with linguistic analysis
-- **Tufts University** - Perseus Digital Library for Greek and Roman texts
-- **University of Southern California** - Comprehensive hadith database
-- **IIT Kanpur** - Bhagavad Gita Supersite
-- **Calvin University** - Christian Classics Ethereal Library
+### Timeline Modes
+- **Accurate Mode**: Proportional historical spacing with era labels at historical centers
+- **Linear Mode**: Even spacing with evenly distributed era labels
 
-#### **Digital Humanities Projects**
-- **Chinese Text Project** (ctext.org) - Complete Chinese philosophical texts with translations
-- **SuttaCentral** - Critical editions of early Buddhist texts
-- **Access to Insight** - Comprehensive Theravada Buddhist canon
-- **Sefaria** - Jewish texts with commentary and translations
+### Interface
+- Single horizontal timeline with color-coded tradition markers
+- Hover tooltips with tradition details
+- Click markers to open detailed tradition information
+- Category filtering by philosophical families
+- Tabbed organization for Historical Eras and Philosophical Categories
 
-#### **Established Archives**
-- **Project Gutenberg** - Modern philosophy and literature
-- **Sacred Texts Archive** - Religious and spiritual traditions
-- **Archive.org** - Historical documents and manuscripts
-- **Wikisource** - Community-verified primary sources
+### Era Distribution
+- **Ancient (before 0 CE)**: Indigenous Wisdom, Judaism, Jainism, Confucianism, Shintoism, Daoism, Stoicism, Theravada Buddhism, Mahayana Buddhism
+- **Classical (0-500 CE)**: Christianity, Zen Buddhism  
+- **Medieval (500-1500 CE)**: Sunni Islam, Hinduism (Advaita Vedanta), Sikhism
+- **Early Modern (1500-1800 CE)**: Utilitarianism, Marxism, Pragmatism
+- **Modern (1800+ CE)**: Analytic Philosophy, Alan Watts, Secular Humanism, Existentialism, Absurdism, Postmodernism
 
-### Adding New Sources
-Sources are managed in `src/data/json/sources.json`:
+## Data Quality
 
-```json
-{
-  "Bible": [
-    {
-      "name": "King James Bible",
-      "source": "Archive.org",
-      "url": "https://archive.org/details/kingjamesbible",
-      "type": "full_text"
-    }
-  ]
-}
-```
+### Confidence Scoring
+- **95-100%**: Well-documented traditions (Christianity, Islam, Buddhism)
+- **85-94%**: Good documentation with minor uncertainties
+- **70-84%**: Good sources with some gaps
+- **Below 70%**: Limited sources or scholarly disagreement
 
-## 🎯 LLM Review Framework
-
-### Review Criteria for Tradition Data
-
-When reviewing and updating tradition data, focus on these areas:
-
-#### 1. **Accuracy & Authenticity**
-- Are core beliefs represented accurately?
-- Do descriptions reflect mainstream understanding?
-- Are there significant misrepresentations or oversimplifications?
-
-#### 2. **Completeness**
-- Are all four philosophical areas (metaphysics, epistemology, ethics, liberation) adequately covered?
-- Are key concepts and practices included?
-- Are important figures and texts listed?
-
-#### 3. **Balance & Fairness**
-- Are positive and challenging aspects both represented?
-- Are critiques fair and scholarly rather than dismissive?
-- Is the tradition presented in its own terms?
-
-#### 4. **Source Quality**
-- Are primary texts correctly identified?
-- Do source links work and lead to reliable content?
-- Are there better online resources available?
-
-#### 5. **Consistency**
-- Does the confidence score (0-1) accurately reflect source reliability?
-- Are similar traditions described with comparable depth?
-- Is terminology consistent across traditions?
-
-### Review Process
-
-1. **Load Current Data**: Review existing tradition data in `src/data/json/traditions.json`
-2. **Scholarly Verification**: Cross-check against academic sources and primary texts
-3. **Source Enhancement**: Find better online links for primary texts and concepts
-4. **Gap Analysis**: Identify missing information or incomplete sections
-5. **Quality Improvement**: Suggest specific improvements for accuracy and completeness
-6. **Documentation**: Update confidence scores and last-updated timestamps
-
-### Improvement Suggestions Format
-
-For each tradition, provide:
-```
-TRADITION: [Name]
-ACCURACY: [Issues found / Corrections needed]
-COMPLETENESS: [Missing information]
-SOURCES: [Better links / Additional texts]
-CONFIDENCE: [Recommended score with justification]
-SPECIFIC CHANGES: [Detailed improvement suggestions]
-```
-
-## 🚀 Getting Started
+## Installation
 
 ### Prerequisites
 - Node.js 18+
 - npm or yarn
 
-### Installation
+### Setup
 ```bash
 git clone [repository-url]
 cd philo-explorer
@@ -238,97 +135,61 @@ npm install
 npm start
 ```
 
-### Development
+### Build
 ```bash
 npm run build    # Production build
 npm run lint     # Code linting
-npm run test     # Run tests (when implemented)
 ```
 
-## 🎨 User Interface
+## Deployment
 
-### Navigation
-- **Select Traditions**: Browse and choose traditions for comparison
-- **Enhanced Interactive Timeline**: View traditions chronologically with multiple interaction modes
-- **Compare**: Side-by-side analysis of selected traditions
-- **AI Debate**: Watch philosophical discussions between tradition representatives
-- **Quiz Mode**: Discover aligned traditions (coming soon)
+### Cloudflare Pages
 
-### Enhanced Timeline Features 🕒
+1. Go to [Cloudflare Dashboard](https://dash.cloudflare.com/)
+2. Navigate to Pages → Create a project → Connect to Git
+3. Select the repository and configure:
+   - **Project name**: philosophical-explorer
+   - **Production branch**: main
+   - **Framework preset**: Create React App
+   - **Build command**: npm run build
+   - **Build output directory**: build
+4. Click "Save and Deploy"
 
-#### **Timeline Modes**
-- **Accurate Mode**: Proportional historical spacing showing true chronological gaps with era labels positioned at historical centers
-- **Linear Mode**: Even spacing for easy comparison while maintaining chronological order with evenly distributed era labels
+The app will be available at: `https://philosophical-explorer.pages.dev`
 
-#### **Clean, Modern Design**
-- **Simplified Visual Layout**: Single horizontal timeline with color-coded tradition markers
-- **Smart Era Labels**: Responsive positioning - evenly spaced in Linear mode, historically accurate in Accurate mode
-- **Color-Coded Categories**: Each philosophical family has its own color (Buddhism=Orange, Abrahamic=Blue, etc.)
-- **Clean Tooltips**: Simple, informative hover cards with essential tradition details
+### CLI Deployment
+```bash
+npm install -g wrangler
+wrangler login
+npm run build
+wrangler pages deploy build --project-name=philosophical-explorer
+```
 
-#### **Interactive Elements**
-- **Click for Details**: Click any tradition marker to open detailed tradition information
-- **Hover Effects**: Smooth scaling and glow effects on tradition markers
-- **Category Filtering**: Browse by philosophical families (Buddhism, Abrahamic, Indian Philosophy, etc.)
-- **Tabbed Organization**: Switch between Historical Eras and Philosophical Categories views
-- **Smooth Transitions**: Animated mode switching with 0.3s ease-in-out effects
-
-#### **Era Distribution**
-- **Ancient (before 0 CE)**: Indigenous Wisdom, Judaism, Jainism, Confucianism, Shintoism, Daoism, Stoicism, Theravada Buddhism, Mahayana Buddhism
-- **Classical (0-500 CE)**: Christianity, Zen Buddhism  
-- **Medieval (500-1500 CE)**: Sunni Islam, Hinduism (Advaita Vedanta), Sikhism
-- **Early Modern (1500-1800 CE)**: Utilitarianism, Marxism, Pragmatism
-- **Modern (1800+ CE)**: Analytic Philosophy, Alan Watts, Secular Humanism, Existentialism, Absurdism, Postmodernism
-
-### General Interactive Features
-- **Educational Tooltips**: Hover over philosophical terms for explanations
-- **Verified Source Links**: Click primary texts to access authoritative online versions
-- **Theme Toggle**: Switch between dark and light modes with consistent readability
-- **Responsive Design**: Optimized for desktop, tablet, and mobile devices
-
-## 📊 Data Quality
-
-### Confidence Scoring
-- **95-100%**: Extremely well-documented (Christianity, Islam, Buddhism)
-- **85-94%**: Well-documented with minor uncertainties
-- **70-84%**: Good sources but some gaps or scholarly debates
-- **Below 70%**: Limited sources or significant scholarly disagreement
-
-### Last Updated
-All tradition data includes timestamps showing when information was last reviewed and verified.
-
-## 🤝 Contributing
+## Contributing
 
 ### Data Improvement
-To improve tradition data:
-1. Review current information in `src/data/json/traditions.json`
-2. Verify against scholarly sources and primary texts
-3. Submit improvements with citations and justifications
+1. Review tradition data in `src/data/json/traditions.json`
+2. Verify against scholarly sources
+3. Submit improvements with citations
 4. Update confidence scores based on source reliability
-
-### Adding Traditions
-To add new traditions:
-1. Follow the schema in `src/types.ts`
-2. Include all four philosophical areas
-3. Provide primary text sources with online links when possible
-4. Set appropriate confidence score based on available sources
 
 ### Code Contributions
 1. Follow TypeScript and React best practices
 2. Maintain accessibility standards
-3. Include tooltips for philosophical terminology
-4. Test across different themes and screen sizes
+3. Test across different themes and screen sizes
 
-## 📄 License
+## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+MIT License - see LICENSE file for details.
 
-## 🙏 Acknowledgments
+## Technical Details
 
-- Academic sources and scholarly traditions represented
-- Online repositories making primary texts accessible
-- Open source community for React and Material-UI frameworks
+- **Framework**: React 19 with TypeScript
+- **UI Library**: Material-UI v5
+- **Build Size**: ~201KB gzipped
+- **Data**: JSON-based with 23 philosophical traditions
+- **Deployment**: Cloudflare Pages with global CDN
 
 ---
 
-**Note**: This application is designed for educational purposes. While every effort is made to represent traditions accurately and fairly, users are encouraged to consult primary sources and scholarly works for authoritative information.
+This application is for educational purposes. Users are encouraged to consult primary sources and scholarly works for authoritative information.
