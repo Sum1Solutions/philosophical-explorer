@@ -257,16 +257,23 @@ npm run test     # Run tests (when implemented)
 ### Enhanced Timeline Features 🕒
 
 #### **Timeline Modes**
-- **Accurate Mode**: Proportional historical spacing showing true chronological gaps
-- **Linear Mode**: Even spacing for easy comparison while maintaining chronological order
+- **Accurate Mode**: Proportional historical spacing showing true chronological gaps with era labels positioned at historical centers
+- **Linear Mode**: Even spacing for easy comparison while maintaining chronological order with evenly distributed era labels
+
+#### **Clean, Modern Design**
+- **Simplified Visual Layout**: Single horizontal timeline with color-coded tradition markers
+- **Smart Era Labels**: Responsive positioning - evenly spaced in Linear mode, historically accurate in Accurate mode
+- **Color-Coded Categories**: Each philosophical family has its own color (Buddhism=Orange, Abrahamic=Blue, etc.)
+- **Clean Tooltips**: Simple, informative hover cards with essential tradition details
 
 #### **Interactive Elements**
-- **Era Filtering**: Click on era markers (Ancient, Classical, Medieval, Early Modern, Modern) to filter traditions by time period
-- **Rich Hover Tooltips**: Detailed tradition cards with adherent counts, categories, and key information
-- **Animated Transitions**: Smooth fade, zoom, and slide effects for enhanced user experience
-- **Visual Effects**: Glowing timeline elements, spinning selection borders, and dynamic scaling
+- **Click for Details**: Click any tradition marker to open detailed tradition information
+- **Hover Effects**: Smooth scaling and glow effects on tradition markers
+- **Category Filtering**: Browse by philosophical families (Buddhism, Abrahamic, Indian Philosophy, etc.)
+- **Tabbed Organization**: Switch between Historical Eras and Philosophical Categories views
+- **Smooth Transitions**: Animated mode switching with 0.3s ease-in-out effects
 
-#### **Era Markers**
+#### **Era Distribution**
 - **Ancient (before 0 CE)**: Indigenous Wisdom, Judaism, Jainism, Confucianism, Shintoism, Daoism, Stoicism, Theravada Buddhism, Mahayana Buddhism
 - **Classical (0-500 CE)**: Christianity, Zen Buddhism  
 - **Medieval (500-1500 CE)**: Sunni Islam, Hinduism (Advaita Vedanta), Sikhism
