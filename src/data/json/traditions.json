@@ -1134,67 +1134,6 @@
     "firstYear": 1900
   },
   {
-    "id": "alan-watts",
-    "name": "Alan Watts",
-    "category": "Modern Philosophy",
-    "subSchool": "Western interpretation of Eastern wisdom",
-    "firstYear": 1915,
-    "metaphysics": {
-      "ultimateReality": "Reality as interdependent patterns; nondual field of experience",
-      "viewOfWorld": "Playful cosmic process where opposites define each other",
-      "viewOfSelf": "Ego is mask; deeper Self as Atman = Brahman",
-      "afterlife": "Participatory play in cosmic process"
-    },
-    "epistemology": [
-      "Direct experience",
-      "Eastern wisdom",
-      "Western psychology",
-      "Mystical insight"
-    ],
-    "ethics": [
-      "Let go and participate",
-      "Embrace life's rascality",
-      "Joyful engagement"
-    ],
-    "liberation": {
-      "goal": "Joyful participation in cosmic play",
-      "path": [
-        "Let go of control",
-        "Embrace irreducible mystery",
-        "Laugh and participate"
-      ]
-    },
-    "primaryTexts": [
-      "The Book",
-      "Tao: The Watercourse Way",
-      "Out of Your Mind lectures"
-    ],
-    "adherents": "Influential but not organized",
-    "originDate": "1915-1973 CE",
-    "keyFigures": [
-      "Alan Watts"
-    ],
-    "confidence": 0.92,
-    "lastUpdated": "2024-01-15",
-    "critiques": {
-      "Academic Buddhism": "Western interpretation misses traditional Buddhist structure and community",
-      "Traditional Christianity": "Mixing Eastern philosophy with Christianity dilutes both traditions",
-      "Systematic Philosophy": "Playful approach lacks rigorous philosophical methodology"
-    },
-    "sources": [
-      {
-        "text": "The ego is a social institution with no physical reality",
-        "source": "The Book: On the Taboo Against Knowing Who You Are",
-        "confidence": "high"
-      },
-      {
-        "text": "We are the universe experiencing itself subjectively",
-        "source": "Alan Watts lectures",
-        "confidence": "medium"
-      }
-    ]
-  },
-  {
     "id": "secular-humanism",
     "name": "Secular Humanism",
     "category": "Modern Philosophy",
@@ -1542,5 +1481,470 @@
       "Plan of Salvation": "Pre-mortal, mortal, and post-mortal progression plan",
       "Restoration": "Original church of Christ restored after Great Apostasy"
     }
+  },
+  {
+    "id": "vaishnavism",
+    "name": "Hinduism (Vaishnavism)",
+    "category": "Hindu Philosophy",
+    "subSchool": "Devotional tradition focused on Vishnu/Krishna",
+    "firstYear": -1000,
+    "metaphysics": {
+      "ultimateReality": "Vishnu/Krishna as Supreme Godhead with infinite divine qualities",
+      "viewOfWorld": "Divine lila (cosmic play) manifested for devotional relationship",
+      "viewOfSelf": "Eternal souls (jivas) meant for loving service to God",
+      "afterlife": "Liberation through devotion, eternal residence in spiritual realm"
+    },
+    "epistemology": [
+      "Bhagavad Gita",
+      "Bhagavata Purana",
+      "Guru parampara (disciplic succession)",
+      "Direct devotional experience",
+      "Vedic scriptures"
+    ],
+    "ethics": [
+      "Bhakti (devotional love)",
+      "Ahimsa (non-violence)",
+      "Dharmic living",
+      "Service to God and devotees",
+      "Compassion for all beings"
+    ],
+    "liberation": {
+      "goal": "Prema-bhakti - Pure love of God, eternal association with Krishna",
+      "path": [
+        "Hearing about Krishna (shravana)",
+        "Chanting holy names (kirtana)",
+        "Remembering Krishna (smarana)",
+        "Worship and service (archana, seva)",
+        "Self-surrender (sharanagati)"
+      ]
+    },
+    "primaryTexts": [
+      {
+        "title": "Bhagavad Gita",
+        "description": "Krishna's teachings on dharma, devotion, and liberation"
+      },
+      {
+        "title": "Srimad Bhagavatam",
+        "description": "Stories and philosophy of Krishna's pastimes"
+      },
+      {
+        "title": "Ramayana",
+        "description": "Epic of Rama, ideal devotional conduct"
+      },
+      "Vishnu Purana",
+      "Gita Govinda"
+    ],
+    "adherents": "600M+ (largest Hindu tradition)",
+    "originDate": "1000 BCE - present",
+    "keyFigures": [
+      "Krishna",
+      "Chaitanya Mahaprabhu",
+      "Ramanuja",
+      "Madhva",
+      "Vallabha"
+    ],
+    "confidence": 0.94,
+    "lastUpdated": "2024-01-15",
+    "critiques": {
+      "Advaita Vedanta": "Impersonal Brahman denies personal relationship with God",
+      "Buddhism": "Denial of eternal soul contradicts devotional relationship",
+      "Materialism": "Focus on matter ignores spiritual nature of existence"
+    },
+    "sources": [
+      {
+        "text": "Abandon all dharmas and surrender unto Me alone",
+        "source": "Bhagavad Gita 18.66",
+        "confidence": "high"
+      },
+      {
+        "text": "God is realized in three features: Brahman, Paramatma, and Bhagavan",
+        "source": "Srimad Bhagavatam 1.2.11",
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "shia-islam",
+    "name": "Islam (Shia)",
+    "category": "Islamic Theology",
+    "subSchool": "Twelver Shia majority",
+    "firstYear": 632,
+    "metaphysics": {
+      "ultimateReality": "Allah - One, eternal, transcendent Creator",
+      "viewOfWorld": "Created by Allah, guided through divinely appointed Imams",
+      "viewOfSelf": "Soul accountable to Allah, guided by Imam's spiritual authority",
+      "afterlife": "Paradise or Hell, with intercession of Prophet and Imams"
+    },
+    "epistemology": [
+      "Qur'an",
+      "Sunnah of Prophet and Imams",
+      "Ijtihad (scholarly interpretation)",
+      "Aql (reason)",
+      "Ijma (consensus of scholars)"
+    ],
+    "ethics": [
+      "Five Pillars of Islam",
+      "Following guidance of living Marja (religious authority)",
+      "Justice (Adl) as divine attribute",
+      "Wilayah (devotion to Ahl al-Bayt)"
+    ],
+    "liberation": {
+      "goal": "Paradise through faith, good deeds, and following Imam's guidance",
+      "path": [
+        "Shahada (Declaration of faith)",
+        "Prayer (Salah)",
+        "Charity (Zakat)", 
+        "Fasting (Sawm)",
+        "Hajj pilgrimage",
+        "Following the Twelve Imams' teachings"
+      ]
+    },
+    "primaryTexts": [
+      "Qur'an",
+      "Nahj al-Balagha (Imam Ali's sermons)",
+      "Al-Kafi (Hadith collection)",
+      "Four Books (Hadith collections)"
+    ],
+    "adherents": "200M+ worldwide",
+    "originDate": "632 CE (succession dispute after Prophet's death)",
+    "keyFigures": [
+      "Ali ibn Abi Talib (First Imam)",
+      "Hussein (Third Imam)",
+      "Ja'far al-Sadiq (Sixth Imam)",
+      "Al-Kulayni",
+      "Al-Tusi"
+    ],
+    "confidence": 0.96,
+    "lastUpdated": "2024-01-15",
+    "critiques": {
+      "Sunni Islam": "Imams are not divinely appointed; Quran and Sunnah are sufficient",
+      "Christianity": "Trinity violates monotheism; Jesus was prophet, not divine",
+      "Secularism": "Divine guidance through Imams is necessary for proper understanding"
+    },
+    "sources": [
+      {
+        "text": "Today I have perfected your religion and completed My favor upon you",
+        "source": "Quran 5:3 (interpreted as referring to Ali's succession)",
+        "confidence": "high"
+      },
+      {
+        "text": "Ali is with the Truth and the Truth is with Ali",
+        "source": "Hadith tradition",
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "id": "eastern-orthodox",
+    "name": "Eastern Orthodox Christianity",
+    "category": "Christian Theology",
+    "subSchool": "Orthodox Church traditions",
+    "firstYear": 33,
+    "metaphysics": {
+      "ultimateReality": "Trinity - Father, Son, Holy Spirit in perfect unity",
+      "viewOfWorld": "Created good, fallen, being restored through Christ",
+      "viewOfSelf": "Made in God's image, called to theosis (deification)",
+      "afterlife": "Eternal life with God through participation in divine nature"
+    },
+    "epistemology": [
+      "Scripture",
+      "Holy Tradition",
+      "Church Fathers",
+      "Ecumenical Councils",
+      "Liturgical life",
+      "Mystical experience"
+    ],
+    "ethics": [
+      "Love of God and neighbor",
+      "Ascetical practices",
+      "Liturgical participation",
+      "Fasting and prayer",
+      "Care for poor and suffering"
+    ],
+    "liberation": {
+      "goal": "Theosis - Participation in divine life, becoming God by grace",
+      "path": [
+        "Baptism and Chrismation",
+        "Eucharistic participation",
+        "Prayer and fasting",
+        "Ascetical struggle",
+        "Mystical union with God"
+      ]
+    },
+    "primaryTexts": [
+      "Bible (Septuagint Old Testament)",
+      "Nicene Creed",
+      "Church Fathers (Chrysostom, Basil, Gregory)",
+      "Liturgical texts",
+      "Philokalia"
+    ],
+    "adherents": "220M+ worldwide",
+    "originDate": "33 CE (claims apostolic succession)",
+    "keyFigures": [
+      "Jesus Christ",
+      "John Chrysostom",
+      "Basil the Great",
+      "Gregory of Nazianzus",
+      "Maximus the Confessor"
+    ],
+    "confidence": 0.97,
+    "lastUpdated": "2024-01-15",
+    "critiques": {
+      "Roman Catholicism": "Papal supremacy and filioque contradict original faith",
+      "Protestantism": "Sola scriptura ignores Holy Tradition and Church authority",
+      "Islam": "Incarnation and Trinity are central to Christian revelation"
+    },
+    "sources": [
+      {
+        "text": "God became man so that man might become God",
+        "source": "Athanasius of Alexandria",
+        "confidence": "high"
+      },
+      {
+        "text": "The glory of God is a living human being",
+        "source": "Irenaeus of Lyon",
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "new-age-spirituality",
+    "name": "New Age Spirituality",
+    "category": "Contemporary Spirituality",
+    "subSchool": "Synthesis movement combining Eastern and Western practices",
+    "firstYear": 1960,
+    "metaphysics": {
+      "ultimateReality": "Universal consciousness/energy connecting all beings",
+      "viewOfWorld": "Holistic reality where matter and spirit are unified",
+      "viewOfSelf": "Divine spark within, capable of unlimited potential",
+      "afterlife": "Reincarnation for spiritual evolution and karmic learning"
+    },
+    "epistemology": [
+      "Intuitive knowing",
+      "Channeled wisdom",
+      "Personal spiritual experience",
+      "Ancient wisdom traditions",
+      "Holistic science"
+    ],
+    "ethics": [
+      "Follow your highest good",
+      "Universal love and compassion",
+      "Environmental consciousness",
+      "Personal responsibility for reality",
+      "Non-harm to all beings"
+    ],
+    "liberation": {
+      "goal": "Spiritual awakening and conscious co-creation with the universe",
+      "path": [
+        "Meditation and mindfulness",
+        "Energy healing practices",
+        "Crystal and alternative therapies",
+        "Spiritual workshops and communities",
+        "Personal transformation work"
+      ]
+    },
+    "primaryTexts": [
+      {
+        "title": "A Course in Miracles",
+        "description": "Channeled spiritual text on forgiveness and love"
+      },
+      {
+        "title": "The Aquarian Conspiracy",
+        "description": "Marilyn Ferguson's manifesto on consciousness transformation"
+      },
+      "The Seth Material",
+      "Conversations with God series"
+    ],
+    "adherents": "Millions worldwide (diverse, decentralized)",
+    "originDate": "1960s-1970s (Aquarian Age movement)",
+    "keyFigures": [
+      "Alan Watts (early popularizer)",
+      "Marilyn Ferguson",
+      "Shirley MacLaine", 
+      "Deepak Chopra",
+      "Wayne Dyer",
+      "Louise Hay"
+    ],
+    "confidence": 0.82,
+    "lastUpdated": "2024-01-15",
+    "critiques": {
+      "Traditional Religion": "Syncretistic mixing dilutes authentic spiritual traditions",
+      "Scientific Materialism": "Unsubstantiated claims about consciousness and energy",
+      "Eastern Traditions": "Superficial appropriation misses depth of traditional practices"
+    },
+    "sources": [
+      {
+        "text": "We are not human beings having a spiritual experience; we are spiritual beings having a human experience",
+        "source": "Popular New Age teaching (attributed to various sources)",
+        "confidence": "medium"
+      },
+      {
+        "text": "You create your own reality",
+        "source": "Core New Age principle",
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "environmental-philosophy",
+    "name": "Environmental Philosophy",
+    "category": "Contemporary Philosophy",
+    "subSchool": "Deep ecology and ecocentric ethics",
+    "firstYear": 1970,
+    "metaphysics": {
+      "ultimateReality": "Interconnected web of life; Earth as living system (Gaia)",
+      "viewOfWorld": "Sacred biosphere requiring protection and reverence",
+      "viewOfSelf": "Humans as part of nature, not separate from or above it",
+      "afterlife": "Continuation in natural cycles, focus on present ecological responsibility"
+    },
+    "epistemology": [
+      "Ecological science",
+      "Indigenous wisdom",
+      "Systems thinking",
+      "Direct experience in nature",
+      "Interdisciplinary research"
+    ],
+    "ethics": [
+      "Intrinsic value of all life forms",
+      "Biocentric equality",
+      "Sustainable living practices",
+      "Intergenerational responsibility",
+      "Ecological justice"
+    ],
+    "liberation": {
+      "goal": "Ecological consciousness and sustainable human-Earth relationship",
+      "path": [
+        "Deep ecology practices",
+        "Wilderness experience",
+        "Environmental activism",
+        "Sustainable lifestyle choices",
+        "Bioregional awareness"
+      ]
+    },
+    "primaryTexts": [
+      {
+        "title": "Deep Ecology",
+        "description": "Arne Naess's foundational work on ecocentric philosophy"
+      },
+      {
+        "title": "A Sand County Almanac",
+        "description": "Aldo Leopold's land ethic philosophy"
+      },
+      {
+        "title": "The Ecology of Wisdom",
+        "description": "Arne Naess's collected writings"
+      },
+      "Silent Spring",
+      "Gaia hypothesis works"
+    ],
+    "adherents": "Environmental movement, academic ecology",
+    "originDate": "1970s (post-Earth Day environmental awakening)",
+    "keyFigures": [
+      "Aldo Leopold",
+      "Arne Naess",
+      "Rachel Carson",
+      "James Lovelock",
+      "Joanna Macy"
+    ],
+    "confidence": 0.91,
+    "lastUpdated": "2024-01-15",
+    "critiques": {
+      "Anthropocentrism": "Human-centered worldview ignores intrinsic value of nature",
+      "Economic growth paradigm": "Infinite growth on finite planet is impossible",
+      "Religious traditions": "Dominion theology treats nature as mere resource"
+    },
+    "sources": [
+      {
+        "text": "A thing is right when it tends to preserve the integrity, stability, and beauty of the biotic community",
+        "source": "Aldo Leopold, A Sand County Almanac",
+        "confidence": "high"
+      },
+      {
+        "text": "The ecological self of a person is that with which this person identifies",
+        "source": "Arne Naess, Deep Ecology movement",
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "effective-altruism",
+    "name": "Effective Altruism",
+    "category": "Contemporary Ethics",
+    "subSchool": "Evidence-based philanthropic philosophy",
+    "firstYear": 2005,
+    "metaphysics": {
+      "ultimateReality": "Natural world understood through reason and evidence",
+      "viewOfWorld": "Arena for reducing suffering and increasing wellbeing",
+      "viewOfSelf": "Rational agent with moral obligation to help others effectively",
+      "afterlife": "Generally secular; focus on maximizing this-world impact"
+    },
+    "epistemology": [
+      "Scientific evidence",
+      "Randomized controlled trials",
+      "Cost-effectiveness analysis",
+      "Bayesian reasoning",
+      "Peer review and meta-analysis"
+    ],
+    "ethics": [
+      "Impartial concern for all sentient beings",
+      "Evidence-based decision making",
+      "Cost-effectiveness in helping others",
+      "Long-term thinking and existential risk",
+      "Earning to give"
+    ],
+    "liberation": {
+      "goal": "Maximum reduction of suffering and increase of wellbeing globally",
+      "path": [
+        "Career optimization for impact",
+        "Effective charitable giving",
+        "Research on cause prioritization",
+        "Community building",
+        "Rational altruistic decision-making"
+      ]
+    },
+    "primaryTexts": [
+      {
+        "title": "The Life You Can Save",
+        "description": "Peter Singer's argument for effective giving"
+      },
+      {
+        "title": "Doing Good Better",
+        "description": "William MacAskill's guide to effective altruism"
+      },
+      {
+        "title": "The Precipice",
+        "description": "Toby Ord on existential risk and future generations"
+      },
+      "80,000 Hours research",
+      "GiveWell evaluations"
+    ],
+    "adherents": "Thousands actively practicing, growing movement",
+    "originDate": "2005-2010s (formalization of movement)",
+    "keyFigures": [
+      "Peter Singer",
+      "William MacAskill",
+      "Toby Ord",
+      "Nick Bostrom",
+      "Holden Karnofsky"
+    ],
+    "confidence": 0.94,
+    "lastUpdated": "2024-01-15",
+    "critiques": {
+      "Traditional charity": "Emotional giving ignores evidence about what actually helps",
+      "Virtue ethics": "Focus on consequences misses importance of character and intentions",
+      "Local community": "Global focus neglects obligations to nearby communities"
+    },
+    "sources": [
+      {
+        "text": "If it's within your power to prevent something bad from happening, without sacrificing anything nearly as important, it's wrong not to do so",
+        "source": "Peter Singer, The Life You Can Save",
+        "confidence": "high"
+      },
+      {
+        "text": "Effective altruism is about answering one simple question: how can we use our resources to help others the most?",
+        "source": "William MacAskill, Doing Good Better",
+        "confidence": "high"
+      }
+    ]
   }
 ]

@@ -177,7 +177,7 @@ const TimelineView: React.FC<TimelineViewProps> = ({
     <Paper sx={{ p: 3, mb: 3 }}>
       <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 3 }}>
         <Typography variant="h5" sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-          📅 Historical Timeline of Philosophical Traditions
+          📅 Philosophy & Religious Traditions Timeline
         </Typography>
         
         <FormControl>
@@ -353,8 +353,8 @@ const TimelineView: React.FC<TimelineViewProps> = ({
             onChange={(_, newValue) => setActiveTab(newValue)}
             aria-label="tradition grouping tabs"
           >
-            <Tab label="Historical Eras" />
-            <Tab label="Philosophical Categories" />
+            <Tab label="ERAS" />
+            <Tab label="CATEGORIES" />
           </Tabs>
         </Box>
 

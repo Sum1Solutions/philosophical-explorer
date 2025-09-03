@@ -20,7 +20,7 @@ import ComparisonMatrix from './components/ComparisonMatrix';
 import AIDebateChat from './components/AIDebateChat';
 import TimelineView from './components/TimelineView';
 import TraditionDetailView from './components/TraditionDetailView';
-import PrintButton from './components/PrintButton';
+import BottomBar from './components/BottomBar';
 import { UserProfile } from './types';
 
 interface TabPanelProps {
@@ -68,6 +68,14 @@ function App() {
       secondary: {
         main: '#dc004e',
       },
+      background: {
+        default: darkMode ? '#121212' : '#fafafa',
+        paper: darkMode ? '#1e1e1e' : '#ffffff',
+      },
+      text: {
+        primary: darkMode ? '#ffffff' : '#000000',
+        secondary: darkMode ? '#b3b3b3' : '#666666',
+      },
     },
     typography: {
       h4: {
@@ -75,6 +83,32 @@ function App() {
       },
       h5: {
         fontWeight: 600,
+      },
+      h6: {
+        fontWeight: 600,
+      },
+      body1: {
+        lineHeight: 1.6,
+      },
+      body2: {
+        lineHeight: 1.5,
+      },
+    },
+    components: {
+      MuiPaper: {
+        styleOverrides: {
+          root: {
+            backgroundImage: 'none',
+          },
+        },
+      },
+      MuiAppBar: {
+        styleOverrides: {
+          root: {
+            backgroundImage: 'none',
+            backgroundColor: darkMode ? '#1e1e1e' : '#1976d2',
+          },
+        },
       },
     },
   });
@@ -138,12 +172,8 @@ function App() {
               <School sx={{ mr: 2, cursor: 'help' }} />
             </Tooltip>
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-              Philosophical Explorer
+              Philosophy & Religion Explorer
             </Typography>
-            <Typography variant="subtitle2" sx={{ mr: 2 }}>
-              Compare {selectedTraditions.length > 0 ? `${selectedTraditions.length} selected` : 'traditions'}
-            </Typography>
-            <PrintButton className="mr-2" />
             <IconButton
               color="inherit"
               onClick={() => setDarkMode(!darkMode)}
@@ -162,17 +192,17 @@ function App() {
               textColor="primary"
               variant="fullWidth"
             >
+              <Tooltip title="View traditions arranged chronologically through history and by philosophical categories" arrow>
+                <Tab
+                  label="Philosophy & Religious Traditions Timeline"
+                  icon={<Timeline />}
+                  iconPosition="start"
+                />
+              </Tooltip>
               <Tooltip title="Browse and select philosophical and religious traditions to compare" arrow>
                 <Tab
                   label="Select Traditions"
                   icon={<Psychology />}
-                  iconPosition="start"
-                />
-              </Tooltip>
-              <Tooltip title="View traditions arranged chronologically through history" arrow>
-                <Tab
-                  label="Historical Timeline"
-                  icon={<Timeline />}
                   iconPosition="start"
                 />
               </Tooltip>
@@ -205,19 +235,19 @@ function App() {
 
           {/* Tab Panels */}
           <TabPanel value={currentTab} index={0}>
+            <TimelineView
+              selectedTraditions={selectedTraditions}
+              onTraditionClick={handleTraditionClick}
+            />
+          </TabPanel>
+
+          <TabPanel value={currentTab} index={1}>
             <TraditionSelector
               selectedTraditions={selectedTraditions}
               onSelectionChange={handleTraditionSelectionChange}
               onCompare={handleCompare}
               userProfile={userProfile}
               onProfileUpdate={setUserProfile}
-            />
-          </TabPanel>
-
-          <TabPanel value={currentTab} index={1}>
-            <TimelineView
-              selectedTraditions={selectedTraditions}
-              onTraditionClick={handleTraditionClick}
             />
           </TabPanel>
 
@@ -267,6 +297,9 @@ function App() {
             </Paper>
           </TabPanel>
         </Container>
+
+        {/* Bottom Bar */}
+        <BottomBar selectedTraditions={selectedTraditions} />
 
         {/* Global Tradition Detail View */}
         <TraditionDetailView
