@@ -1439,5 +1439,108 @@
       }
     ],
     "firstYear": 1960
+  },
+  {
+    "id": "mormonism",
+    "name": "Mormonism (LDS Church)",
+    "category": "Christian Restoration Movement",
+    "subSchool": "Church of Jesus Christ of Latter-day Saints",
+    "firstYear": 1830,
+    "metaphysics": {
+      "ultimateReality": "Godhead of three distinct beings: Father, Son, Holy Ghost - all with glorified bodies",
+      "viewOfWorld": "Physical world created by God for progression; multiple worlds exist",
+      "viewOfSelf": "Pre-mortal spirits who chose to come to Earth for testing and progression",
+      "afterlife": "Three degrees of glory (Celestial, Terrestrial, Telestial) based on obedience and ordinances"
+    },
+    "epistemology": [
+      "Personal revelation through Holy Ghost",
+      "Living prophets and apostles",
+      "Book of Mormon",
+      "Bible (as far as translated correctly)",
+      "Doctrine and Covenants",
+      "Pearl of Great Price"
+    ],
+    "ethics": [
+      "Word of Wisdom (health code)",
+      "Law of Chastity",
+      "Tithing (10% of income)",
+      "Temple ordinances",
+      "Family-centered living",
+      "Missionary service"
+    ],
+    "liberation": {
+      "goal": "Exaltation - becoming like God and achieving eternal families in Celestial Kingdom",
+      "path": [
+        "Faith in Jesus Christ",
+        "Repentance",
+        "Baptism by immersion",
+        "Receiving Holy Ghost",
+        "Temple ordinances (endowment, sealing)",
+        "Enduring to the end"
+      ]
+    },
+    "primaryTexts": [
+      {
+        "title": "Book of Mormon",
+        "description": "Another Testament of Jesus Christ - ancient American scripture"
+      },
+      {
+        "title": "Doctrine and Covenants",
+        "description": "Modern revelations to Joseph Smith and successors"
+      },
+      {
+        "title": "Pearl of Great Price",
+        "description": "Book of Moses, Book of Abraham, Joseph Smith History"
+      },
+      {
+        "title": "Bible (KJV)",
+        "description": "Old and New Testament with Joseph Smith Translation corrections"
+      }
+    ],
+    "adherents": "16.8 million worldwide (2023)",
+    "originDate": "April 6, 1830",
+    "keyFigures": [
+      "Joseph Smith Jr. (Founder/Prophet)",
+      "Brigham Young (2nd President)",
+      "Gordon B. Hinckley",
+      "Russell M. Nelson (Current President)"
+    ],
+    "confidence": 0.92,
+    "lastUpdated": "2024-01-15",
+    "critiques": {
+      "Traditional Christianity": "Additional scriptures and continuing revelation contradict sola scriptura; deification doctrine is heretical",
+      "Secularism": "Historical claims about ancient America lack archaeological evidence",
+      "Protestant Christianity": "Works-based salvation contradicts salvation by grace alone",
+      "Catholic Christianity": "Claim to restored priesthood denies apostolic succession"
+    },
+    "sources": [
+      {
+        "text": "As man is, God once was; as God is, man may be",
+        "source": "Lorenzo Snow, 5th President of LDS Church",
+        "confidence": "high"
+      },
+      {
+        "text": "We believe in God, the Eternal Father, and in His Son, Jesus Christ, and in the Holy Ghost",
+        "source": "Articles of Faith 1:1",
+        "confidence": "high"
+      },
+      {
+        "text": "Men are, that they might have joy",
+        "source": "2 Nephi 2:25, Book of Mormon",
+        "confidence": "high"
+      }
+    ],
+    "distinctiveBeliefs": {
+      "PremortalExistence": "All humans lived as spirit children of God before birth",
+      "ContinuingRevelation": "God speaks through living prophets today",
+      "EternalProgression": "Humans can progress to become like God",
+      "TempleWork": "Sacred ordinances performed for living and dead",
+      "EternalMarriage": "Marriage can last beyond death when sealed in temple",
+      "Baptism for the Dead": "Proxy baptisms allow deceased to accept gospel",
+      "Three Heavens": "Multiple degrees of salvation, not just heaven/hell",
+      "Corporeal God": "God the Father has a perfected physical body",
+      "Plan of Salvation": "Pre-mortal, mortal, and post-mortal progression plan",
+      "Restoration": "Original church of Christ restored after Great Apostasy"
+    }
   }
 ]

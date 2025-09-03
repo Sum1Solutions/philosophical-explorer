@@ -1,16 +1,18 @@
 # Philosophical Explorer
 
-A React application for comparing 23 philosophical and religious traditions across four areas: Metaphysics, Epistemology, Ethics, and Liberation.
+A React application for comparing 24 philosophical and religious traditions across four areas: Metaphysics, Epistemology, Ethics, and Liberation. Includes comprehensive knowledge export functionality for printing and verification.
 
 ## Features
 
-- **Tradition Comparison**: Side-by-side analysis of 23 philosophical and religious traditions
+- **Tradition Comparison**: Side-by-side analysis of 24 philosophical and religious traditions
 - **Interactive Timeline**: Chronological visualization with two positioning modes
 - **Detailed Tradition Views**: Exploration of each tradition's core beliefs
 - **Source Integration**: Links to primary texts and foundational documents
 - **Theme Support**: Dark and light mode interface
+- **Knowledge Export**: Print and download complete philosophical knowledge base
+- **AI Debate Mode**: Watch AI representatives debate fundamental questions
 
-## Covered Traditions (23 Total)
+## Covered Traditions (24 Total)
 
 ### Buddhism
 - **Theravada Buddhism** - Liberation through the Noble Eightfold Path
@@ -21,6 +23,7 @@ A React application for comparing 23 philosophical and religious traditions acro
 - **Judaism** - Covenant relationship with God and ethical living
 - **Christianity** - Salvation through faith in Jesus Christ
 - **Islam (Sunni)** - Submission to Allah through the Five Pillars
+- **Mormonism (LDS Church)** - Exaltation through restored gospel and temple ordinances
 
 ### Indian Philosophy
 - **Hinduism (Advaita Vedanta)** - Liberation through knowledge of Brahman
@@ -187,7 +190,7 @@ MIT License - see LICENSE file for details.
 - **Framework**: React 19 with TypeScript
 - **UI Library**: Material-UI v5
 - **Build Size**: ~201KB gzipped
-- **Data**: JSON-based with 23 philosophical traditions
+- **Data**: JSON-based with 24 philosophical traditions
 - **Deployment**: Cloudflare Pages with global CDN
 
 ---

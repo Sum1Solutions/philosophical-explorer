@@ -20,6 +20,7 @@ import ComparisonMatrix from './components/ComparisonMatrix';
 import AIDebateChat from './components/AIDebateChat';
 import TimelineView from './components/TimelineView';
 import TraditionDetailView from './components/TraditionDetailView';
+import PrintButton from './components/PrintButton';
 import { UserProfile } from './types';
 
 interface TabPanelProps {
@@ -142,6 +143,7 @@ function App() {
             <Typography variant="subtitle2" sx={{ mr: 2 }}>
               Compare {selectedTraditions.length > 0 ? `${selectedTraditions.length} selected` : 'traditions'}
             </Typography>
+            <PrintButton className="mr-2" />
             <IconButton
               color="inherit"
               onClick={() => setDarkMode(!darkMode)}
